@@ -1,25 +1,34 @@
 {
   "name": "portfolio-22",
-  "version": "1.0.0",
-  "description": "New updated web portfolio ",
-  "main": "index.js",
+  "version": "0.0.0",
   "scripts": {
-    "compile:scss": "node"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "test:unit": "vitest --environment jsdom",
+    "test:e2e": "start-server-and-test preview http://localhost:4173/ 'cypress open --e2e'",
+    "test:e2e:ci": "start-server-and-test preview http://localhost:4173/ 'cypress run --e2e'",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DotJones94/portfolio-22.git"
-  },
-  "author": "Kelly Jones",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DotJones94/portfolio-22/issues"
-  },
-  "homepage": "https://github.com/DotJones94/portfolio-22#readme",
   "dependencies": {
-    "sass": "^1.54.9"
+    "vue": "^3.2.38",
+    "vue-router": "^4.1.5"
   },
   "devDependencies": {
-    "node-sass": "^7.0.3"
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/test-utils": "^2.0.2",
+    "cypress": "^10.7.0",
+    "eslint": "^8.22.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-vue": "^9.3.0",
+    "jsdom": "^20.0.0",
+    "node-sass": "^7.0.3",
+    "prettier": "^2.7.1",
+    "start-server-and-test": "^1.14.0",
+    "vite": "^3.0.9",
+    "vitest": "^0.23.0"
   }
 }
