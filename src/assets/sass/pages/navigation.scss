@@ -1,0 +1,16 @@
+.navigation{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 25vh;
+    justify-content: space-between;
+
+    &__link{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img{
+        width: 2rem;
+    }
+}

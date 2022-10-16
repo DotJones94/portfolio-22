@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;800&display=swap');
+
+$assistant-font : 'Assistant', sans-serif;
+
+.heading{
+    &__main{
+        font-family: $assistant-font;
+        font-size: 9rem;
+        color: white;
+        font-weight: 800;
+        letter-spacing: 1.3rem;
+    }
+}
