@@ -17,14 +17,20 @@ body {
 .landing_page {
   background-color: #FFA41C; }
 
+.navigation__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  position: fixed; }
+
 .navigation {
   display: flex;
   flex-direction: column;
   position: fixed;
-  height: 25vh;
+  height: 30vh;
   justify-content: space-between; }
   .navigation__link {
-    display: flex;
-    flex-direction: column; }
+    display: flex; }
   .navigation__img {
     width: 2rem; }

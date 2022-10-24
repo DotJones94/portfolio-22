@@ -1,13 +1,20 @@
+.navigation__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+}
+
 .navigation{
     display: flex;
     flex-direction: column;
     position: fixed;
-    height: 25vh;
+    height: 30vh;
     justify-content: space-between;
 
     &__link{
         display: flex;
-        flex-direction: column;
     }
 
     &__img{

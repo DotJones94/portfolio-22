@@ -5,7 +5,7 @@ import SideNavigation from './navigation/side-navigation.vue';
 
 <template>
     <div>
-        <SideNavigation />
+        <SideNavigation/>
         <LandingPage/>
     </div>
 </template>
