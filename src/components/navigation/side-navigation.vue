@@ -1,33 +1,48 @@
+<script>
+    import Home from './icons/home.vue'
+    import Briefcase from './icons/breifcase.vue'
+    import Medal from './icons/medal.vue';
+    import Brush from './icons/brush.vue';
+    import Percentage from './icons/percentage.vue'
+    import Message from './icons/message.vue'
+
+    export default {
+        components: {
+            Home,Briefcase, Medal, Brush, Percentage, Message,
+        }
+    }
+</script>
+
 <template>
     <div class="navigation__wrapper">
         <div class="navigation">
-            <div class="navigation__link">
-                <img src="../icons/home-2.svg" alt="home-icon" class="navigation__img"/>
+            <div class="navigation__link navigation__link--active ">
+                <home />
                 <span class="link__text">Home</span>
             </div>
 
             <div class="navigation__link">
-                <img src="../icons/brifecase-timer.svg" alt="breifcase-icon" class="navigation__img" />
+                <briefcase />
                 <span class="link__text">Experience</span>
             </div>
 
             <div class="navigation__link">
-                <img src="../icons/percentage-circle.svg" alt="percentage-icon" class="navigation__img" />
+                <percentage />
                 <span class="link__text">Skills</span>
             </div>
 
             <div class="navigation__link">
-                <img src="../icons/brush.svg" alt="paint-brush-icon" class="navigation__img" />
+                <brush/>
                 <span class="link__text">Portfolio</span>
             </div>
 
             <div class="navigation__link">
-                <img src="../icons/medal-star.svg" alt="medal-icon" class="navigation__img"/>
+                <medal/>
                 <span class="link__text">Qualifications</span>
             </div>
 
             <div class="navigation__link">
-                <img src="../icons/messages-2.svg" alt="message-icon" class="navigation__img"/>
+                <message />
                 <div class="link__text">Contact Me</div>
             </div>
         </div>
