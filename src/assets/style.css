@@ -5,7 +5,10 @@
   font-size: 9rem;
   color: white;
   font-weight: 800;
-  letter-spacing: 1.3rem; }
+  letter-spacing: 1.3rem;
+  text-align: center;
+  line-height: 7rem;
+  text-shadow: -4px 5px 8px rgba(0, 0, 0, 0.05); }
 
 .link__text {
   font-family: "Inria Sans", sans-serif;
@@ -24,6 +27,14 @@
     height: 35vh;
     opacity: 1; } }
 
+@keyframes bee-movements {
+  0% {
+    margin-left: 0; }
+  50% {
+    margin-left: 100px; }
+  100% {
+    margin-left: 0; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -31,9 +42,58 @@
 
 body {
   background-color: #FFA41C; }
+  body::-webkit-scrollbar-track {
+    background-color: none;
+    border-radius: 10px; }
+  body::-webkit-scrollbar {
+    width: 0.7rem;
+    background-color: none; }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, #23a02d), color-stop(0.72, #186c1f), color-stop(0.86, #103e02)); }
 
-.landing_page {
-  background-color: #FFA41C; }
+.full_page {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative; }
+
+.landing-page__layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+.landing-page__heading {
+  z-index: 3; }
+
+.landing-page__bees {
+  z-index: 0; }
+  .landing-page__bees--single {
+    position: absolute; }
+  .landing-page__bees--single:nth-child(1) {
+    left: 39%;
+    top: 38%;
+    transform: scale(0.3);
+    animation: bee-movements 10s infinite; }
+  .landing-page__bees--single:nth-child(2) {
+    left: 58%;
+    top: 4%;
+    transform: scale(0.4);
+    animation: bee-movements 20s infinite; }
+  .landing-page__bees--single:nth-child(3) {
+    left: 44%;
+    top: 40%;
+    transform: scale(0.5);
+    animation: bee-movements 30s infinite; }
+  .landing-page__bees--single:nth-child(4) {
+    left: 53%;
+    top: 8%;
+    transform: scale(0.6);
+    animation: bee-movements 40s infinite; }
 
 .navigation__wrapper {
   display: flex;

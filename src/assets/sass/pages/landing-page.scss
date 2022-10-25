@@ -1,3 +1,32 @@
-.landing_page{
-    background-color: $main-orange;
+.landing-page{
+    &__layer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    
+   &__heading{
+    z-index: 3;
+   }
+
+   &__bees{
+    z-index: 0;
+
+    &--single{
+        position: absolute;
+        
+    }
+
+    @for $i from 1 through 4 {
+        &--single:nth-child(#{$i}){
+            left: random($limit: 90) + 1%;
+            top: random($limit: 50) + 1%;
+            transform: scale(0.2+($i*0.1));
+            animation: bee-movements ($i*10s) infinite;
+        }
+      }
+   }
 }
