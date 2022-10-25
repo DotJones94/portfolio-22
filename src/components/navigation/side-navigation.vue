@@ -9,6 +9,16 @@
     export default {
         components: {
             Home,Briefcase, Medal, Brush, Percentage, Message,
+        },
+        data(){
+            return{
+                activeSection : 'home'
+            }
+        },
+        methods: {
+            changeActiveSection(section){
+                this.activeSection = section;
+            }
         }
     }
 </script>
@@ -16,32 +26,44 @@
 <template>
     <div class="navigation__wrapper">
         <div class="navigation">
-            <div class="navigation__link navigation__link--active ">
+            <div class="navigation__link"
+                :class="{'navigation__link--active' : activeSection === 'home'}"
+                @click="changeActiveSection('home')">
                 <home />
                 <span class="link__text">Home</span>
             </div>
 
-            <div class="navigation__link">
+            <div class="navigation__link"
+                :class="{'navigation__link--active' : activeSection === 'experience'}"
+                @click="changeActiveSection('experience')">
                 <briefcase />
                 <span class="link__text">Experience</span>
             </div>
 
-            <div class="navigation__link">
+            <div class="navigation__link"
+                :class="{'navigation__link--active' : activeSection === 'skills'}"
+                @click="changeActiveSection('skills')">
                 <percentage />
                 <span class="link__text">Skills</span>
             </div>
 
-            <div class="navigation__link">
+            <div class="navigation__link"
+                :class="{'navigation__link--active' : activeSection === 'portfolio'}"
+                @click="changeActiveSection('portfolio')">
                 <brush/>
                 <span class="link__text">Portfolio</span>
             </div>
 
-            <div class="navigation__link">
+            <div class="navigation__link"
+                :class="{'navigation__link--active' : activeSection === 'qualifications'}"
+                @click="changeActiveSection('qualifications')">
                 <medal/>
                 <span class="link__text">Qualifications</span>
             </div>
 
-            <div class="navigation__link">
+            <div class="navigation__link"
+                :class="{'navigation__link--active' : activeSection === 'contact-me'}"
+                @click="changeActiveSection('contact-me')">
                 <message />
                 <div class="link__text">Contact Me</div>
             </div>

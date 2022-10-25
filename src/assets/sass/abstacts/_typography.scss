@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap');
 
 $assistant-font : 'Assistant', sans-serif;
+$inria-sans-font: 'Inria Sans', sans-serif;
 
 .heading{
     &__main{
@@ -10,4 +12,15 @@ $assistant-font : 'Assistant', sans-serif;
         font-weight: 800;
         letter-spacing: 1.3rem;
     }
+}
+
+
+.link__text{
+    font-family: $inria-sans-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 0.26em;
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
