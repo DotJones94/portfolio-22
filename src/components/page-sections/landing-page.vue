@@ -24,7 +24,14 @@
             <div class="line_breaker"></div>
             <h2 class="heading__two">Welcome to my portfolio</h2>
             <div class="description">Something short sweet and a little funny, like a quote or something that shows a little bit more about me</div>
-            <div class="btn btn--main link__text link__text--btn">Drop me an email</div>
+            <div class="btn btn--main ">
+                <div class="btn--circle"></div>
+                <div>
+                    <span>Icon</span>
+                    <span class="link__text link__text--btn">Drop me an email</span>
+                </div>
+                
+            </div>
         </div>
     </div>
     
