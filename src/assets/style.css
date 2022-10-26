@@ -10,14 +10,33 @@
   line-height: 7rem;
   text-shadow: -4px 5px 8px rgba(0, 0, 0, 0.05); }
 
+.heading__two {
+  font-family: "Inria Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 0.26em;
+  color: black;
+  text-transform: uppercase; }
+
 .link__text {
   font-family: "Inria Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.2rem;
   letter-spacing: 0.26em;
-  color: #FFFFFF;
   text-transform: uppercase; }
+  .link__text--navigation {
+    color: #FFFFFF; }
+  .link__text--btn {
+    color: #000000;
+    font-weight: 600; }
+
+.description {
+  font-family: "Assistant", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.06em; }
 
 @keyframes nagivation-grow {
   0% {
@@ -29,11 +48,14 @@
 
 @keyframes bee-movements {
   0% {
-    margin-left: 0; }
+    margin-left: 0;
+    margin-top: 0; }
   50% {
-    margin-left: 100px; }
+    margin-left: 100px;
+    margin-top: -200px; }
   100% {
-    margin-left: 0; } }
+    margin-left: 0;
+    margin-top: 0; } }
 
 * {
   margin: 0;
@@ -59,6 +81,16 @@ body {
   overflow: hidden;
   position: relative; }
 
+.btn--main {
+  border: 1px solid;
+  text-align: center;
+  padding: 1rem 3rem;
+  border-radius: 50px; }
+
+.line_breaker {
+  width: 100%;
+  border-top: 1.5px solid; }
+
 .landing-page__layer {
   display: flex;
   justify-content: center;
@@ -70,43 +102,58 @@ body {
 .landing-page__heading {
   z-index: 3; }
 
+.landing-page__background-circle {
+  width: 90vh;
+  height: 90vh;
+  background-color: #1aa71a52;
+  border-radius: 100%; }
+
 .landing-page__bees {
   z-index: 0; }
   .landing-page__bees--single {
     position: absolute; }
   .landing-page__bees--single:nth-child(1) {
-    left: 39%;
-    top: 38%;
+    left: 19%;
+    top: 14%;
     transform: scale(0.3);
     animation: bee-movements 10s infinite; }
   .landing-page__bees--single:nth-child(2) {
-    left: 58%;
-    top: 4%;
+    left: 39%;
+    top: 43%;
     transform: scale(0.4);
     animation: bee-movements 20s infinite; }
   .landing-page__bees--single:nth-child(3) {
-    left: 44%;
-    top: 40%;
+    left: 17%;
+    top: 13%;
     transform: scale(0.5);
     animation: bee-movements 30s infinite; }
   .landing-page__bees--single:nth-child(4) {
-    left: 53%;
-    top: 8%;
+    left: 19%;
+    top: 42%;
     transform: scale(0.6);
     animation: bee-movements 40s infinite; }
+
+.landing-page .landing-page__welcome-note {
+  width: 25rem;
+  position: absolute;
+  bottom: 6%;
+  right: 6%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
 
 .navigation__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  position: fixed; }
+  position: fixed;
+  z-index: 5; }
 
 .navigation {
   display: flex;
   flex-direction: column;
   position: fixed;
-  z-index: 5;
   height: 35vh;
   justify-content: space-between;
   margin-left: 2rem;

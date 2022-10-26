@@ -15,6 +15,16 @@ $inria-sans-font: 'Inria Sans', sans-serif;
         line-height: 7rem;
         text-shadow: -4px 5px 8px rgba($color: #000000, $alpha: 0.05)
     }
+
+    &__two{
+        font-family: $inria-sans-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        letter-spacing: 0.26em;
+        color: black;
+        text-transform: uppercase;
+    }
 }
 
 
@@ -24,6 +34,21 @@ $inria-sans-font: 'Inria Sans', sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
     letter-spacing: 0.26em;
-    color: #FFFFFF;
     text-transform: uppercase;
+
+    &--navigation{
+        color: #FFFFFF;
+    }
+
+    &--btn{
+        color: #000000;
+        font-weight: 600;
+    }
+}
+
+.description{
+    font-family: $assistant-font;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.06em;
 }

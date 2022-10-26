@@ -30,42 +30,42 @@
                 :class="{'navigation__link--active' : activeSection === 'home'}"
                 @click="changeActiveSection('home')">
                 <home />
-                <span class="link__text">Home</span>
+                <span class="link__text link__text--navigation">Home</span>
             </div>
 
             <div class="navigation__link"
                 :class="{'navigation__link--active' : activeSection === 'experience'}"
                 @click="changeActiveSection('experience')">
                 <briefcase />
-                <span class="link__text">Experience</span>
+                <span class="link__text link__text--navigation">Experience</span>
             </div>
 
             <div class="navigation__link"
                 :class="{'navigation__link--active' : activeSection === 'skills'}"
                 @click="changeActiveSection('skills')">
                 <percentage />
-                <span class="link__text">Skills</span>
+                <span class="link__text link__text--navigation">Skills</span>
             </div>
 
             <div class="navigation__link"
                 :class="{'navigation__link--active' : activeSection === 'portfolio'}"
                 @click="changeActiveSection('portfolio')">
                 <brush/>
-                <span class="link__text">Portfolio</span>
+                <span class="link__text link__text--navigation">Portfolio</span>
             </div>
 
             <div class="navigation__link"
                 :class="{'navigation__link--active' : activeSection === 'qualifications'}"
                 @click="changeActiveSection('qualifications')">
                 <medal/>
-                <span class="link__text">Qualifications</span>
+                <span class="link__text link__text--navigation">Qualifications</span>
             </div>
 
             <div class="navigation__link"
                 :class="{'navigation__link--active' : activeSection === 'contact-me'}"
                 @click="changeActiveSection('contact-me')">
                 <message />
-                <div class="link__text">Contact Me</div>
+                <div class="link__text link__text--navigation">Contact Me</div>
             </div>
         </div>
     </div>

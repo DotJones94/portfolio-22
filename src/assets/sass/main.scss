@@ -47,6 +47,9 @@ body{
     position: relative;
 }
 
+//GLOBAL
+@import 'abstacts/global';
+
 //PAGES
 @import 'pages/landing-page.scss';
 @import 'pages/navigation.scss';
