@@ -14,7 +14,9 @@ import Experience from './page-sections/experience.vue'
         </div>
 
         <SideNavigation/>
-        <LandingPage/>
-        <Experience/>
+        <div class="pages">
+            <LandingPage/>
+            <Experience/>
+        </div>
     </div>
 </template>

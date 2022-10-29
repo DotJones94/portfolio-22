@@ -30,6 +30,10 @@
 
         &--active{
             color: white;
+
+            .link_text{
+                opacity: 1;
+            }
            
             .navigation__img{
                 transform: scale(1.3);
@@ -49,7 +53,8 @@
             }
         }
 
-        .link__text{
+        &:not(.navigation__link--active).link__text{
+            opacity: 0;
             padding-bottom: 1rem;
         }
     }

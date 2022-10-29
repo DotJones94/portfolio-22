@@ -2,10 +2,21 @@
     &__navigation-wrapper{
         display: flex;
         justify-content: space-between;
+        padding: 0 3rem;
+
 
         .exp__navigation{
-            width: 60rem;
-            background-color: teal;
+            width: 30rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .exp__links{
+            margin-left: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
         }
     }
 }

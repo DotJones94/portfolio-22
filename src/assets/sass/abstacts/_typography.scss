@@ -20,7 +20,7 @@ $inria-sans-font: 'Inria Sans', sans-serif;
         font-family: $inria-sans-font;
         font-style: normal;
         font-weight: 400;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         letter-spacing: 0.26em;
         color: black;
         text-transform: uppercase;
@@ -44,6 +44,12 @@ $inria-sans-font: 'Inria Sans', sans-serif;
         color: #FFFFFF;
         font-weight: 600;
     }
+}
+
+.list-link__text{
+    font-family: $assistant-font;
+    font-size: 1.6rem;
+    letter-spacing: 0.15em;
 }
 
 .description{

@@ -1,9 +1,9 @@
 <script>
-    import Send from '../global/icons/send.vue';
+    import ListLink from '../global/links/list-link.vue';
 
     export default {
         components: {
-            Send,
+            ListLink,
         },
     }
 </script>
@@ -11,22 +11,19 @@
 <template>
     <div class="full_page exp">
     
-        <div class="exp__nagigation-wrapper">
+        <div class="exp__navigation-wrapper">
             <!-- Image of plant -->
             <div></div>
 
             <!-- Navigation links -->
             <div class="exp__navigation">
                 <div class="line_breaker"></div>
-                <h2 class="heading__two">Welcome to my portfolio</h2>
-                <div class="description">Something short sweet and a little funny, like a quote or something that shows a little bit more about me</div>
-                <div class="btn btn--main ">
-                    <div class="btn__circle"></div>
-                    <div class="btn__text">
-                        <send class="btn__icon"/>
-                        <span class="link__text link__text--btn">Drop me an email</span>
-                    </div>
-                
+                <h2 class="heading__two">Developing since 2013</h2>
+                <div class="exp__links">
+                    <list-link>Software Developer</list-link>
+                    <list-link>Co-founder & CTO</list-link>
+                    <list-link>Freelance Developer</list-link>
+                    <list-link>Events Co-Ordinator</list-link>
             </div>
         </div>
         </div>
