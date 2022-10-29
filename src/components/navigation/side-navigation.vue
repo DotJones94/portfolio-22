@@ -1,10 +1,10 @@
 <script>
-    import Home from './icons/home.vue'
-    import Briefcase from './icons/breifcase.vue'
-    import Medal from './icons/medal.vue';
-    import Brush from './icons/brush.vue';
-    import Percentage from './icons/percentage.vue'
-    import Message from './icons/message.vue'
+    import Home from '../global/icons/home.vue'
+    import Briefcase from '../global/icons/breifcase.vue'
+    import Medal from '../global/icons/medal.vue';
+    import Brush from '../global/icons/brush.vue';
+    import Percentage from '../global/icons/percentage.vue'
+    import Message from '../global/icons/message.vue'
 
     export default {
         components: {

@@ -1,0 +1,11 @@
+.exp{
+    &__navigation-wrapper{
+        display: flex;
+        justify-content: space-between;
+
+        .exp__navigation{
+            width: 60rem;
+            background-color: teal;
+        }
+    }
+}
