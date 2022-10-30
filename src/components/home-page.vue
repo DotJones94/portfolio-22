@@ -1,7 +1,8 @@
 <script setup>
 import LandingPage from './page-sections/landing-page.vue'
 import SideNavigation from './navigation/side-navigation.vue';
-import Experience from './page-sections/experience.vue'
+import Experience from './page-sections/experience.vue';
+import Skills from './page-sections/skills.vue';
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import Experience from './page-sections/experience.vue'
         <div class="pages">
             <LandingPage/>
             <Experience/>
+            <skills />
         </div>
     </div>
 </template>
