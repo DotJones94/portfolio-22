@@ -18,25 +18,29 @@
                         id: 1,
                         yearFrom: '2020', 
                         yearTo: 'Current',
-                        role: 'Software Developer'
+                        role: 'Software Developer',
+                        image: ''
                     },
                     {
                         id: 2,
                         yearFrom: '2018', 
                         yearTo: '2020',
-                        role: 'Co-Founder & CTO'
+                        role: 'Co-Founder & Technical Director',
+                        image : ''
                     },
                     {
                         id: 3,
                         yearFrom: '2013', 
                         yearTo: '2020',
-                        role: 'Freelance Developer'
+                        role: 'Freelance Developer',
+                        image: ''
                     },
                     {
                         id: 4,
                         yearFrom: '2017', 
                         yearTo: '2017',
-                        role: 'Events Co-Ordinator'
+                        role: 'Events Co-Ordinator',
+                        image: ''
                     }
                 ],
                 activeRoleID : 1,
@@ -74,14 +78,18 @@
         </div>
          
          <!-- Content of expereince  -->
-         <div class="exp__content full-layer">
+         <div class="exp__content">
                 <!-- Circle -->
-                <div class="content__circle">
+                <div class="content__circle"></div>
+
+                <!-- text -->
+                <div class="content__text">
                     <img class="content__logo" />
-                    <div class="content__text">
-                        <div class="heading_six">
+                    <div class="content__text--headings">
+                        <div class="heading__five">
                             From {{activeExperience.yearFrom}} -  {{activeExperience.yearTo}}
                         </div>
+                        <div class="heading__four">{{activeExperience.role}}</div>
                     </div>
                 </div>
             </div>

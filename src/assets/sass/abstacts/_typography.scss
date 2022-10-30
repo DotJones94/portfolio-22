@@ -25,6 +25,22 @@ $inria-sans-font: 'Inria Sans', sans-serif;
         color: black;
         text-transform: uppercase;
     }
+
+    &__four{
+        color: $main-green;
+        font-family: $inria-sans-font;
+        line-height: 6.5rem;
+        font-weight: 700;
+        font-size: 8rem;
+    }
+
+    &__five{
+        color: $second-green;
+        font-family: $inria-sans-font;
+        letter-spacing: 0.26em;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
 }
 
 
