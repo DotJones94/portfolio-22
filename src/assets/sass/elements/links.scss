@@ -19,4 +19,24 @@
             fill: $main-orange-dark;
         }
     }
+
+    &--active{
+        .list-link__arrow{
+            fill: $main-green;
+            path{
+                stroke: $main-green;
+            }
+        }
+
+        .list-link__text{
+            color: $main-green;
+            font-weight: 600;
+        }
+
+        &:hover{
+            .list-link__arrow{
+                fill: $main-green;
+            }
+        }
+    }
 }
