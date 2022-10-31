@@ -8,6 +8,7 @@
 
 //ELEMENTS 
 @import 'elements/links.scss';
+@import 'elements/skill-block.scss';
 
 *{
     margin: 0;
@@ -63,3 +64,4 @@ body{
 @import 'pages/landing-page.scss';
 @import 'pages/navigation.scss';
 @import 'pages/experience.scss';
+@import 'pages/skills.scss';

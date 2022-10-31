@@ -33,6 +33,13 @@
   font-size: 1.2rem;
   text-transform: uppercase; }
 
+.heading__six {
+  color: #0D4503;
+  font-family: "Inria Sans", sans-serif;
+  line-height: 2rem;
+  font-weight: 700;
+  font-size: 2.5rem; }
+
 .link__text {
   font-family: "Inria Sans", sans-serif;
   font-style: normal;
@@ -99,6 +106,20 @@
     font-weight: 600; }
   .list-link--active:hover .list-link__arrow {
     fill: #0D4503; }
+
+.skill-block {
+  background-color: #FFBD15;
+  border-radius: 6rem;
+  padding: 3rem;
+  width: 20rem;
+  height: 30rem; }
+  .skill-block__amounts {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .skill-block__amounts .amount {
+      display: flex; }
 
 * {
   margin: 0;
@@ -184,28 +205,34 @@ body {
   width: 100%;
   position: absolute; }
 
+.top__navigation {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+
 .bees {
   z-index: 0; }
   .bees--single {
     position: absolute; }
   .bees--single:nth-child(1) {
-    left: 11%;
-    top: 41%;
+    left: 34%;
+    top: 25%;
     transform: scale(0.3);
     animation: bee-movements 10s infinite; }
   .bees--single:nth-child(2) {
-    left: 22%;
-    top: 36%;
+    left: 27%;
+    top: 44%;
     transform: scale(0.4);
     animation: bee-movements 20s infinite; }
   .bees--single:nth-child(3) {
-    left: 64%;
-    top: 21%;
+    left: 70%;
+    top: 10%;
     transform: scale(0.5);
     animation: bee-movements 30s infinite; }
   .bees--single:nth-child(4) {
-    left: 74%;
-    top: 21%;
+    left: 42%;
+    top: 42%;
     transform: scale(0.6);
     animation: bee-movements 40s infinite; }
 
@@ -229,10 +256,6 @@ body {
   align-items: stretch;
   justify-content: flex-end; }
   .landing-page__content .landing-page__welcome-note {
-    width: 25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
     height: 40vh;
     margin-top: 7vh;
     margin-right: 7vw;
@@ -305,18 +328,17 @@ body {
     box-sizing: border-box;
     z-index: 3;
     margin-bottom: -8rem; }
-    .exp__navigation-wrapper .exp__navigation {
-      width: 30rem;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem; }
     .exp__navigation-wrapper .exp__links {
       margin-left: 1.5rem;
       display: flex;
       flex-direction: column;
       gap: 1rem; }
   .exp__content {
-    position: relative; }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 15rem; }
     .exp__content .content__circle {
       width: 75vh;
       height: 75vh;
@@ -329,3 +351,14 @@ body {
       position: relative; }
       .exp__content .content__text--headings {
         margin-left: 50%; }
+
+.skills__header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 8rem 3vw 0 3vw; }
+
+.skills__blocks {
+  display: flex;
+  justify-content: center;
+  padding: 8rem; }

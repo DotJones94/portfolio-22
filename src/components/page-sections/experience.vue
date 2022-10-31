@@ -57,12 +57,12 @@
 <template>
     <div class="full_page exp">
     
-        <div class="exp__navigation-wrapper full-layer">
+        <div class="exp__navigation-wrapper">
             <!-- Image of plant -->
             <div></div>
 
             <!-- Navigation links -->
-            <div class="exp__navigation">
+            <div class="top__navigation">
                 <div class="line_breaker"></div>
                 <h2 class="heading__two">Developing since 2013</h2>
                 <div class="exp__links">

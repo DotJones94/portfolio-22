@@ -1,0 +1,14 @@
+.skills{
+    &__header-wrapper{
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 8rem 3vw 0 3vw;
+    }
+
+    &__blocks{
+        display: flex;
+        justify-content: center;
+        padding: 8rem;
+    }
+}

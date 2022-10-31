@@ -19,7 +19,7 @@
                 </h1>
 
                 <!-- Welcome note -->
-                <div class="landing-page__welcome-note">
+                <div class="landing-page__welcome-note top__navigation">
                     <div class="line_breaker"></div>
                     <h2 class="heading__two">Welcome to my portfolio</h2>
                     <div class="description">Something short sweet and a little funny, like a quote or something that shows a little bit more about me</div>
