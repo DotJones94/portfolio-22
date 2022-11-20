@@ -78,7 +78,7 @@
                    
                     
                 ],
-                activeRoleID : 1,
+                activeSkillID : 2,
             }
         },
         methods:{
@@ -91,9 +91,13 @@
 
 <template>
     <div class="full_page skills">
-        <div class="skills__header-wrapper">
+        <div class="header-wrapper">
             <!-- Image of plant -->
-            <div></div>
+            <div>
+                <img src="../../assets/images/section-navigation/hanging01.png"
+                 alt="Hanging plant"
+                 class="navigation__image" />
+            </div>
 
             <!-- Navigation links -->
             <div class="top__navigation">
@@ -103,7 +107,17 @@
         </div>
 
         <div class="skills__blocks">
-            <skill-block v-for="skill in skills" :key="skill.id" :skill="skill"/>
+            <skill-block v-for="skill in skills" 
+                :key="skill.id" 
+                :skill="skill"
+                :class="{'skill-block--active' : this.activeSkillID == skill.id}"/>
+        </div>
+
+        <!-- Image of bottom Plant -->
+        <div class="bottom-images bottom-images--skills">
+            <img src="../../assets/images/bottom-images/peacelilly.webp"
+            alt="Image of pot plant" 
+            class="bottom-image" />
         </div>
     </div>
 </template>

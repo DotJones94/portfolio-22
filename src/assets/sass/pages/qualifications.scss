@@ -1,0 +1,33 @@
+.qualifications{
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+    align-items: center;
+    padding: 1rem;
+    
+    &--wrapper{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__image{
+        width: 10rem;
+    }
+}
+
+//Smaller Screens
+@media screen and (max-width: 600px) {
+    .qualifications{
+        flex-direction: column;
+        
+        &--wrapper{
+            width: 100%;
+        }
+    
+        &__image{
+            width: 5rem;
+        }
+    }
+  }

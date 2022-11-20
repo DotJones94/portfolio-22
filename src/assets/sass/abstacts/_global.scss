@@ -5,6 +5,7 @@
        z-index: 5;
        transition: all 1s;
        cursor: pointer;
+       min-width: 20rem;
     }
 
     &__circle{
@@ -70,6 +71,10 @@
     align-items: center;
     width: 100%;
     position: absolute;
+
+    &--background{
+        min-height: 100vh;
+    }
 }
 
 // TOP NAVIGATION --------
@@ -80,6 +85,18 @@
     gap: 2rem;
 }
 
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 8rem 3vw 0 3vw;
+}
+
+
+.navigation__image{
+    width: 20rem;
+    position: absolute;
+}
 
 //    BEES -----------------
 .bees{
@@ -99,3 +116,21 @@
         }
       }
    }
+
+
+//  BOTTTOM IMAGES 
+.bottom-images{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: end;
+    padding: 0 5rem;
+
+    &--skills{
+        margin-top: -12rem;
+    }
+
+    .bottom-image{
+        width: 20rem;
+    }
+}

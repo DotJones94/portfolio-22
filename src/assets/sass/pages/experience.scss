@@ -2,6 +2,7 @@
     padding: 4rem 0 ;
 
     &__navigation-wrapper{
+        position: relative;
         display: flex;
         justify-content: space-between;
         padding: 8rem 3vw 0 3vw;
@@ -24,6 +25,7 @@
         flex-direction: column;
         position: relative;
         margin-top: 15rem;
+        z-index: 1;
 
         .content{
             &__circle{
@@ -33,11 +35,12 @@
                 background-color: $main-yellow;
                 display: flex;
                 flex-direction: column;
-                position: absolute;
+                margin-top: -20rem;
             }
 
             &__text{
                 position: relative;
+                margin-top: -16rem;
 
                 &--headings{
                     margin-left: 50%;
@@ -45,4 +48,31 @@
             }
         }
     }
+}
+
+//Smaller Screens
+@media screen and (max-width: 600px) {
+    .exp{    
+        &__content{
+            margin-top: 15rem;
+    
+            .content{
+                &__circle{
+                    margin-top: -22rem;
+                }
+    
+                &__text{
+                    position: relative;
+                    margin-top: -16rem;
+    
+                    &--headings{
+                        text-align: center;
+                        padding: 1rem;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    
 }

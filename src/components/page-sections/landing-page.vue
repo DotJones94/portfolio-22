@@ -32,17 +32,20 @@
                         
                     </div>
                 </div>
-            </div>
-            
+            </div>           
         </div>
         
 
         <!-- Background circle -->
-        <div class="full-layer">
-            <div class="landing-page__background-circle"></div>
+        <div class="full-layer full-layer--background">
+            <div class="landing-page__background landing-page__background--circle"></div>
         </div>
 
         <!-- Image of plant -->
+        <div class="full-layer full-layer--background">
+            <img class="landing-page__background landing-page__background--plant"
+            src="../../assets/images/landing-page/palm.png" alt="Image of plam plant" />
+        </div>
     </div>
     
 </template>

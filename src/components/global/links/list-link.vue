@@ -5,6 +5,7 @@
         props: {
             currentRoleId : Number, 
             id : Number,
+            subList : Array,
         },
         components: {
             Arrow,
@@ -24,7 +25,17 @@
          @click="changeCurrentRole">
         <!-- Icon -->
         <Arrow class="list-link__arrow" />
-        <!-- Link -->
-        <div class="list-link__text "><slot></slot></div>
+
+        <div>
+             <!-- Link -->
+            <div class="list-link__text "><slot></slot></div>
+            
+            <div v-for="subItem in subList" 
+                :key="subItem.id" 
+                class="heading__five">
+                {{subItem}}
+            </div>
+        </div>
+       
     </div>
 </template>

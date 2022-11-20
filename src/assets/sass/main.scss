@@ -46,14 +46,14 @@ body{
 .full_page{
     width: 100vw;
     max-width: 100%;
-    min-height: 100vh;
     overflow-x: hidden;
-    position: relative;
+    min-height: 100vh;
 }
 
 .pages{
     display: flex;
     flex-direction: column;
+    position: relative;
     gap: 20rem;
 }
 
@@ -65,3 +65,4 @@ body{
 @import 'pages/navigation.scss';
 @import 'pages/experience.scss';
 @import 'pages/skills.scss';
+@import 'pages/qualifications.scss';

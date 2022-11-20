@@ -59,7 +59,11 @@
     
         <div class="exp__navigation-wrapper">
             <!-- Image of plant -->
-            <div></div>
+            <div>
+                <img src="../../assets/images/section-navigation/hanging01.png"
+                 alt="Hanging plant"
+                 class="navigation__image" />
+            </div>
 
             <!-- Navigation links -->
             <div class="top__navigation">
