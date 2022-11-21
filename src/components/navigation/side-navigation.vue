@@ -5,19 +5,22 @@
     import Brush from '../global/icons/brush.vue';
     import Percentage from '../global/icons/percentage.vue'
     import Message from '../global/icons/message.vue'
+    import { mapState } from 'vuex';
 
     export default {
         components: {
             Home,Briefcase, Medal, Brush, Percentage, Message,
         },
-        data(){
-            return{
-                activeSection : 'home'
-            }
+        computed:{
+            ...mapState({
+                activeSection: "activeSection"
+            })
         },
         methods: {
             changeActiveSection(section){
-                this.activeSection = section;
+                this.$store.commit('changeSection', {
+                    newSectionName: section
+                })
             }
         }
     }
@@ -47,12 +50,12 @@
                 <span class="link__text link__text--navigation">Skills</span>
             </div>
 
-            <div class="navigation__link"
+            <!-- <div class="navigation__link"
                 :class="{'navigation__link--active' : activeSection === 'portfolio'}"
                 @click="changeActiveSection('portfolio')">
                 <brush/>
                 <span class="link__text link__text--navigation">Portfolio</span>
-            </div>
+            </div> -->
 
             <div class="navigation__link"
                 :class="{'navigation__link--active' : activeSection === 'qualifications'}"

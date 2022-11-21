@@ -29,7 +29,6 @@
                             <send class="btn__icon"/>
                             <span class="link__text link__text--btn">Drop me an email</span>
                         </div>
-                        
                     </div>
                 </div>
             </div>           

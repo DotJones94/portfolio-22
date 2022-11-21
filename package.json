@@ -12,6 +12,7 @@
     "compile:sass": "node-sass src/assets/sass/main.scss src/assets/style.css -rw"
   },
   "dependencies": {
+    "@volar-plugins/vetur": "^0.1.0",
     "vue": "^3.2.38",
     "vue-router": "^4.1.5",
     "vuex": "^4.0.2"
