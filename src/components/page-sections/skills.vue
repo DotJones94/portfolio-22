@@ -45,14 +45,17 @@
                             {
                                 name: 'HTML/CSS',
                                 percentage: 95,
+                                strokeDasharray: "10 100"
                             },
                             {
                                 name: 'Javascript',
                                 percentage: 85,
+                                strokeDasharray: "9.5 100"
                             },
                             {
                                 name: 'PHP',
                                 percentage: 90,
+                                strokeDasharray: "11 100"
                             },
                         ]
                     },

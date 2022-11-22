@@ -62,7 +62,7 @@
             <div>
                 <img src="../../assets/images/section-navigation/hanging01.png"
                  alt="Hanging plant"
-                 class="navigation__image" />
+                 class="navigation" />
             </div>
 
             <!-- Navigation links -->

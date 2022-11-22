@@ -141,6 +141,12 @@
     stroke-dashoffset: 17.5; }
   to {
     stroke-dashoffset: 0; } }
+        .skill-block__amounts .amount__percentage--text {
+          font-weight: 700;
+          font-size: 1rem;
+          margin-right: -3.8rem;
+          color: white;
+          opacity: 0.6; }
   .skill-block:nth-child(2) {
     margin-left: -5rem;
     margin-right: -5rem; }
@@ -271,23 +277,23 @@ body {
   .bees--single {
     position: absolute; }
   .bees--single:nth-child(1) {
-    left: 20%;
-    top: 15%;
+    left: 22%;
+    top: 45%;
     transform: scale(0.3);
     animation: bee-movements 10s infinite; }
   .bees--single:nth-child(2) {
-    left: 69%;
-    top: 9%;
+    left: 20%;
+    top: 13%;
     transform: scale(0.4);
     animation: bee-movements 20s infinite; }
   .bees--single:nth-child(3) {
-    left: 90%;
-    top: 15%;
+    left: 44%;
+    top: 12%;
     transform: scale(0.5);
     animation: bee-movements 30s infinite; }
   .bees--single:nth-child(4) {
-    left: 3%;
-    top: 46%;
+    left: 22%;
+    top: 44%;
     transform: scale(0.6);
     animation: bee-movements 40s infinite; }
 
