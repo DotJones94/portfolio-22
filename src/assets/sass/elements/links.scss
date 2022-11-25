@@ -1,0 +1,42 @@
+// LIST LINKS ----------------
+.list-link{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all 1s;
+
+    &__arrow{
+        transition: all 1s;
+        fill: transparent;
+        path{
+            stroke: $main-orange-dark;
+        }
+    }
+
+    &:hover{
+        transform: scale(1.05);
+        .list-link__arrow{
+            fill: $main-orange-dark;
+        }
+    }
+
+    &--active{
+        .list-link__arrow{
+            fill: $main-green;
+            path{
+                stroke: $main-green;
+            }
+        }
+
+        .list-link__text{
+            color: $main-green;
+            font-weight: 600;
+        }
+
+        &:hover{
+            .list-link__arrow{
+                fill: $main-green;
+            }
+        }
+    }
+}
