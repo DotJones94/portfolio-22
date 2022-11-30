@@ -1,5 +1,6 @@
 <script>
     import ListLink from '../global/links/list-link.vue';
+    import SeeMore from '../global/icons/see-more.vue';
 
     export default {
         emits: ["changeCurrentRole"],
@@ -33,7 +34,7 @@
                         yearFrom: '2013', 
                         yearTo: '2020',
                         role: 'Freelance Developer',
-                        image: ''
+                        image: 'CapitalK.png'
                     },
                     {
                         id: 4,
@@ -44,11 +45,15 @@
                     }
                 ],
                 activeRoleID : 1,
+                showMore : false,
             }
         },
         methods:{
             changeCurrentRole(newId){
                 this.activeRoleID = newId;
+            },
+            handleFocusOut(){
+                this.showMore = false;
             }
         }
     }
@@ -82,22 +87,39 @@
         </div>
          
          <!-- Content of expereince  -->
-         <div class="exp__content">
-                <!-- Circle -->
-                <div class="content__circle"></div>
+         <div class="exp__content"  @focusout="handleFocusOut"
+        tabindex="0">
+            <!-- Circle -->
+            <div :class="[showMore ? 
+                        'content__circle--show-more' :
+                        'content__circle--logo',  
+                        'content__circle']">
+            </div>
 
-                <!-- text -->
-                <div class="content__text">
-                    <img class="content__logo" />
-                    <div class="content__text--headings">
-                        <div class="heading__five">
-                            From {{activeExperience.yearFrom}} -  {{activeExperience.yearTo}}
+            <!-- text -->
+            <div class="content__text">
+                
+                <img :src="'../../assets/images/experience/' + activeExperience.image" class="content__logo" />
+                <div class="content__text--headings">
+                    <div class="heading__five">
+                        From {{activeExperience.yearFrom}} -  {{activeExperience.yearTo}}
+                    </div>
+                    <div class="heading__four">{{activeExperience.role}}</div>
+                    <div class="btn btn--main " @click="showMore = !showMore">
+                        <div class="btn__circle"></div>
+                        <div class="btn__text">
+                            <seeMore class="btn__icon"/>
+                            <span class="link__text link__text--btn" v-show="!showMore">Show more</span>
+                            <span class="link__text link__text--btn" v-show="showMore">Show less</span>
                         </div>
-                        <div class="heading__four">{{activeExperience.role}}</div>
                     </div>
                 </div>
             </div>
 
+            <!-- See More -->
+            <div class="exp__see-more" v-if="showMore">
+                    hello
+            </div>
+        </div>
     </div>
-    
 </template>

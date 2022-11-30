@@ -29,13 +29,25 @@
 
         .content{
             &__circle{
-                width: 75vh;
                 height: 75vh;
-                border-radius: 50%;
                 background-color: $main-yellow;
                 display: flex;
                 flex-direction: column;
-                margin-top: -20rem;
+                transition: all 0.5s;
+
+                &--logo{
+                    width: 75vh;
+                    border-radius: 50%;
+                    z-index: 0;
+                    margin-top: -20rem;
+                }
+
+                &--show-more{
+                    width: 90vw;
+                    border-radius: 8rem;
+                    z-index: 20;
+                    margin-top: -10rem;
+                }
             }
 
             &__text{
@@ -47,6 +59,18 @@
                 }
             }
         }
+    }
+
+    &__see-more{
+        z-index: 25;
+        position: absolute;
+        margin-top: -10rem;
+        width: 90vw;
+        padding: 3rem;
+        box-sizing: border-box;
+        height: 75vh;
+        overflow: auto;
+        border-radius: 8rem;
     }
 }
 
