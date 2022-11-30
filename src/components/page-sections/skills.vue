@@ -40,7 +40,7 @@
                     {
                         id: 2,
                         name: 'Web Development',
-                        image: '',
+                        image: 'www.png',
                         skills: [
                             {
                                 name: 'HTML/CSS',
@@ -110,10 +110,12 @@
         </div>
 
         <div class="skills__blocks">
-            <skill-block v-for="skill in skills" 
+            <skill-block v-for="skill in skills"
+                @mouseover="this.activeSkillID = skill.id" 
+                @mouseleave="this.activeSkillID = 2"    
                 :key="skill.id" 
                 :skill="skill"
-                :class="{'skill-block--active' : this.activeSkillID == skill.id}"/>
+                :class="{'skill-block--active' : this.activeSkillID === skill.id}"/>
         </div>
 
         <!-- Image of bottom Plant -->

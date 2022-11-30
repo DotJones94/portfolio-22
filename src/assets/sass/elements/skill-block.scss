@@ -8,6 +8,7 @@
     height: 40rem;
     box-sizing: border-box;
     z-index: 3;
+    transition: all 0.5s;
 
    
 
@@ -23,6 +24,7 @@
             display: flex;
             align-items: center;
             gap: 1.5rem;
+            cursor: default;
     
             &__percentage{
                 display: flex;

@@ -125,7 +125,8 @@
   min-width: 30rem;
   height: 40rem;
   box-sizing: border-box;
-  z-index: 3; }
+  z-index: 3;
+  transition: all 0.5s; }
   .skill-block__amounts {
     height: 95%;
     display: flex;
@@ -136,7 +137,8 @@
       .skill-block__amounts .skill-item .amount {
         display: flex;
         align-items: center;
-        gap: 1.5rem; }
+        gap: 1.5rem;
+        cursor: default; }
         .skill-block__amounts .skill-item .amount__percentage {
           display: flex; }
           .skill-block__amounts .skill-item .amount__percentage svg {
@@ -295,23 +297,23 @@ body {
   .bees--single {
     position: absolute; }
   .bees--single:nth-child(1) {
-    left: 16%;
-    top: 24%;
+    left: 22%;
+    top: 6%;
     transform: scale(0.3);
     animation: bee-movements 10s infinite; }
   .bees--single:nth-child(2) {
-    left: 72%;
-    top: 49%;
+    left: 34%;
+    top: 44%;
     transform: scale(0.4);
     animation: bee-movements 20s infinite; }
   .bees--single:nth-child(3) {
-    left: 77%;
-    top: 35%;
+    left: 62%;
+    top: 44%;
     transform: scale(0.5);
     animation: bee-movements 30s infinite; }
   .bees--single:nth-child(4) {
-    left: 90%;
-    top: 20%;
+    left: 33%;
+    top: 7%;
     transform: scale(0.6);
     animation: bee-movements 40s infinite; }
 
