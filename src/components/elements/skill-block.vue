@@ -8,8 +8,7 @@ export default {
 }
 </script>
 <template>
-    <div class="skill-block"
-     :class="{'skill-block--active' : hover}">
+    <div class="skill-block">
         <img :scr="'../../assets/images/skills-icons/www.png'"  />
         <div class="heading__six">{{skill.name}}</div>
         <div class="skill-block__amounts">

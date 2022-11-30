@@ -54,8 +54,12 @@
         }
 
         &:not(.navigation__link--active).link__text{
-            opacity: 0;
+            display: none;
             padding-bottom: 1rem;
+        }
+
+        .link__text{
+            display: block;
         }
     }
 
@@ -66,6 +70,15 @@
         }
     }
 
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .navigation{
+        .link__text{
+            display: none;
+        }
+    }
 }
 
 
