@@ -1,10 +1,11 @@
 <script>
     import SkillBlock from '../elements/skill-block.vue';
+    import potPlant from '../../assets/images/bottom-images/pot-plant-1.vue';
 
     export default {
         emits: ["changeCurrentRole"],
         components: {
-            SkillBlock,
+            SkillBlock, potPlant,
         },
         computed:{
             activeExperience(){
@@ -97,9 +98,7 @@
         <div class="header-wrapper">
             <!-- Image of plant -->
             <div>
-                <img src="../../assets/images/section-navigation/hanging01.png"
-                 alt="Hanging plant"
-                 class="navigation__image" />
+                <pot-plant class="navigation__image"  />
             </div>
 
             <!-- Navigation links -->
@@ -120,9 +119,7 @@
 
         <!-- Image of bottom Plant -->
         <div class="bottom-images bottom-images--skills">
-            <img src="../../assets/images/bottom-images/peacelilly.webp"
-            alt="Image of pot plant" 
-            class="bottom-image" />
+            <pot-plant class="bottom-image"  />
         </div>
     </div>
 </template>

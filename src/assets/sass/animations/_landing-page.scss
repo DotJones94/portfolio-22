@@ -12,3 +12,54 @@
         margin-top: 0;
     }
 }
+
+@keyframes palm-animations {
+    0%{
+        transform: rotate(0);
+        transform-origin: bottom center;
+    }
+    100%{
+        transform: rotate(0.75deg);
+        transform-origin: bottom center;
+    }
+}
+
+@keyframes circle-animations {
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+
+    100%{
+        width: 55%;
+        opacity: 1;
+    }
+}
+
+@keyframes shaddow-animations {
+    0%{
+        width: 0;
+        
+    height:0;
+    }
+    90%{
+        width: 30%;
+    }
+    100%{
+        width: 26%;
+        
+        height: 4rem;
+    }
+}
+
+@keyframes palm-drop-animations {
+    0%{
+        transform: translateY(-75rem);
+    }
+    90%{
+        transform: translateY(1rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}

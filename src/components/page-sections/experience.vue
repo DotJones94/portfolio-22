@@ -1,11 +1,12 @@
 <script>
     import ListLink from '../global/links/list-link.vue';
     import SeeMore from '../global/icons/see-more.vue';
+    import SeeMoreExperience from '../elements/experience-show-more.vue';
 
     export default {
         emits: ["changeCurrentRole"],
         components: {
-            ListLink,
+            ListLink, SeeMore, SeeMoreExperience
         },
         computed:{
             activeExperience(){
@@ -118,7 +119,7 @@
 
             <!-- See More -->
             <div class="exp__see-more" v-if="showMore">
-                    hello
+                   <SeeMoreExperience :experience="activeExperience"/>
             </div>
         </div>
     </div>

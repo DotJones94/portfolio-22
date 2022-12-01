@@ -19,6 +19,7 @@
 
 body{
     background-color: $main-orange;
+    scroll-behavior: smooth;
 
     &::-webkit-scrollbar-track
     {

@@ -69,8 +69,41 @@
         padding: 3rem;
         box-sizing: border-box;
         height: 75vh;
-        overflow: auto;
+       
         border-radius: 8rem;
+
+        &-info{
+            display: flex;
+            justify-content: space-evenly;
+            transition: all 0.5s;
+
+            .see-more__left{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 3rem;
+               
+            }
+
+            .see-more__right{
+                width: 50%;
+                max-height: 70vh;
+                overflow-y: auto;
+
+                .left__images{
+                    column-count: 2;
+                     column-gap: 2rem;
+
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
     }
 }
 

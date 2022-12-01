@@ -1,9 +1,10 @@
 <script>
     import Send from '../global/icons/send.vue';
+    import palm from '../../assets/images/landing-page/palm.vue';
 
     export default {
         components: {
-            Send,
+            Send, palm
         },
     }
 </script>
@@ -40,11 +41,16 @@
             <div class="landing-page__background landing-page__background--circle"></div>
         </div>
 
+        <div class="full-layer full-layer--background">
+            <div class="circle-shaddow"></div>
+        </div>
+
         <!-- Image of plant -->
         <div class="full-layer full-layer--background">
-            <img class="landing-page__background landing-page__background--plant"
-            src="../../assets/images/landing-page/palm.png" alt="Image of plam plant" />
+            <palm class="landing-page__background landing-page__background--plant"/>
+           
         </div>
+        
     </div>
     
 </template>
