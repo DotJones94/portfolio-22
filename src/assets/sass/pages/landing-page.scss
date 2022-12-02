@@ -1,44 +1,36 @@
 .landing-page{
    &__heading{
     z-index: 3;
-
+    margin-top: 25rem;
    }
 
 //    BACKGROUND CIRCLE
    &__background{
-        width: 55%;
+        width: 600px;
+        height: 600px;
+        position: relative;
+        transition: all 0.5s;
         animation: circle-animations 0.6s ease-in-out;
-
 
         &--circle{
             background-color: #FFBD15;
             border-radius: 100%; 
        }
-
-       &::after{
-        content: "";
-        padding-bottom: 100%;
-        display: block;
-    }
    }
-    
 
 
 //    CONTENT: NAME AND WELCOME NOTE
     &__content{
         width: 100%;
-        margin-top: 27vw;
+        height: 60rem;
         position: relative;
         z-index: 1;
         display: flex;
         flex-direction: column;
-        align-content: flex-start;
-        align-items: stretch;
-        justify-content: flex-end;
+        justify-content: center;
 
         //    WELOCME NOTE ----------
         .landing-page__welcome-note{
-            height: 40vh;
             margin-top: 7vh;
             margin-right: 7vw;
             align-self: flex-end;
@@ -48,7 +40,10 @@
 
 // Palm animations 
 .palm{
-    animation: palm-drop-animations .5s .2s backwards;
+    animation: drop .6s linear .2s backwards ;
+    transform-origin: bottom;
+    margin-right: 2rem;
+    
     @for $i from 1 through 30 {
         .leaf:nth-of-type(#{$i}){
             animation-delay: random()+s;
@@ -64,30 +59,37 @@
 }
 
 .circle-shaddow{
+    position: absolute;
+    bottom: 6rem;
+    margin-left: 30%;
     background-color: $main-orange-dark;
-    width: 26%;
+    width: 40%;
     height: 4rem;
     border-radius: 50%;
-    margin-top: 54rem;
-    margin-left: 2rem;
     transition: all 0.5s;
-    animation-delay: 0.2s;
-    animation-duration: 0.5s;
-    animation-name: shaddow-animations;
-    animation-fill-mode: backwards;
+    animation: shaddow-grow .6s linear .2s backwards ;
+    // animation-delay: 0.2s;
+    // animation-duration: 0.1s;
+    // animation-name: shaddow-animations;
+    // animation-fill-mode: backwards;
+    // animation-timing-function: ease-in;
 }
 
 
 //Smaller Screens
 @media screen and (max-width: 600px) {
     .landing-page{     
-     
+        &__heading{
+            margin-top: 10rem;
+        }
+
      //    CONTENT: NAME AND WELCOME NOTE
          &__content{
-             margin-top: 38vh;
-     
+            text-shadow: 1px 1px 5px rgba($color: #895e07, $alpha: 0.35);
              //    WELOCME NOTE ----------
              .landing-page__welcome-note{
+                background-color: rgba($color: rgb(255, 218, 143), $alpha: 0.35);;
+                border-radius: 2rem;
                  height: 30vh;
                  margin-right: 0;
                  align-self: center;
@@ -96,4 +98,19 @@
              }
          }
      }
+  }
+
+  
+//larger Screens
+@media screen and (min-width: 1400px) {
+    .landing-page{     
+     //    BACKGROUND CIRCLE
+        &__background{
+            width: 1000px;
+            height: 1000px;
+        }
+     }
+     .circle-shaddow{
+        bottom: 18%;
+    }
   }

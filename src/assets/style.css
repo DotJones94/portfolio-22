@@ -95,28 +95,52 @@
 @keyframes circle-animations {
   0% {
     width: 0;
-    opacity: 0; }
+    opacity: 0;
+    height: 0; }
   100% {
-    width: 55%;
+    width: 600px;
+    height: 600px;
     opacity: 1; } }
 
-@keyframes shaddow-animations {
+@keyframes shaddow-grow {
   0% {
     width: 0;
-    height: 0; }
-  90% {
-    width: 30%; }
+    height: 0;
+    transform: translateX(6.5rem);
+    opacity: 0; }
+  50% {
+    width: 38%;
+    height: 4rem;
+    transform: translateX(0rem); }
+  65% {
+    transform: scaleY(1);
+    opacity: 1; }
+  75% {
+    transform: scaleY(0.9);
+    opacity: 1; }
   100% {
-    width: 26%;
-    height: 4rem; } }
+    width: 40%;
+    transform: scaleY(1);
+    opacity: 1; } }
 
-@keyframes palm-drop-animations {
+@keyframes drop {
   0% {
-    transform: translateY(-75rem); }
-  90% {
-    transform: translateY(1rem); }
+    transform: translateY(-100rem) scaleY(0.9);
+    opacity: 0; }
+  5% {
+    opacity: .7; }
+  50% {
+    transform: translateY(0px) scaleY(1);
+    opacity: 1; }
+  65% {
+    transform: translateY(-17px) scaleY(0.9);
+    opacity: 1; }
+  75% {
+    transform: translateY(-22px) scaleY(0.9);
+    opacity: 1; }
   100% {
-    transform: translateY(0rem); } }
+    transform: translateY(0px) scaleY(1);
+    opacity: 1; } }
 
 @keyframes grow {
   0% {
@@ -251,7 +275,9 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  gap: 20rem; }
+  gap: 20rem;
+  max-width: 100vw;
+  overflow-x: hidden; }
 
 .btn--main {
   position: relative;
@@ -311,6 +337,8 @@ body {
   flex-direction: column; }
   .full-layer--background {
     min-height: 100vh; }
+    .full-layer--background-plant {
+      height: 60rem; }
 
 .top__navigation {
   width: 30rem;
@@ -333,23 +361,23 @@ body {
   .bees--single {
     position: absolute; }
   .bees--single:nth-child(1) {
-    left: 41%;
-    top: 27%;
+    left: 8%;
+    top: 29%;
     transform: scale(0.3);
     animation: bee-movements 10s infinite; }
   .bees--single:nth-child(2) {
-    left: 64%;
-    top: 9%;
+    left: 31%;
+    top: 39%;
     transform: scale(0.4);
     animation: bee-movements 20s infinite; }
   .bees--single:nth-child(3) {
-    left: 4%;
-    top: 31%;
+    left: 87%;
+    top: 51%;
     transform: scale(0.5);
     animation: bee-movements 30s infinite; }
   .bees--single:nth-child(4) {
-    left: 91%;
-    top: 6%;
+    left: 61%;
+    top: 13%;
     transform: scale(0.6);
     animation: bee-movements 40s infinite; }
 
@@ -365,154 +393,162 @@ body {
     width: 20rem; }
 
 .landing-page__heading {
-  z-index: 3; }
+  z-index: 3;
+  margin-top: 25rem; }
 
 .landing-page__background {
-  width: 55%;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  transition: all 0.5s;
   animation: circle-animations 0.6s ease-in-out; }
   .landing-page__background--circle {
     background-color: #FFBD15;
     border-radius: 100%; }
-  .landing-page__background::after {
-    content: "";
-    padding-bottom: 100%;
-    display: block; }
 
 .landing-page__content {
   width: 100%;
-  margin-top: 27vw;
+  height: 60rem;
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
-  align-items: stretch;
-  justify-content: flex-end; }
+  justify-content: center; }
   .landing-page__content .landing-page__welcome-note {
-    height: 40vh;
     margin-top: 7vh;
     margin-right: 7vw;
     align-self: flex-end; }
 
 .palm {
-  animation: palm-drop-animations .5s .2s backwards; }
+  animation: drop .6s linear .2s backwards;
+  transform-origin: bottom;
+  margin-right: 2rem; }
   .palm .leaf:nth-of-type(1) {
-    animation-delay: 0.41248s;
+    animation-delay: 0.75441s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(2) {
-    animation-delay: 0.79464s;
-    animation-duration: 1s; }
-  .palm .leaf:nth-of-type(3) {
-    animation-delay: 0.24441s;
-    animation-duration: 1s; }
-  .palm .leaf:nth-of-type(4) {
-    animation-delay: 0.92073s;
+    animation-delay: 0.80339s;
     animation-duration: 2s; }
+  .palm .leaf:nth-of-type(3) {
+    animation-delay: 0.73411s;
+    animation-duration: 2s; }
+  .palm .leaf:nth-of-type(4) {
+    animation-delay: 0.18235s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(5) {
-    animation-delay: 0.51859s;
+    animation-delay: 0.81217s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(6) {
-    animation-delay: 0.7158s;
-    animation-duration: 2s; }
+    animation-delay: 0.26604s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(7) {
-    animation-delay: 0.37132s;
+    animation-delay: 0.71426s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(8) {
-    animation-delay: 0.37847s;
-    animation-duration: 1s; }
+    animation-delay: 0.50494s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(9) {
-    animation-delay: 0.95818s;
-    animation-duration: 1s; }
+    animation-delay: 0.90219s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(10) {
-    animation-delay: 0.42693s;
+    animation-delay: 0.279s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(11) {
-    animation-delay: 0.77827s;
+    animation-delay: 0.82431s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(12) {
-    animation-delay: 0.92964s;
-    animation-duration: 2s; }
+    animation-delay: 0.04885s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(13) {
-    animation-delay: 0.82866s;
-    animation-duration: 1s; }
-  .palm .leaf:nth-of-type(14) {
-    animation-delay: 0.24256s;
-    animation-duration: 1s; }
-  .palm .leaf:nth-of-type(15) {
-    animation-delay: 0.35734s;
+    animation-delay: 0.24177s;
     animation-duration: 2s; }
+  .palm .leaf:nth-of-type(14) {
+    animation-delay: 0.9831s;
+    animation-duration: 2s; }
+  .palm .leaf:nth-of-type(15) {
+    animation-delay: 0.63756s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(16) {
-    animation-delay: 0.83625s;
+    animation-delay: 0.91285s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(17) {
-    animation-delay: 0.82877s;
-    animation-duration: 1s; }
+    animation-delay: 0.51379s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(18) {
-    animation-delay: 0.83295s;
+    animation-delay: 0.42701s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(19) {
-    animation-delay: 0.01315s;
-    animation-duration: 1s; }
+    animation-delay: 0.19699s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(20) {
-    animation-delay: 0.56277s;
+    animation-delay: 0.5276s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(21) {
-    animation-delay: 0.55806s;
+    animation-delay: 0.93725s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(22) {
-    animation-delay: 0.46894s;
+    animation-delay: 0.97909s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(23) {
-    animation-delay: 0.03084s;
-    animation-duration: 1s; }
+    animation-delay: 0.76687s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(24) {
-    animation-delay: 0.44116s;
+    animation-delay: 0.86806s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(25) {
-    animation-delay: 0.5746s;
-    animation-duration: 2s; }
+    animation-delay: 0.34333s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(26) {
-    animation-delay: 0.62837s;
-    animation-duration: 1s; }
+    animation-delay: 0.43713s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(27) {
-    animation-delay: 0.28813s;
-    animation-duration: 1s; }
+    animation-delay: 0.23581s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(28) {
-    animation-delay: 0.01096s;
+    animation-delay: 0.8615s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(29) {
-    animation-delay: 0.51191s;
+    animation-delay: 0.8153s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(30) {
-    animation-delay: 0.74749s;
-    animation-duration: 1s; }
+    animation-delay: 0.65109s;
+    animation-duration: 2s; }
   .palm .leaf {
     animation: palm-animations infinite;
     animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out; }
 
 .circle-shaddow {
+  position: absolute;
+  bottom: 6rem;
+  margin-left: 30%;
   background-color: #BE7303;
-  width: 26%;
+  width: 40%;
   height: 4rem;
   border-radius: 50%;
-  margin-top: 54rem;
-  margin-left: 2rem;
   transition: all 0.5s;
-  animation-delay: 0.2s;
-  animation-duration: 0.5s;
-  animation-name: shaddow-animations;
-  animation-fill-mode: backwards; }
+  animation: shaddow-grow .6s linear .2s backwards; }
 
 @media screen and (max-width: 600px) {
+  .landing-page__heading {
+    margin-top: 10rem; }
   .landing-page__content {
-    margin-top: 38vh; }
+    text-shadow: 1px 1px 5px rgba(137, 94, 7, 0.35); }
     .landing-page__content .landing-page__welcome-note {
+      background-color: rgba(255, 218, 143, 0.35);
+      border-radius: 2rem;
       height: 30vh;
       margin-right: 0;
       align-self: center;
       text-align: center;
       align-items: center; } }
+
+@media screen and (min-width: 1400px) {
+  .landing-page__background {
+    width: 1000px;
+    height: 1000px; }
+  .circle-shaddow {
+    bottom: 18%; } }
 
 .navigation__wrapper {
   display: flex;
