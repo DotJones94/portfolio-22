@@ -10,7 +10,7 @@ import Bee from './elements/bee.vue';
 </script>
 
 <template>
-    <div>
+    <div ref="full">
         <!-- Laoding -->
         <div class="circle__wrapper full-layer">
             <div class="circle circle__outer" :class="{'circle--loaded': loading}"></div>
@@ -19,9 +19,9 @@ import Bee from './elements/bee.vue';
         </div>
 
         <!-- Bees -->
-        <div class="bees full-layer" v-if="loading">
-            <div v-for="index in 4" :key="index" class="landing-page__bees--single">
-               <Bee class="bee"/>
+        <div class="bees full-layer" >
+            <div v-for="index in 10" :key="index" class="landing-page__bees--single">
+               <Bee class="bee" :style="{top: getRandomNumberTop(), left: getRandomNumberLeft()}"/>
             </div>
         </div>
 
@@ -46,6 +46,7 @@ export default {
     },
     mounted() {
         console.log("here");
+        this.windowHeight = this.$refs.full.clientHeight;
         this.loading = true;
     },
     computed: {
@@ -62,7 +63,9 @@ export default {
     },
     data() {
         return {
-            loading: false
+            loading: false,
+            windowWitdth : window.innerWidth-60,
+            windowHeight: 0
         };
     },
     methods: {
@@ -93,6 +96,12 @@ export default {
                     newSectionName: "contact-me"
                 });
         },
+        getRandomNumberTop() {
+            return Math.random() * (this.windowHeight - 0) + 0 + 'px';
+        },
+        getRandomNumberLeft(){
+            return Math.random() * (this.windowWitdth - 0) + 0 + 'px';
+        }
     },
     components: { Bee }
 }

@@ -1,7 +1,7 @@
 <template>
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="800px"
         height="600px" viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
-    <g id="body">
+    <g id="wings">
         <g>
             <path fill-rule="evenodd" clip-rule="evenodd" fill="#E2D9CC" d="M499.444,277.714l-32.499,9.547l-33.9,11.351
                 c0,0-18.87-48.371-25.866-66.292c-9.195-23.555-15.347-52.834-14.526-70.19c0.509-10.75,7.978-31.201,14.928-39.918
@@ -23,7 +23,7 @@
                 C357.75,237.873,382.651,263.276,382.651,263.276z"/>
         </g>
     </g>
-    <g id="wings">
+    <g id="body">
         <path fill-rule="evenodd" clip-rule="evenodd" fill="#2D2921" d="M518.646,288.717c0,0,32.253,14.599,47.675,25.57
             c21.863,15.554,21.508,47.953,21.508,47.953s-18.626-7.481-33.339-10.08c-19.57-3.457-41.764,6.874-41.764,6.874L518.646,288.717z"
             />
