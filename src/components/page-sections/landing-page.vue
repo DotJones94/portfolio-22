@@ -6,23 +6,31 @@
         components: {
             Send, palm
         },
+        data(){
+            return{
+                typography : 'heading--loading'
+            }
+        }
     }
 </script>
 
 <template>
     <div class="full_page landing-page">
         <!-- Content -->
-        <div class="full-layer">
+        <div class="full-layer full-layer--background">
             <div class="landing-page__content">
                 <!-- Heading of my name -->
-                <h1 class="heading__main landing-page__heading">
-                    Kelly Dot Jones
+                <h1 class="heading__main landing-page__heading"
+                    :class="'landing-page__' + typography">
+                    <div>Kelly</div>
+                    <div>Dot</div>  
+                    <div>Jones</div>
                 </h1>
 
                 <!-- Welcome note -->
-                <div class="landing-page__welcome-note top__navigation">
+                <div class="landing-page__welcome-note top__navigation" >
                     <div class="line_breaker"></div>
-                    <h2 class="heading__two">Welcome to my portfolio</h2>
+                    <div><h2 class="heading__two">Welcome to my portfolio</h2></div>
                     <div class="description">Something short sweet and a little funny, like a quote or something that shows a little bit more about me</div>
                     <div class="btn btn--main ">
                         <div class="btn__circle"></div>
@@ -34,19 +42,19 @@
                 </div>
             </div>           
         </div>
-        
-
+    
         <!-- Background circle -->
         <div class="full-layer full-layer--background">
             <div class="landing-page__background landing-page__background--circle"></div>
         </div>
 
+        <!-- Plant Shaddow -->
         <div class="full-layer full-layer--background">
-            <div class="circle-shaddow"></div>
+            <div class="landing-page__background"><div class="circle-shaddow"></div></div>
         </div>
 
         <!-- Image of plant -->
-        <div class="full-layer full-layer--background">
+        <div class="full-layer full-layer--background full-layer--background-plant" >
             <palm class="landing-page__background landing-page__background--plant"/>
            
         </div>

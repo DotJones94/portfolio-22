@@ -5,10 +5,8 @@
   font-size: 9rem;
   color: white;
   font-weight: 800;
-  letter-spacing: 1.3rem;
   text-align: center;
-  line-height: 7rem;
-  text-shadow: -4px 5px 8px rgba(0, 0, 0, 0.25); }
+  line-height: 7rem; }
 
 .heading__two {
   font-family: "Inria Sans", sans-serif;
@@ -73,33 +71,24 @@
     height: 35vh;
     opacity: 1; } }
 
-@keyframes bee-movements {
-  0% {
-    margin-left: 0;
-    margin-top: 0; }
-  50% {
-    margin-left: 100px;
-    margin-top: -200px; }
-  100% {
-    margin-left: 0;
-    margin-top: 0; } }
-
 @keyframes palm-animations {
   0% {
-    transform: rotate(0);
-    transform-origin: bottom center; }
+    transform: rotate(0); }
   100% {
-    transform: rotate(0.75deg);
-    transform-origin: bottom center; } }
+    transform: rotate(0.75deg); } }
 
 @keyframes circle-animations {
   0% {
-    width: 0;
-    opacity: 0;
-    height: 0; }
+    width: 10rem;
+    height: 10rem;
+    opacity: 0; }
+  70% {
+    width: 65rem;
+    height: 65rem;
+    opacity: 1; }
   100% {
-    width: 600px;
-    height: 600px;
+    width: 60rem;
+    height: 60rem;
     opacity: 1; } }
 
 @keyframes shaddow-grow {
@@ -142,6 +131,50 @@
     transform: translateY(0px) scaleY(1);
     opacity: 1; } }
 
+@keyframes flip-down {
+  0% {
+    transform: rotateX(90deg); }
+  75% {
+    transform: rotateX(-20deg); }
+  100% {
+    transform: rotateX(0deg); } }
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+    opacity: 0; }
+  90% {
+    transform: rotate(270deg) scale(1);
+    opacity: 1; }
+  100% {
+    transform: rotate(360deg) scale(0.95);
+    opacity: 0; } }
+
+@keyframes front-ripple {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1; }
+  100% {
+    transform: rotate(360deg) scale(3.5);
+    opacity: 0; } }
+
+@keyframes heading-show {
+  0% {
+    overflow: hidden;
+    opacity: 0; }
+  90% {
+    overflow: hidden;
+    opacity: 0.7; }
+  100% {
+    overflow: visible;
+    opacity: 1; } }
+
+@keyframes heading-animate {
+  0% {
+    margin-bottom: -30rem; }
+  95% {
+    margin-bottom: 0; } }
+
 @keyframes grow {
   0% {
     padding: 0;
@@ -150,7 +183,7 @@
     padding: 1rem 2rem;
     opacity: 1; } }
 
-.list-link {
+@keyframes text-up {}.list-link {
   display: flex;
   gap: 1rem;
   cursor: pointer;
@@ -246,6 +279,9 @@
     height: 40rem;
     box-sizing: border-box;
     z-index: 3; } }
+
+.bee {
+  width: 10rem; }
 
 * {
   margin: 0;
@@ -361,23 +397,23 @@ body {
   .bees--single {
     position: absolute; }
   .bees--single:nth-child(1) {
-    left: 8%;
-    top: 29%;
+    left: 90%;
+    top: 40%;
     transform: scale(0.3);
     animation: bee-movements 10s infinite; }
   .bees--single:nth-child(2) {
-    left: 31%;
-    top: 39%;
+    left: 36%;
+    top: 45%;
     transform: scale(0.4);
     animation: bee-movements 20s infinite; }
   .bees--single:nth-child(3) {
-    left: 87%;
-    top: 51%;
+    left: 29%;
+    top: 49%;
     transform: scale(0.5);
     animation: bee-movements 30s infinite; }
   .bees--single:nth-child(4) {
-    left: 61%;
-    top: 13%;
+    left: 32%;
+    top: 28%;
     transform: scale(0.6);
     animation: bee-movements 40s infinite; }
 
@@ -394,7 +430,21 @@ body {
 
 .landing-page__heading {
   z-index: 3;
-  margin-top: 25rem; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25rem;
+  position: relative;
+  overflow: visible;
+  animation: heading-show 1s backwards;
+  transition: all 0.4s;
+  opacity: 1; }
+  .landing-page__heading div {
+    transition: all 0.4s;
+    font-size: 11rem;
+    opacity: 1;
+    animation: heading-animate 1s;
+    text-shadow: 1px 1px 3px rgba(190, 115, 3, 0.6); }
 
 .landing-page__background {
   width: 600px;
@@ -418,102 +468,116 @@ body {
     margin-top: 7vh;
     margin-right: 7vw;
     align-self: flex-end; }
+    .landing-page__content .landing-page__welcome-note > div {
+      transform-origin: top center;
+      animation: flip-down 1s ease backwards; }
+      .landing-page__content .landing-page__welcome-note > div:nth-of-type(1) {
+        animation-delay: 0.25s; }
+      .landing-page__content .landing-page__welcome-note > div:nth-of-type(2) {
+        animation-delay: 0.5s; }
+      .landing-page__content .landing-page__welcome-note > div:nth-of-type(3) {
+        animation-delay: 0.75s; }
+      .landing-page__content .landing-page__welcome-note > div:nth-of-type(4) {
+        animation-delay: 1s; }
+      .landing-page__content .landing-page__welcome-note > div:nth-of-type(5) {
+        animation-delay: 1.25s; }
 
 .palm {
-  animation: drop .6s linear .2s backwards;
+  animation: drop .6s linear .4s backwards;
   transform-origin: bottom;
   margin-right: 2rem; }
   .palm .leaf:nth-of-type(1) {
-    animation-delay: 0.75441s;
-    animation-duration: 1s; }
+    animation-delay: 0.5255s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(2) {
-    animation-delay: 0.80339s;
-    animation-duration: 2s; }
-  .palm .leaf:nth-of-type(3) {
-    animation-delay: 0.73411s;
-    animation-duration: 2s; }
-  .palm .leaf:nth-of-type(4) {
-    animation-delay: 0.18235s;
+    animation-delay: 0.80021s;
     animation-duration: 1s; }
+  .palm .leaf:nth-of-type(3) {
+    animation-delay: 0.08045s;
+    animation-duration: 1s; }
+  .palm .leaf:nth-of-type(4) {
+    animation-delay: 0.84792s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(5) {
-    animation-delay: 0.81217s;
+    animation-delay: 0.24942s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(6) {
-    animation-delay: 0.26604s;
+    animation-delay: 0.08082s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(7) {
-    animation-delay: 0.71426s;
+    animation-delay: 0.9401s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(8) {
-    animation-delay: 0.50494s;
+    animation-delay: 0.44097s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(9) {
-    animation-delay: 0.90219s;
+    animation-delay: 0.5545s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(10) {
-    animation-delay: 0.279s;
+    animation-delay: 0.91533s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(11) {
-    animation-delay: 0.82431s;
+    animation-delay: 0.93966s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(12) {
-    animation-delay: 0.04885s;
+    animation-delay: 0.53513s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(13) {
-    animation-delay: 0.24177s;
+    animation-delay: 0.39853s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(14) {
-    animation-delay: 0.9831s;
-    animation-duration: 2s; }
+    animation-delay: 0.05477s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(15) {
-    animation-delay: 0.63756s;
-    animation-duration: 1s; }
+    animation-delay: 0.80492s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(16) {
-    animation-delay: 0.91285s;
-    animation-duration: 1s; }
+    animation-delay: 0.7948s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(17) {
-    animation-delay: 0.51379s;
+    animation-delay: 0.3562s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(18) {
-    animation-delay: 0.42701s;
-    animation-duration: 2s; }
+    animation-delay: 0.49239s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(19) {
-    animation-delay: 0.19699s;
+    animation-delay: 0.69164s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(20) {
-    animation-delay: 0.5276s;
-    animation-duration: 1s; }
+    animation-delay: 0.89805s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(21) {
-    animation-delay: 0.93725s;
-    animation-duration: 2s; }
+    animation-delay: 0.25712s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(22) {
-    animation-delay: 0.97909s;
-    animation-duration: 2s; }
+    animation-delay: 0.24007s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(23) {
-    animation-delay: 0.76687s;
-    animation-duration: 2s; }
+    animation-delay: 0.92087s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(24) {
-    animation-delay: 0.86806s;
+    animation-delay: 0.40925s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(25) {
-    animation-delay: 0.34333s;
-    animation-duration: 1s; }
+    animation-delay: 0.24616s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(26) {
-    animation-delay: 0.43713s;
+    animation-delay: 0.53515s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(27) {
-    animation-delay: 0.23581s;
+    animation-delay: 0.4013s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(28) {
-    animation-delay: 0.8615s;
+    animation-delay: 0.49616s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(29) {
-    animation-delay: 0.8153s;
+    animation-delay: 0.52129s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(30) {
-    animation-delay: 0.65109s;
-    animation-duration: 2s; }
+    animation-delay: 0.59004s;
+    animation-duration: 1s; }
   .palm .leaf {
+    transform-origin: bottom center;
     animation: palm-animations infinite;
     animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out; }
@@ -527,7 +591,33 @@ body {
   height: 4rem;
   border-radius: 50%;
   transition: all 0.5s;
-  animation: shaddow-grow .6s linear .2s backwards; }
+  animation: shaddow-grow .6s linear .4s backwards; }
+
+.circle__wrapper {
+  position: fixed;
+  height: 100vh; }
+  .circle__wrapper .circle {
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(#FFA41C, #FFA41C) padding-box, linear-gradient(to right, #FFBD15, rgba(255, 164, 28, 0.1)) border-box;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    animation: spinner 3s ease-in-out infinite; }
+    .circle__wrapper .circle__inner-most {
+      width: 10rem;
+      height: 10rem;
+      animation-delay: 0.2s; }
+    .circle__wrapper .circle__inner {
+      width: 15rem;
+      height: 15rem;
+      animation-delay: 0.5s; }
+    .circle__wrapper .circle__outer {
+      width: 20rem;
+      height: 20rem;
+      animation-delay: 0.8s; }
+    .circle__wrapper .circle--loaded {
+      animation: front-ripple 1s ease backwards;
+      opacity: 0; }
 
 @media screen and (max-width: 600px) {
   .landing-page__heading {

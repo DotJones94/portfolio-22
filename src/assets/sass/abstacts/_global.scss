@@ -75,7 +75,12 @@
 
     &--background{
         min-height: 100vh;
+
+        &-plant{
+            height: 60rem;
+        }
     }
+
 }
 
 // TOP NAVIGATION --------

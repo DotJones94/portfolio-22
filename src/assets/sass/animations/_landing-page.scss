@@ -1,41 +1,12 @@
-@keyframes bee-movements {
-    0%{
-        margin-left: 0;
-        margin-top: 0;
-    }
-    50%{
-        margin-left: 100px;
-        margin-top: -200px;
-    }
-    100%{
-        margin-left: 0;
-        margin-top: 0;
-    }
-}
-
 @keyframes palm-animations {
-    0%{
-        transform: rotate(0);
-        transform-origin: bottom center;
-    }
-    100%{
-        transform: rotate(0.75deg);
-        transform-origin: bottom center;
-    }
+    0%{ transform: rotate(0); }
+    100%{ transform: rotate(0.75deg);}
 }
 
 @keyframes circle-animations {
-    0%{
-        width: 0;
-        opacity: 0;
-        height: 0;
-    }
-
-    100%{
-        width: 600px;
-        height: 600px;
-        opacity: 1;
-    }
+    0%{ width: 10rem; height: 10rem; opacity: 0; }
+    70%{ width: 65rem; height: 65rem; opacity: 1;}
+    100%{ width: 60rem; height: 60rem; opacity: 1;}
 }
 
 @keyframes shaddow-grow {
@@ -55,3 +26,32 @@
     75% {transform: translateY(-22px) scaleY(.9); opacity: 1;}
     100% {transform: translateY(0px) scaleY(1); opacity: 1;}
   }
+
+@keyframes flip-down {
+    0%{transform: rotateX(90deg)}
+    75%{transform: rotateX(-20deg)}
+    100%{transform: rotateX(0deg) }
+}
+
+@keyframes spinner {
+    0%{transform: rotate(0deg) scale(0.5); opacity: 0;}
+    90%{transform: rotate(270deg) scale(1); opacity: 1;}
+    100%{transform: rotate(360deg) scale(0.95); opacity: 0;}
+}
+
+@keyframes front-ripple {
+    0%{transform: rotate(0deg) scale(1); opacity: 1;}
+    100%{transform: rotate(360deg) scale(3.5); opacity: 0;}
+}
+
+@keyframes heading-show {
+    0%{ overflow: hidden; opacity: 0;}
+    90%{ overflow: hidden; opacity: 0.7;}
+    100%{ overflow: visible; opacity: 1;}
+}
+
+@keyframes heading-animate{
+    0%{  margin-bottom: -30rem; }
+    95%{  margin-bottom: 0; }
+}
+

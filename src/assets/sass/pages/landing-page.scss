@@ -1,8 +1,25 @@
 .landing-page{
    &__heading{
-    z-index: 3;
-    margin-top: 25rem;
-   }
+        z-index: 3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 25rem;
+        position: relative;
+        overflow: visible;
+        animation: heading-show 1s backwards;
+        transition: all 0.4s;
+        opacity: 1;
+
+        div{
+            transition: all 0.4s;
+            font-size: 11rem;
+            opacity: 1;
+            animation: heading-animate 1s;
+            text-shadow: 1px 1px 3px rgba($color: $main-orange-dark, $alpha: 0.6);
+        }
+        
+    }
 
 //    BACKGROUND CIRCLE
    &__background{
@@ -34,13 +51,25 @@
             margin-top: 7vh;
             margin-right: 7vw;
             align-self: flex-end;
+
+            & > div{
+                transform-origin: top center;
+                animation: flip-down 1s ease backwards;
+
+                @for $i from 1 through 5{
+                    &:nth-of-type(#{$i}){
+                        animation-delay: $i*0.25s;
+                    }
+                }  
+            }
         }
     }
 }
 
 // Palm animations 
 .palm{
-    animation: drop .6s linear .2s backwards ;
+    
+    animation: drop .6s linear .4s backwards ;
     transform-origin: bottom;
     margin-right: 2rem;
     
@@ -52,6 +81,7 @@
     }
 
     .leaf{
+        transform-origin: bottom center;
         animation: palm-animations infinite;
         animation-direction: alternate-reverse;
         animation-timing-function: ease-in-out;
@@ -67,13 +97,48 @@
     height: 4rem;
     border-radius: 50%;
     transition: all 0.5s;
-    animation: shaddow-grow .6s linear .2s backwards ;
-    // animation-delay: 0.2s;
-    // animation-duration: 0.1s;
-    // animation-name: shaddow-animations;
-    // animation-fill-mode: backwards;
-    // animation-timing-function: ease-in;
+    animation: shaddow-grow .6s linear .4s backwards ;
 }
+
+// LOADING Circle
+.circle__wrapper{
+    position: fixed;
+    height: 100vh;
+
+    .circle{
+        border-radius: 50%;
+        position: absolute;
+        background: linear-gradient($main-orange, $main-orange) padding-box,
+              linear-gradient(to right, $main-yellow, rgba($main-orange, 0.1)) border-box;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        animation: spinner 3s ease-in-out infinite;
+    
+        &__inner-most{
+            width: 10rem;
+            height: 10rem;
+            animation-delay: 0.2s;
+        }
+
+        &__inner{
+            width: 15rem;
+            height: 15rem;
+            animation-delay: 0.5s;
+        }
+
+        &__outer{
+            width: 20rem;
+            height: 20rem;
+            animation-delay: 0.8s;
+        }
+
+        &--loaded{
+            animation: front-ripple 1s ease backwards;
+            opacity: 0;
+        }
+    }
+}
+
 
 
 //Smaller Screens
