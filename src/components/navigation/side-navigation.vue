@@ -68,7 +68,7 @@
                 :class="{'navigation__link--active' : activeSection === 'contact-me'}"
                 @click="changeActiveSection('contact-me')">
                 <message />
-                <div class="link__text link__text--navigation">Contact Me</div>
+                <span class="link__text link__text--navigation">Contact Me</span>
             </div>
         </div>
     </div>

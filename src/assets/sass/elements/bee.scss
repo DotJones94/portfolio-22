@@ -3,6 +3,17 @@
     height: 6rem;
     position: absolute;
 
+    &:nth-child(odd){
+        animation: beeMove 20s infinite;
+        animation-direction: normal;
+    }
+
+    &:nth-child(even){
+        animation: beeMove 20s infinite;
+        animation-direction: reverse;
+    }
+    
+
     #wings{
         animation: bob 0.5s ease-in-out infinite;
         g{

@@ -9,3 +9,9 @@
     50%{transform: translateY(2rem);}
     100%{transform: translateY(0);}
 }
+
+@keyframes beeMove {
+    100% { transform: rotate(0deg) translateX(10rem) rotate(0deg); }
+    // 50% {transform: rotate(180deg) translateX(10rem) rotate(180deg);}
+    0%   { transform: rotate(180deg) translateX(10rem) rotate(-180deg); }
+}

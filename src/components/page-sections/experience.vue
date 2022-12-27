@@ -99,8 +99,8 @@
 
             <!-- text -->
             <div class="content__text">
-                
-                <img :src="'../../assets/images/experience/' + activeExperience.image" class="content__logo" />
+                <!-- <img :src="'../../assets/images/experience/' + activeExperience.image" class="content__logo" /> -->
+                <img src="../../assets/images/experience/CapitalK.png" class="content__logo" />
                 <div class="content__text--headings">
                     <div class="heading__five">
                         From {{activeExperience.yearFrom}} -  {{activeExperience.yearTo}}

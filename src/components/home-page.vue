@@ -19,7 +19,7 @@ import Bee from './elements/bee.vue';
         </div>
 
         <!-- Bees -->
-        <div class="bees full-layer" >
+        <div class="bees full-layer" v-if="!loading" >
             <div v-for="index in 10" :key="index" class="landing-page__bees--single">
                <Bee class="bee" :style="{top: getRandomNumberTop(), left: getRandomNumberLeft()}"/>
             </div>
@@ -41,11 +41,8 @@ export default {
     created() {
         window.addEventListener("scroll", this.navigationChange);
     },
-    destroyed() {
-        window.removeEventListener("scroll", this.navigationChange);
-    },
     mounted() {
-        console.log("here");
+        console.log(this.$refs.full.scrollHeight);
         this.windowHeight = this.$refs.full.clientHeight;
         this.loading = true;
     },
@@ -97,6 +94,7 @@ export default {
                 });
         },
         getRandomNumberTop() {
+            console.log(this.windowHeight);
             return Math.random() * (this.windowHeight - 0) + 0 + 'px';
         },
         getRandomNumberLeft(){

@@ -148,18 +148,25 @@
             margin-top: 10rem;
         }
 
+        .heading__two{
+            color: white;
+            font-weight: 600;
+            text-shadow: 1px 1px 1px #7c620fbd;
+        }
+
      //    CONTENT: NAME AND WELCOME NOTE
          &__content{
             text-shadow: 1px 1px 5px rgba($color: #895e07, $alpha: 0.35);
              //    WELOCME NOTE ----------
              .landing-page__welcome-note{
-                background-color: rgba($color: rgb(255, 218, 143), $alpha: 0.35);;
                 border-radius: 2rem;
-                 height: 30vh;
-                 margin-right: 0;
-                 align-self: center;
-                 text-align: center;
-                 align-items: center;
+                height: 30vh;
+                margin-right: 0;
+                align-self: center;
+                text-align: center;
+                align-items: center;
+                color: white;
+                text-shadow: 1px 1px 5px rgba($color: #513703, $alpha: 0.35);
              }
          }
      }
