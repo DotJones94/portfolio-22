@@ -267,6 +267,13 @@
     stroke-dashoffset: 17.5; }
   to {
     stroke-dashoffset: 0; } }
+        .skill-block__amounts .skill-item .amount__name .description {
+          font-size: 1rem;
+          color: #1D7A0C;
+          opacity: 0.6;
+          transition: all 0.5; }
+          .skill-block__amounts .skill-item .amount__name .description:hover {
+            opacity: 1; }
       .skill-block__amounts .skill-item .percentage--text {
         font-family: "Assistant", sans-serif;
         font-weight: 700;
@@ -301,7 +308,8 @@
     min-width: 30rem;
     height: 40rem;
     box-sizing: border-box;
-    z-index: 3; } }
+    z-index: 3;
+    margin-bottom: -6rem; } }
 
 .bee {
   width: 6rem;
@@ -438,7 +446,8 @@ body {
   width: 30rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem; }
+  gap: 2rem;
+  margin-left: 45vw; }
 
 .header-wrapper {
   display: flex;
@@ -467,6 +476,11 @@ body {
     margin-top: -20rem; }
   .bottom-images .bottom-image {
     width: 20rem; }
+
+@media screen and (max-width: 600px) {
+  .top__navigation {
+    margin-left: 0;
+    align-items: center; } }
 
 .landing-page__heading {
   z-index: 3;
@@ -527,94 +541,94 @@ body {
   transform-origin: bottom;
   margin-right: 2rem; }
   .palm .leaf:nth-of-type(1) {
-    animation-delay: 0.21545s;
+    animation-delay: 0.12017s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(2) {
-    animation-delay: 0.93995s;
+    animation-delay: 0.18022s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(3) {
-    animation-delay: 0.60965s;
-    animation-duration: 2s; }
+    animation-delay: 0.7282s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(4) {
-    animation-delay: 0.36174s;
+    animation-delay: 0.80166s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(5) {
-    animation-delay: 0.857s;
+    animation-delay: 0.41813s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(6) {
-    animation-delay: 0.43898s;
-    animation-duration: 1s; }
+    animation-delay: 0.96749s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(7) {
-    animation-delay: 0.79224s;
+    animation-delay: 0.35076s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(8) {
-    animation-delay: 0.01132s;
+    animation-delay: 0.63517s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(9) {
-    animation-delay: 0.31216s;
+    animation-delay: 0.30608s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(10) {
-    animation-delay: 0.55781s;
+    animation-delay: 0.12944s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(11) {
-    animation-delay: 0.44512s;
-    animation-duration: 1s; }
+    animation-delay: 0.21097s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(12) {
-    animation-delay: 0.97284s;
+    animation-delay: 0.41154s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(13) {
-    animation-delay: 0.83421s;
+    animation-delay: 0.00431s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(14) {
-    animation-delay: 0.16106s;
-    animation-duration: 1s; }
+    animation-delay: 0.26196s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(15) {
-    animation-delay: 0.16676s;
+    animation-delay: 0.08727s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(16) {
-    animation-delay: 0.31755s;
+    animation-delay: 0.2336s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(17) {
-    animation-delay: 0.08061s;
+    animation-delay: 0.79762s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(18) {
-    animation-delay: 0.42438s;
+    animation-delay: 0.52114s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(19) {
-    animation-delay: 0.4784s;
-    animation-duration: 1s; }
+    animation-delay: 0.60409s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(20) {
-    animation-delay: 0.95301s;
+    animation-delay: 0.50412s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(21) {
-    animation-delay: 0.22257s;
-    animation-duration: 1s; }
-  .palm .leaf:nth-of-type(22) {
-    animation-delay: 0.60265s;
+    animation-delay: 0.96569s;
     animation-duration: 2s; }
+  .palm .leaf:nth-of-type(22) {
+    animation-delay: 0.19748s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(23) {
-    animation-delay: 0.05327s;
-    animation-duration: 1s; }
+    animation-delay: 0.18817s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(24) {
-    animation-delay: 0.86932s;
-    animation-duration: 1s; }
+    animation-delay: 0.09799s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(25) {
-    animation-delay: 0.653s;
+    animation-delay: 0.29337s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(26) {
-    animation-delay: 0.54495s;
-    animation-duration: 1s; }
-  .palm .leaf:nth-of-type(27) {
-    animation-delay: 0.30122s;
+    animation-delay: 0.4983s;
     animation-duration: 2s; }
+  .palm .leaf:nth-of-type(27) {
+    animation-delay: 0.62255s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(28) {
-    animation-delay: 0.68428s;
+    animation-delay: 0.77297s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(29) {
-    animation-delay: 0.48415s;
+    animation-delay: 0.76543s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(30) {
-    animation-delay: 0.595s;
+    animation-delay: 0.74807s;
     animation-duration: 1s; }
   .palm .leaf {
     transform-origin: bottom center;
@@ -680,8 +694,8 @@ body {
 
 @media screen and (min-width: 1400px) {
   .landing-page__background {
-    width: 1000px;
-    height: 1000px; }
+    width: 90rem;
+    height: 90rem; }
   .circle-shaddow {
     bottom: 18%; } }
 
@@ -770,7 +784,7 @@ body {
   .exp__navigation-wrapper {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 8rem 3vw 0 3vw;
     align-items: flex-start;
     box-sizing: border-box;
@@ -789,18 +803,19 @@ body {
     margin-top: 15rem;
     z-index: 1; }
     .exp__content .content__circle {
-      height: 75vh;
+      width: 540px;
+      height: 540px;
       background-color: #FFBD15;
       display: flex;
       flex-direction: column;
       transition: all 0.5s; }
       .exp__content .content__circle--logo {
-        width: 75vh;
         border-radius: 50%;
         z-index: 0;
         margin-top: -20rem; }
       .exp__content .content__circle--show-more {
         width: 90vw;
+        height: 75vh;
         border-radius: 8rem;
         z-index: 20;
         margin-top: -10rem; }
@@ -813,9 +828,14 @@ body {
       .exp__content .content__text--headings {
         margin-left: 50%; }
     .exp__content .content__logo {
-      width: 50%;
+      width: 26rem;
       position: absolute;
       top: -24rem; }
+    .exp__content .content__button {
+      display: flex;
+      justify-content: left;
+      margin-top: 2rem;
+      margin-left: 0; }
   .exp__see-more {
     z-index: 25;
     position: absolute;
@@ -828,13 +848,17 @@ body {
     .exp__see-more-info {
       display: flex;
       justify-content: space-evenly;
-      transition: all 0.5s; }
+      transition: all 0.5s;
+      align-items: center;
+      height: 100%; }
       .exp__see-more-info .see-more__left {
         width: 30%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 3rem; }
+        gap: 3rem;
+        height: 100%;
+        overflow: scroll;
+        padding-right: 1rem; }
       .exp__see-more-info .see-more__right {
         width: 50%;
         max-height: 70vh;
@@ -851,15 +875,31 @@ body {
 @media screen and (max-width: 600px) {
   .exp__content {
     margin-top: 15rem; }
-    .exp__content .content__circle {
-      margin-top: -22rem; }
     .exp__content .content__text {
       position: relative;
       margin-top: -16rem; }
       .exp__content .content__text--headings {
         text-align: center;
         padding: 1rem;
-        margin-left: 0; } }
+        margin-left: 0; }
+    .exp__content .content__button {
+      justify-content: center;
+      margin-left: 6rem; }
+  .see-more__right {
+    display: none; }
+  .exp__see-more-info .see-more__left {
+    width: 100%; }
+  .exp__navigation-wrapper .exp__links {
+    margin-left: 4.5rem; } }
+
+@media screen and (min-width: 1400px) {
+  .exp__content .content__circle {
+    width: 65rem;
+    height: 66rem;
+    margin-top: -25rem; }
+  .exp__content .content__logo {
+    width: 37rem;
+    top: -37rem; } }
 
 .skills__blocks {
   display: flex;
@@ -871,7 +911,6 @@ body {
   .skills__blocks {
     display: flex;
     justify-content: center;
-    padding: 8rem;
     flex-direction: column; } }
 
 .qualifications {

@@ -28,7 +28,10 @@ export default {
                     stroke-linecap="round" transform="rotate(-90 2.25 2.25)" />
                 </svg>
             </div>
-            <div class="amount__name heading__five">{{skillItem.name}}</div>
+            <div class="amount__name ">
+                <div class="heading__five">{{skillItem.name}}</div>
+                <div class="description">{{skillItem.subItems}}</div>
+            </div>
         </div>
     </div>
     

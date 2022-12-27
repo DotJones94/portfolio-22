@@ -23,18 +23,26 @@
                             {
                                 name: 'Figma',
                                 percentage: 70,
+                                strokeDasharray: "7.5 100",
+                                subItems: 'Wireframes & prototyping',
                             },
                             {
                                 name: 'Adobe Suite',
                                 percentage: 80,
+                                strokeDasharray: "10 100",
+                                subItems: 'PS, AI, FL, AE, XD, ID, PR',
                             },
                             {
                                 name: '3Ds Max',
                                 percentage: 70,
+                                strokeDasharray: "7.5 100",
+                                subItems: 'Modeling & Animation',
                             },
                             {
                                 name: 'Unity',
                                 percentage: 75,
+                                strokeDasharray: "8.9 100",
+                                subItems: 'Game dev, film, VR',
                             },
                         ]
                     },
@@ -46,17 +54,20 @@
                             {
                                 name: 'HTML/CSS',
                                 percentage: 95,
-                                strokeDasharray: "10 100"
+                                strokeDasharray: "11.2 100",
+                                subItems: 'HTML 5, Sass',
                             },
                             {
                                 name: 'Javascript',
                                 percentage: 85,
-                                strokeDasharray: "9.5 100"
+                                strokeDasharray: "10.5 100",
+                                subItems: 'Vue.js, Jquery',
                             },
                             {
                                 name: 'PHP',
                                 percentage: 90,
-                                strokeDasharray: "11 100"
+                                strokeDasharray: "11 100",
+                                subItems: 'Laravel',
                             },
                         ]
                     },
@@ -68,14 +79,20 @@
                             {
                                 name: 'Java',
                                 percentage: 75,
+                                strokeDasharray: "8.9 100",
+                                subItems: 'Data structure & Algorithms',
                             },
                             {
                                 name: 'C++',
                                 percentage: 70,
+                                strokeDasharray: "7.5 100",
+                                subItems: '',
                             },
                             {
                                 name: 'c#',
                                 percentage: 60,
+                                strokeDasharray: "7 100",
+                                subItems: 'Game development',
                             },
                         ]
                     },
@@ -117,9 +134,9 @@
                 :class="{'skill-block--active' : this.activeSkillID === skill.id}"/>
         </div>
 
-        <!-- Image of bottom Plant -->
+        <!-- Image of bottom Plant
         <div class="bottom-images bottom-images--skills">
             <pot-plant class="bottom-image"  />
-        </div>
+        </div> -->
     </div>
 </template>

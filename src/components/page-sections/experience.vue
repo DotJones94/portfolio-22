@@ -64,13 +64,6 @@
     <div class="full_page exp">
     
         <div class="exp__navigation-wrapper">
-            <!-- Image of plant -->
-            <div>
-                <img src="../../assets/images/section-navigation/hanging01.png"
-                 alt="Hanging plant"
-                 class="navigation" />
-            </div>
-
             <!-- Navigation links -->
             <div class="top__navigation">
                 <div class="line_breaker"></div>
@@ -106,14 +99,17 @@
                         From {{activeExperience.yearFrom}} -  {{activeExperience.yearTo}}
                     </div>
                     <div class="heading__four">{{activeExperience.role}}</div>
-                    <div class="btn btn--main " @click="showMore = !showMore">
-                        <div class="btn__circle"></div>
-                        <div class="btn__text">
-                            <seeMore class="btn__icon"/>
-                            <span class="link__text link__text--btn" v-show="!showMore">Show more</span>
-                            <span class="link__text link__text--btn" v-show="showMore">Show less</span>
+                    <div class="content__button">
+                        <div class="btn btn--main " @click="showMore = !showMore">
+                            <div class="btn__circle"></div>
+                            <div class="btn__text">
+                                <seeMore class="btn__icon"/>
+                                <span class="link__text link__text--btn" v-show="!showMore">Show more</span>
+                                <span class="link__text link__text--btn" v-show="showMore">Show less</span>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
 
