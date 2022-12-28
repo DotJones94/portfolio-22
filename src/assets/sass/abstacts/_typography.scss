@@ -84,3 +84,16 @@ $inria-sans-font: 'Inria Sans', sans-serif;
 }
 
 
+.portfolio__text{
+    text-transform: uppercase;
+    font-family: $assistant-font;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.15em;
+
+    &--name{
+        font-weight: 600;
+        letter-spacing: 0.2em;
+    }
+}
+

@@ -98,6 +98,10 @@ export default {
                 class="qualifications__image" />
             </div>
         </div>
+
+        <div>
+            
+        </div>
         
         
 

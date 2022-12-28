@@ -64,6 +64,16 @@
   line-height: 1.2rem;
   letter-spacing: 0.06em; }
 
+.portfolio__text {
+  text-transform: uppercase;
+  font-family: "Assistant", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.15em; }
+  .portfolio__text--name {
+    font-weight: 600;
+    letter-spacing: 0.2em; }
+
 @keyframes nagivation-grow {
   0% {
     height: 0;
@@ -349,6 +359,52 @@
   .bee #body {
     animation: bob 0.5s ease-in-out infinite; }
 
+.portfolio-line {
+  width: 75%;
+  cursor: pointer;
+  padding: 3rem;
+  border-top: 1px solid white;
+  color: #0D4503; }
+  .portfolio-line__header {
+    position: relative;
+    display: grid;
+    width: 100%;
+    gap: 0.5rem;
+    grid-template-columns: 2.2fr 1fr 1fr 1fr; }
+    .portfolio-line__header div:not(:first-child):not(:last-child) {
+      text-align: center; }
+    .portfolio-line__header div:last-child {
+      text-align: right; }
+  .portfolio-line__description {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem; }
+    .portfolio-line__description .description__images {
+      width: 40%;
+      display: flex; }
+      .portfolio-line__description .description__images--circle {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background-color: #FFBD15;
+        box-shadow: 0.2rem 0.2rem 0.5rem #BE7303; }
+        .portfolio-line__description .description__images--circle:not(:first-child) {
+          margin-left: -3rem; }
+    .portfolio-line__description .description__text {
+      font-size: 1rem;
+      line-height: 1rem;
+      color: black; }
+  .portfolio-line__main-image {
+    width: 8em;
+    height: 8em;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(16, 0, 54, 0.2);
+    transition: 0.1s ease-in-out; }
+
 * {
   margin: 0;
   padding: 0;
@@ -541,94 +597,94 @@ body {
   transform-origin: bottom;
   margin-right: 2rem; }
   .palm .leaf:nth-of-type(1) {
-    animation-delay: 0.12017s;
-    animation-duration: 1s; }
+    animation-delay: 0.59868s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(2) {
-    animation-delay: 0.18022s;
+    animation-delay: 0.47279s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(3) {
-    animation-delay: 0.7282s;
+    animation-delay: 0.24692s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(4) {
-    animation-delay: 0.80166s;
+    animation-delay: 0.32093s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(5) {
-    animation-delay: 0.41813s;
+    animation-delay: 0.89313s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(6) {
-    animation-delay: 0.96749s;
+    animation-delay: 0.61329s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(7) {
-    animation-delay: 0.35076s;
-    animation-duration: 1s; }
-  .palm .leaf:nth-of-type(8) {
-    animation-delay: 0.63517s;
+    animation-delay: 0.21615s;
     animation-duration: 2s; }
+  .palm .leaf:nth-of-type(8) {
+    animation-delay: 0.65548s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(9) {
-    animation-delay: 0.30608s;
+    animation-delay: 0.03592s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(10) {
-    animation-delay: 0.12944s;
-    animation-duration: 1s; }
+    animation-delay: 0.36306s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(11) {
-    animation-delay: 0.21097s;
+    animation-delay: 0.09708s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(12) {
-    animation-delay: 0.41154s;
+    animation-delay: 0.13912s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(13) {
-    animation-delay: 0.00431s;
+    animation-delay: 0.6317s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(14) {
-    animation-delay: 0.26196s;
-    animation-duration: 2s; }
+    animation-delay: 0.36603s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(15) {
-    animation-delay: 0.08727s;
-    animation-duration: 2s; }
+    animation-delay: 0.4809s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(16) {
-    animation-delay: 0.2336s;
-    animation-duration: 2s; }
+    animation-delay: 0.36794s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(17) {
-    animation-delay: 0.79762s;
+    animation-delay: 0.725s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(18) {
-    animation-delay: 0.52114s;
+    animation-delay: 0.90486s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(19) {
-    animation-delay: 0.60409s;
+    animation-delay: 0.58116s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(20) {
-    animation-delay: 0.50412s;
+    animation-delay: 0.49292s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(21) {
-    animation-delay: 0.96569s;
+    animation-delay: 0.63604s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(22) {
-    animation-delay: 0.19748s;
-    animation-duration: 1s; }
-  .palm .leaf:nth-of-type(23) {
-    animation-delay: 0.18817s;
+    animation-delay: 0.75106s;
     animation-duration: 2s; }
+  .palm .leaf:nth-of-type(23) {
+    animation-delay: 0.93983s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(24) {
-    animation-delay: 0.09799s;
+    animation-delay: 0.78724s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(25) {
-    animation-delay: 0.29337s;
-    animation-duration: 2s; }
+    animation-delay: 0.51753s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(26) {
-    animation-delay: 0.4983s;
-    animation-duration: 2s; }
+    animation-delay: 0.64127s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(27) {
-    animation-delay: 0.62255s;
-    animation-duration: 1s; }
+    animation-delay: 0.60334s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(28) {
-    animation-delay: 0.77297s;
-    animation-duration: 1s; }
+    animation-delay: 0.65204s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(29) {
-    animation-delay: 0.76543s;
+    animation-delay: 0.61567s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(30) {
-    animation-delay: 0.74807s;
+    animation-delay: 0.50678s;
     animation-duration: 1s; }
   .palm .leaf {
     transform-origin: bottom center;
@@ -955,3 +1011,10 @@ body {
     bottom: -4rem; }
     .contact-us__image-wrapper {
       position: relative; }
+
+.portfolio {
+  padding: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }

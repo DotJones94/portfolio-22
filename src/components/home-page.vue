@@ -5,6 +5,7 @@ import Experience from './page-sections/experience.vue';
 import Skills from './page-sections/skills.vue';
 import Qualifications  from './page-sections/qualifications.vue';
 import ContactMe  from './page-sections/contact-us.vue';
+import Portfolio from './page-sections/portfolio.vue'
 import { mapState } from 'vuex';
 import Bee from './elements/bee.vue';
 </script>
@@ -30,6 +31,7 @@ import Bee from './elements/bee.vue';
             <LandingPage id="home" v-if="loading"/>
             <Experience id="experience" v-if="loading"/>
             <skills id="skills" v-if="loading"/>
+            <Portfolio />
             <Qualifications id="qualifications" v-if="loading"/>
             <ContactMe id="contact-me" v-if="loading"/>
         </div>
