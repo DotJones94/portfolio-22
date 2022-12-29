@@ -226,6 +226,16 @@
     height: 12rem;
     opacity: 1; } }
 
+@keyframes portfolio-drop-down {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+    margin-top: -12rem; }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+    margin-top: 2rem; } }
+
 .list-link {
   display: flex;
   gap: 1rem;
@@ -373,13 +383,14 @@
   width: 75%;
   cursor: pointer;
   padding: 3rem;
-  border-top: 1px solid white;
+  border-top: 2px solid #FFBD15;
   color: #0D4503;
   transition: all 0.5s; }
   .portfolio-line:last-child {
-    border-bottom: 1px solid white; }
+    border-bottom: 2px solid #FFBD15; }
   .portfolio-line:hover {
-    transform: scale(1.05); }
+    transform: scale(1.05);
+    color: #ffffff; }
   .portfolio-line__header {
     position: relative;
     z-index: 1;
@@ -397,7 +408,12 @@
     margin-top: 2rem;
     display: flex;
     align-items: center;
-    gap: 2rem; }
+    gap: 2rem;
+    transition: all 0.5s; }
+    .portfolio-line__description--show {
+      animation: portfolio-drop-down 1s forwards; }
+    .portfolio-line__description--hide {
+      animation: portfolio-drop-down 1s reverse forwards; }
     .portfolio-line__description .description__images {
       width: 40%;
       display: flex; }
@@ -416,17 +432,17 @@
       .portfolio-line__description .description__text--year, .portfolio-line__description .description__text--program {
         display: block; }
   .portfolio-line__main-image {
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
     z-index: 0;
     width: 12em;
     height: 12em;
     background-color: #ffffff;
     position: absolute;
     transform: translate(-50%, -50%);
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(16, 0, 54, 0.2);
     transition: 0.4s ease-in-out;
-    animation: main-image-show 0.2s ease-in-out;
-    animation-fill-mode: backwards; }
+    animation: main-image-show 0.2s ease-in-out backwards; }
 
 @media screen and (max-width: 600px) {
   .portfolio__text--year, .portfolio__text--program {
@@ -642,94 +658,94 @@ body {
   transform-origin: bottom;
   margin-right: 2rem; }
   .palm .leaf:nth-of-type(1) {
-    animation-delay: 0.51307s;
-    animation-duration: 2s; }
+    animation-delay: 0.26791s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(2) {
-    animation-delay: 0.08411s;
-    animation-duration: 2s; }
+    animation-delay: 0.58988s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(3) {
-    animation-delay: 0.22893s;
+    animation-delay: 0.14924s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(4) {
-    animation-delay: 0.01485s;
+    animation-delay: 0.94032s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(5) {
-    animation-delay: 0.83773s;
+    animation-delay: 0.12642s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(6) {
-    animation-delay: 0.67584s;
+    animation-delay: 0.52171s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(7) {
-    animation-delay: 0.24091s;
-    animation-duration: 2s; }
-  .palm .leaf:nth-of-type(8) {
-    animation-delay: 0.83209s;
+    animation-delay: 0.54224s;
     animation-duration: 1s; }
+  .palm .leaf:nth-of-type(8) {
+    animation-delay: 0.42916s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(9) {
-    animation-delay: 0.69909s;
+    animation-delay: 0.95709s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(10) {
-    animation-delay: 0.33759s;
+    animation-delay: 0.879s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(11) {
-    animation-delay: 0.07333s;
+    animation-delay: 0.55745s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(12) {
-    animation-delay: 0.23138s;
-    animation-duration: 1s; }
+    animation-delay: 0.16935s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(13) {
-    animation-delay: 0.61444s;
-    animation-duration: 2s; }
+    animation-delay: 0.0618s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(14) {
-    animation-delay: 0.4814s;
-    animation-duration: 2s; }
+    animation-delay: 0.71786s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(15) {
-    animation-delay: 0.68343s;
+    animation-delay: 0.07271s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(16) {
-    animation-delay: 0.81325s;
-    animation-duration: 1s; }
+    animation-delay: 0.92216s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(17) {
-    animation-delay: 0.23878s;
+    animation-delay: 0.62223s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(18) {
-    animation-delay: 0.32534s;
-    animation-duration: 1s; }
+    animation-delay: 0.71118s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(19) {
-    animation-delay: 0.09155s;
+    animation-delay: 0.71334s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(20) {
-    animation-delay: 0.99089s;
-    animation-duration: 2s; }
-  .palm .leaf:nth-of-type(21) {
-    animation-delay: 0.43949s;
+    animation-delay: 0.12026s;
     animation-duration: 1s; }
+  .palm .leaf:nth-of-type(21) {
+    animation-delay: 0.77405s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(22) {
-    animation-delay: 0.09622s;
-    animation-duration: 2s; }
+    animation-delay: 0.99581s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(23) {
-    animation-delay: 0.34675s;
-    animation-duration: 2s; }
+    animation-delay: 0.56682s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(24) {
-    animation-delay: 0.5318s;
+    animation-delay: 0.41838s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(25) {
-    animation-delay: 0.46133s;
+    animation-delay: 0.03132s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(26) {
-    animation-delay: 0.71243s;
-    animation-duration: 1s; }
+    animation-delay: 0.71737s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(27) {
-    animation-delay: 0.62047s;
-    animation-duration: 1s; }
+    animation-delay: 0.93603s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(28) {
-    animation-delay: 0.6677s;
+    animation-delay: 0.78801s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(29) {
-    animation-delay: 0.60733s;
-    animation-duration: 1s; }
+    animation-delay: 0.82342s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(30) {
-    animation-delay: 0.83732s;
+    animation-delay: 0.35494s;
     animation-duration: 2s; }
   .palm .leaf {
     transform-origin: bottom center;

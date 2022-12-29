@@ -19,6 +19,19 @@ export default {
     mounted() {
         this.circle = document.getElementById('circle'+this.index);
     },
+    computed: {
+        image(){
+            if(this.images)
+                return new URL(`../../assets/images/portfolio/${this.images[0]}`, import.meta.url).href
+            
+            
+            //return require('@/assets/images/portfolio/innocent01.jpg')
+        },
+        descriptionShow(){
+            if(this.displayDesc) return 'portfolio-line__description--show';
+            else return 'portfolio-line__description--hide';
+        }
+    },
     methods: {
         mouseMove(event) {
             //Try, catch to avoid any errors for touch screens (Error thrown when user doesn't move his finger)
@@ -57,11 +70,15 @@ export default {
         </div>
         
         <!-- Main image -->
-        <div class="portfolio-line__main-image" v-show="hover" :id="'circle'+index">
-            <img :src="'../../assets/images/portfolio/' + images[0]"/>
+        <div class="portfolio-line__main-image" 
+            v-show="hover" 
+            :id="'circle'+index"
+            :style="{ 'background-image': 'url(' + image + ')' }">
+            <!-- <img src='../../assets/images/portfolio/innocent01.jpg' class="portfolio-line__main-image"/> -->
         </div>
         
-        <div class="portfolio-line__description" v-if="displayDesc">
+        <div class="portfolio-line__description" 
+            :class="descriptionShow">
             <!-- image / video  -->
             <div class="description__images">
                 <div class="description__images--circle"></div>

@@ -24,7 +24,7 @@ export default {
                     type: 'Games',
                     description: "Robot cop is a 2.5D game that was created in the Unity Game Development course. This project displays basic game principles of a coin collection and moving platforms.",
                     images: [
-                        ''
+                        'robo_cop01.jpg'
                     ]
                 },
                 {
@@ -35,7 +35,7 @@ export default {
                     type: 'Games',
                     description: "Space shooter is a 2D game created in the Unity Game Development course. With single and multiple player options, the user can shoot, power-up and move in a space-like environment.",
                     images: [
-                        ''
+                        'space-shooter01.jpg'
                     ]
                 },
                 {
@@ -46,7 +46,7 @@ export default {
                     type: 'Games',
                     description: "Sci-Fi Tech Demo is a first person shooter 3D game created in the Unity Game Development course. The play is able to collect a coin, buy a weapon, and shoot appropriate objects.",
                     images: [
-                        ''
+                        'sci-fi-tech01.jpg'
                     ]
                 },
                 {
@@ -57,7 +57,7 @@ export default {
                     type: 'Games',
                     description: "The Minion Creator was created to further develop my coding skills. It is based on an Abstract Factory design Pattern and uses inheritance and object orientated programming.",
                     images: [
-                        ''
+                        'minion01.jpg'
                     ]
                 },
                 {
@@ -68,7 +68,7 @@ export default {
                     type: 'Film',
                     description: "This a short animated film on a Welsh folk tale about a little yellow cheese that goes on a journey. This short film was part of my postgraduate year and is a simple 2D film that helped me explore my heritage.",
                     images: [
-                        ''
+                        'caws01.jpg'
                     ]
                 },
                 {
@@ -79,7 +79,7 @@ export default {
                     type: 'Film',
                     description: "This film is a continuous loop portraying the production of jelly beans. Each jelly bean goes through stages as they get older, making sure only the perfect jelly beans are packaged. It is a reflection on today's society.",
                     images: [
-                        ''
+                        'pink.gif'
                     ]
                 },
                 {
@@ -90,7 +90,7 @@ export default {
                     type: 'Film',
                     description: "This ancestor project was made to discover more about our past and how our ancestors make up who we are. We were to find a picture of a significant ancestor and bring it to life by putting ourselves in it.",
                     images: [
-                        ''
+                        'mr-jones01.jpg'
                     ]
                 },
                 {
@@ -101,7 +101,7 @@ export default {
                     type: 'Film',
                     description: "A few extra short films, experimenting with water effects in a poly world. Using poly made up trees and environment is touching on our journey, which is often unknown. We are the only light to guide us or push towards each direction.",
                     images: [
-                        ''
+                        'poly01.jpg'
                     ]
                 },
                 {
@@ -112,7 +112,7 @@ export default {
                     type: 'Games',
                     description: "Jailer Jim was a collaborative project in my final year of my undergraduate. The team decided to create a puzzle game which was set in a future time where robots have been jailed. Jim and a few other robots attempt to escape.",
                     images: [
-                        ''
+                        'jailer-jim01.jpg'
                     ]
                 },
                 {
@@ -123,7 +123,7 @@ export default {
                     type: 'Characters',
                     description: "After the creation of the game Jailer Jim, I produced a few shorts to illustrate some of the characters. This series are just reveals of each character and a few of their animations they do.",
                     images: [
-                        ''
+                        'robo01.jpg'
                     ]
                 },
                 {
@@ -134,7 +134,7 @@ export default {
                     type: 'Film',
                     description: "A small personal project experimenting with 3D animation and film. A short film about a man who is cleaning up an old fun fair to find a magical leaf that shows him what the place could look like, almost like his dream.",
                     images: [
-                        ''
+                        'caretaker01.jpg'
                     ]
                 },
             ]
