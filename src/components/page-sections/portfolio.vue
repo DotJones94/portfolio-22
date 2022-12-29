@@ -6,16 +6,18 @@ export default {
         return{
             portfolio: [
                 {
+                    index : 0,
                     name : 'Innocence',
                     year: '2020',
                     program: 'Unity / 3DSMAX',
                     type: 'VR Film',
                     description: "My final year project during my postgraduate in film arts was a VR film. I created an interactive virtual reality film that related to my dissertation, nostalgia. Using a Samsung VR Headset and headphones. This has been converted to PC usage.",
                     images: [
-                        ''
+                        'innocent01.jpg'
                     ]
                 },
                 {
+                    index : 1,
                     name : 'Robot Cop',
                     year: '2020',
                     program: 'Unity / Blender',
@@ -26,6 +28,7 @@ export default {
                     ]
                 },
                 {
+                    index : 2,
                     name : 'Space Shooter',
                     year: '2020',
                     program: 'Unity',
@@ -36,6 +39,7 @@ export default {
                     ]
                 },
                 {
+                    index : 3,
                     name : 'Sci-Fi Tech Demo',
                     year: '2020',
                     program: 'Unity',
@@ -46,6 +50,7 @@ export default {
                     ]
                 },
                 {
+                    index : 4,
                     name : 'Minion Creator',
                     year: '2020',
                     program: 'Unity',
@@ -56,6 +61,7 @@ export default {
                     ]
                 },
                 {
+                    index : 5,
                     name : 'Caws Bach Melyn',
                     year: '2019',
                     program: 'After Effects',
@@ -66,6 +72,7 @@ export default {
                     ]
                 },
                 {
+                    index : 6,
                     name : 'Jelly Bean Production',
                     year: '2018',
                     program: '3DSMAX',
@@ -76,6 +83,7 @@ export default {
                     ]
                 },
                 {
+                    index : 7,
                     name : 'Mr Jones & I',
                     year: '2018',
                     program: 'After Effects',
@@ -86,6 +94,7 @@ export default {
                     ]
                 },
                 {
+                    index : 8,
                     name : 'Poly Series',
                     year: '2017',
                     program: '3DSMAX',
@@ -96,6 +105,7 @@ export default {
                     ]
                 },
                 {
+                    index : 9,
                     name : 'Jailer Jim',
                     year: '2016',
                     program: 'Unity / 3DSMAX',
@@ -106,6 +116,7 @@ export default {
                     ]
                 },
                 {
+                    index : 10,
                     name : 'Robot Series',
                     year: '2016',
                     program: '3DSMAX',
@@ -116,6 +127,7 @@ export default {
                     ]
                 },
                 {
+                    index : 11,
                     name : 'The Ferris Caretaker',
                     year: '2016',
                     program: '3DSMAX',
@@ -149,7 +161,7 @@ export default {
         </div>
 
         <div class="portfolio">
-            <portfolio-line v-for="item in portfolio" 
+            <portfolio-line v-for="(item) in portfolio" 
             :key="item" 
             v-bind="item"/>
         </div>

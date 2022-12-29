@@ -4,13 +4,24 @@
     padding: 3rem;
     border-top: 1px solid white;
     color: $main-green;
+    transition: all 0.5s;
+
+    &:last-child{
+        border-bottom: 1px solid white;
+    }
+
+    &:hover{
+        transform: scale(1.05);
+    }
 
     &__header{
         position: relative;
+        z-index: 1;
         display: grid;
         width: 100%;
         gap: 0.5rem;
-        grid-template-columns: 2.2fr 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+
 
         div:not(:first-child):not(:last-child){
             text-align: center;
@@ -23,6 +34,8 @@
     }
 
     &__description{
+        position: relative;
+        z-index: 1;
         margin-top: 2rem;
         display: flex;
         align-items: center;
@@ -50,19 +63,65 @@
                 font-size: 1rem;
                 line-height: 1rem;
                 color: black;
+
+                &--year, &--program{
+                    display: block;
+                }
             }
         }
     }
 
     &__main-image{
-        width: 8em;
-        height: 8em;
+        z-index: 0;
+        width: 12em;
+        height: 12em;
         background-color: #ffffff;
         position: absolute;
         transform: translate(-50%, -50%);
         border-radius: 50%;
         box-shadow: 0 0 20px rgba(16, 0, 54, 0.2);
-        transition: 0.1s ease-in-out;
+        transition: 0.4s ease-in-out;
+        animation: main-image-show 0.2s ease-in-out;
+        animation-fill-mode: backwards;
 
+    }
+}
+
+//Smaller Screens
+@media screen and (max-width: 600px) {
+    .portfolio__text{
+        &--year, &--program{
+            display: none;
+        }
+    }
+
+    .portfolio-line{
+        width: 100%;
+        cursor: pointer;
+        padding: 3rem;
+        border-top: 1px solid white;
+        color: $main-green;
+    
+        &__header{
+            grid-template-columns: 2fr 1fr;
+        }
+
+        &__main-image{
+            display: none;
+        }
+
+        &__description{
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+
+            .description{
+                &__images{
+                    width: 100%;
+                }
+            }
+        }
     }
 }

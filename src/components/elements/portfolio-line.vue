@@ -7,6 +7,7 @@ export default {
         type: String,
         description: String, 
         images : Array, 
+        index: Number
     },
     data(){
         return{
@@ -16,7 +17,7 @@ export default {
         }
     },
     mounted() {
-        this.circle = document.getElementById('circle');
+        this.circle = document.getElementById('circle'+this.index);
     },
     methods: {
         mouseMove(event) {
@@ -24,39 +25,41 @@ export default {
             try {
                 //PageX and PageY return the position of client's cursor from top left of screen
                 var x =  event.clientX ;
-                var y =  event.clientY;
+                // var y =  event.clientY;
             } catch (event) {console.log('here')}
             //set left and top of div based on mouse position
             this.circle.style.left = x - 200 + "px";
-            this.circle.style.top = y - 200 + "px";
+            // this.circle.style.top = y - 200 + "px";
         },
     }
 }
 </script>
 <template>
     <div class="portfolio-line portfolio__text" 
-        @mouseenter="hover = true" 
-        @mouseleave="hover = false"
         @mousemove="mouseMove"
-        @click="displayDesc = !displayDesc">
+        @mouseenter="hover = true" 
+        @mouseleave="hover = false">
 
-        <div class="portfolio-line__header">
+        <div class="portfolio-line__header" 
+        @click="displayDesc = !displayDesc">
             <!-- Name -->
             <div class="portfolio__text--name">{{name}}</div>
 
             <!-- Year -->
-            <div>{{year}}</div>
+            <div class="portfolio__text--year">{{year}}</div>
 
             <!-- Program -->
-            <div>{{program}}</div>
+            <div class="portfolio__text--program">{{program}}</div>
 
             <!-- Type -->
-            <div>{{type}}</div>
+            <div class="portfolio__text--type">{{type}}</div>
 
         </div>
         
         <!-- Main image -->
-        <div class="portfolio-line__main-image" v-show="hover" id="circle"></div>
+        <div class="portfolio-line__main-image" v-show="hover" :id="'circle'+index">
+            <img :src="'../../assets/images/portfolio/' + images[0]"/>
+        </div>
         
         <div class="portfolio-line__description" v-if="displayDesc">
             <!-- image / video  -->
