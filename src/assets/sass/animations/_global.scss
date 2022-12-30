@@ -3,6 +3,7 @@
     100%{  padding: 1rem 2rem;  opacity: 1; }
 }
 
-@keyframes text-up {
-    
+@keyframes opacity {
+    0%{ opacity: 0;}
+    100%{ opacity: 1; }
 }

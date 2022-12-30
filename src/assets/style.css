@@ -194,7 +194,13 @@
     padding: 1rem 2rem;
     opacity: 1; } }
 
-@keyframes text-up {}@keyframes wings {
+@keyframes opacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes wings {
   0% {
     transform: rotateY(0); }
   50% {
@@ -410,10 +416,6 @@
     align-items: center;
     gap: 2rem;
     transition: all 0.5s; }
-    .portfolio-line__description--show {
-      animation: portfolio-drop-down 1s forwards; }
-    .portfolio-line__description--hide {
-      animation: portfolio-drop-down 1s reverse forwards; }
     .portfolio-line__description .description__images {
       width: 40%;
       display: flex; }
@@ -658,94 +660,94 @@ body {
   transform-origin: bottom;
   margin-right: 2rem; }
   .palm .leaf:nth-of-type(1) {
-    animation-delay: 0.26791s;
+    animation-delay: 0.66223s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(2) {
-    animation-delay: 0.58988s;
-    animation-duration: 1s; }
+    animation-delay: 0.89434s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(3) {
-    animation-delay: 0.14924s;
+    animation-delay: 0.92129s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(4) {
-    animation-delay: 0.94032s;
+    animation-delay: 0.95646s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(5) {
-    animation-delay: 0.12642s;
+    animation-delay: 0.91543s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(6) {
-    animation-delay: 0.52171s;
-    animation-duration: 2s; }
-  .palm .leaf:nth-of-type(7) {
-    animation-delay: 0.54224s;
+    animation-delay: 0.51194s;
     animation-duration: 1s; }
+  .palm .leaf:nth-of-type(7) {
+    animation-delay: 0.90943s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(8) {
-    animation-delay: 0.42916s;
+    animation-delay: 0.08323s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(9) {
-    animation-delay: 0.95709s;
+    animation-delay: 0.46508s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(10) {
-    animation-delay: 0.879s;
-    animation-duration: 2s; }
+    animation-delay: 0.45779s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(11) {
-    animation-delay: 0.55745s;
+    animation-delay: 0.30199s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(12) {
-    animation-delay: 0.16935s;
+    animation-delay: 0.62645s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(13) {
-    animation-delay: 0.0618s;
-    animation-duration: 1s; }
+    animation-delay: 0.38241s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(14) {
-    animation-delay: 0.71786s;
+    animation-delay: 0.9045s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(15) {
-    animation-delay: 0.07271s;
-    animation-duration: 2s; }
+    animation-delay: 0.2972s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(16) {
-    animation-delay: 0.92216s;
+    animation-delay: 0.51141s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(17) {
-    animation-delay: 0.62223s;
+    animation-delay: 0.37985s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(18) {
-    animation-delay: 0.71118s;
-    animation-duration: 2s; }
+    animation-delay: 0.87349s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(19) {
-    animation-delay: 0.71334s;
+    animation-delay: 0.79747s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(20) {
-    animation-delay: 0.12026s;
+    animation-delay: 0.41985s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(21) {
-    animation-delay: 0.77405s;
+    animation-delay: 0.64491s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(22) {
-    animation-delay: 0.99581s;
-    animation-duration: 1s; }
+    animation-delay: 0.78281s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(23) {
-    animation-delay: 0.56682s;
+    animation-delay: 0.92815s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(24) {
-    animation-delay: 0.41838s;
-    animation-duration: 2s; }
+    animation-delay: 0.62353s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(25) {
-    animation-delay: 0.03132s;
+    animation-delay: 0.22241s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(26) {
-    animation-delay: 0.71737s;
+    animation-delay: 0.92397s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(27) {
-    animation-delay: 0.93603s;
+    animation-delay: 0.83812s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(28) {
-    animation-delay: 0.78801s;
+    animation-delay: 0.79727s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(29) {
-    animation-delay: 0.82342s;
+    animation-delay: 0.68073s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(30) {
-    animation-delay: 0.35494s;
+    animation-delay: 0.77082s;
     animation-duration: 2s; }
   .palm .leaf {
     transform-origin: bottom center;
@@ -1037,20 +1039,34 @@ body {
   align-items: center;
   padding: 1rem; }
   .qualifications--wrapper {
-    width: 400px;
+    width: 30rem;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     gap: 2rem; }
+  .qualifications__line {
+    width: 12rem; }
+    .qualifications__line svg {
+      animation: opacity 0.5s; }
+    .qualifications__line .path {
+      stroke-dasharray: 12;
+      stroke-dashoffset: 120;
+      animation: dash 5s linear infinite; }
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 120; }
+  to {
+    stroke-dashoffset: 0; } }
   .qualifications__image {
     width: 10rem; }
-
-@media screen and (max-width: 600px) {
-  .qualifications {
-    flex-direction: column; }
-    .qualifications--wrapper {
-      width: 100%; }
-    .qualifications__image {
-      width: 5rem; } }
+  @media screen and (max-width: 600px) {
+    .qualifications .qualifications {
+      flex-direction: column; }
+      .qualifications .qualifications--wrapper {
+        width: 100%; }
+      .qualifications .qualifications__image {
+        width: 5rem; } }
 
 .contact-us {
   display: flex;

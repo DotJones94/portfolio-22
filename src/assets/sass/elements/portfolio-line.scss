@@ -43,11 +43,11 @@
         transition: all 0.5s;
 
         &--show{
-            animation: portfolio-drop-down 1s forwards;
+            // animation: portfolio-drop-down 1s forwards;
         }
 
         &--hide{
-            animation: portfolio-drop-down 1s reverse forwards;
+            // animation: portfolio-drop-down 1s reverse forwards;
         }
 
         .description{
