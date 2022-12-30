@@ -1,6 +1,8 @@
 <script>
 import Multimedia from '../../assets/images/qualifications/multimedia.vue';
 import Film from '../../assets/images/qualifications/film.vue';
+import Leadership from '../../assets/images/qualifications/leadership.vue';
+import Online from '../../assets/images/qualifications/online.vue';
 import ListLink from '../global/links/list-link.vue';
 
 export default {
@@ -8,6 +10,8 @@ export default {
     ListLink,
     Multimedia,
     Film,
+    Online,
+    Leadership
 },
     computed:{
         activeQualificationImage : function(){
@@ -117,9 +121,11 @@ export default {
             </div>
 
             <!-- Image -->
-            <div>
+            <div class="qualifications__image">
                 <Multimedia v-if="activeQualificationID === 1" />
                 <Film v-if="activeQualificationID === 2"/>
+                <Leadership v-if="activeQualificationID === 3"/>
+                <Online v-if="activeQualificationID === 4"/>
             </div>
         </div>
 

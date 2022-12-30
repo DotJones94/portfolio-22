@@ -31,7 +31,7 @@ import Bee from './elements/bee.vue';
             <LandingPage id="home" v-if="loading"/>
             <Experience id="experience" v-if="loading"/>
             <skills id="skills" v-if="loading"/>
-            <Portfolio />
+            <!-- <Portfolio /> -->
             <Qualifications id="qualifications" v-if="loading"/>
             <ContactMe id="contact-me" v-if="loading"/>
         </div>
