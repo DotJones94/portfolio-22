@@ -22,10 +22,7 @@ export default {
     computed: {
         image(){
             if(this.images)
-                return new URL(`../../assets/images/portfolio/${this.images[0]}`, import.meta.url).href
-            
-            
-            //return require('@/assets/images/portfolio/innocent01.jpg')
+                return this.getImage(this.images[0]);
         },
         descriptionShow(){
             if(this.displayDesc) return 'portfolio-line__description--show';
@@ -34,16 +31,12 @@ export default {
     },
     methods: {
         mouseMove(event) {
-            //Try, catch to avoid any errors for touch screens (Error thrown when user doesn't move his finger)
-            try {
-                //PageX and PageY return the position of client's cursor from top left of screen
-                var x =  event.clientX ;
-                // var y =  event.clientY;
-            } catch (event) {console.log('here')}
-            //set left and top of div based on mouse position
+            var x =  event.clientX ;
             this.circle.style.left = x - 200 + "px";
-            // this.circle.style.top = y - 200 + "px";
         },
+        getImage(imageName){
+            return new URL(`../../assets/images/portfolio/${imageName}`, import.meta.url).href;
+        }
     }
 }
 </script>
@@ -55,18 +48,10 @@ export default {
 
         <div class="portfolio-line__header" 
         @click="displayDesc = !displayDesc">
-            <!-- Name -->
             <div class="portfolio__text--name">{{name}}</div>
-
-            <!-- Year -->
             <div class="portfolio__text--year">{{year}}</div>
-
-            <!-- Program -->
             <div class="portfolio__text--program">{{program}}</div>
-
-            <!-- Type -->
             <div class="portfolio__text--type">{{type}}</div>
-
         </div>
         
         <!-- Main image -->
@@ -81,13 +66,16 @@ export default {
             :class="descriptionShow">
             <!-- image / video  -->
             <div class="description__images">
-                <div class="description__images--circle"></div>
-                <div class="description__images--circle"></div>
-                <div class="description__images--circle"></div>
+                <div class="description__images--circle"
+                    v-for="imageMore in images" :key="imageMore"
+                    :style="{ 'background-image': 'url(' + getImage(imageMore) + ')' }"></div>
             </div>
 
             <!-- Description  -->
-            <div class="description__text">{{description}}</div>
+            <div class="description__text">
+                {{description}}
+                <div><a >View work</a></div>
+            </div>
         </div>
     </div>
 </template>

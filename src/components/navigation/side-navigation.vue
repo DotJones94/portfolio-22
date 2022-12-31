@@ -50,12 +50,12 @@
                 <span class="link__text link__text--navigation">Skills</span>
             </div>
 
-            <!-- <div class="navigation__link"
+            <div class="navigation__link"
                 :class="{'navigation__link--active' : activeSection === 'portfolio'}"
                 @click="changeActiveSection('portfolio')">
                 <brush/>
                 <span class="link__text link__text--navigation">Portfolio</span>
-            </div> -->
+            </div>
 
             <div class="navigation__link"
                 :class="{'navigation__link--active' : activeSection === 'qualifications'}"

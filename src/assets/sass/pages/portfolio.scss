@@ -1,7 +1,10 @@
 .portfolio{
-    padding: 8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    &__wrapper{
+        padding: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
 }

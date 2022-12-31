@@ -242,11 +242,30 @@
     opacity: 1;
     margin-top: 2rem; } }
 
-@keyframes plant_grow {
+@keyframes shaddow-grow {
   0% {
-    transform: translateY(10rem); }
+    transform: scale(0.5);
+    opacity: 0; }
+  5% {
+    opacity: .7; }
+  50% {
+    transform: scale(1);
+    opacity: 1; }
+  65% {
+    transform: scale(0.9);
+    opacity: 1; }
+  75% {
+    transform: scale(0.9);
+    opacity: 1; }
   100% {
-    transform: translateY(0); } }
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes leaf-animations {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(0.2deg); } }
 
 .list-link {
   display: flex;
@@ -430,13 +449,17 @@
         height: 10rem;
         border-radius: 50%;
         background-color: #FFBD15;
-        box-shadow: 0.2rem 0.2rem 0.5rem #BE7303; }
+        box-shadow: 0.2rem 0.2rem 0.5rem #BE7303;
+        background-size: cover;
+        background-position: center; }
         .portfolio-line__description .description__images--circle:not(:first-child) {
           margin-left: -3rem; }
     .portfolio-line__description .description__text {
       font-size: 1rem;
       line-height: 1rem;
-      color: black; }
+      color: black;
+      text-transform: initial;
+      letter-spacing: 0.2rem; }
       .portfolio-line__description .description__text--year, .portfolio-line__description .description__text--program {
         display: block; }
   .portfolio-line__main-image {
@@ -605,7 +628,9 @@ body {
 @media screen and (max-width: 600px) {
   .top__navigation {
     margin-left: 0;
-    align-items: center; } }
+    align-items: center; }
+  .header-wrapper {
+    justify-content: center; } }
 
 .landing-page__heading {
   z-index: 3;
@@ -666,94 +691,94 @@ body {
   transform-origin: bottom;
   margin-right: 2rem; }
   .palm .leaf:nth-of-type(1) {
-    animation-delay: 0.43617s;
+    animation-delay: 0.10194s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(2) {
-    animation-delay: 0.27894s;
+    animation-delay: 0.61373s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(3) {
-    animation-delay: 0.9959s;
-    animation-duration: 1s; }
+    animation-delay: 0.358s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(4) {
-    animation-delay: 0.08135s;
+    animation-delay: 0.11376s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(5) {
-    animation-delay: 0.43202s;
+    animation-delay: 0.1253s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(6) {
-    animation-delay: 0.42269s;
+    animation-delay: 0.78864s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(7) {
-    animation-delay: 0.06776s;
-    animation-duration: 2s; }
-  .palm .leaf:nth-of-type(8) {
-    animation-delay: 0.78782s;
-    animation-duration: 2s; }
-  .palm .leaf:nth-of-type(9) {
-    animation-delay: 0.81021s;
+    animation-delay: 0.5803s;
     animation-duration: 1s; }
-  .palm .leaf:nth-of-type(10) {
-    animation-delay: 0.98862s;
+  .palm .leaf:nth-of-type(8) {
+    animation-delay: 0.45987s;
+    animation-duration: 1s; }
+  .palm .leaf:nth-of-type(9) {
+    animation-delay: 0.60028s;
     animation-duration: 2s; }
+  .palm .leaf:nth-of-type(10) {
+    animation-delay: 0.88016s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(11) {
-    animation-delay: 0.76012s;
+    animation-delay: 0.45458s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(12) {
-    animation-delay: 0.24473s;
-    animation-duration: 1s; }
+    animation-delay: 0.2774s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(13) {
-    animation-delay: 0.1064s;
-    animation-duration: 2s; }
+    animation-delay: 0.74588s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(14) {
-    animation-delay: 0.81661s;
-    animation-duration: 2s; }
+    animation-delay: 0.14584s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(15) {
-    animation-delay: 0.9413s;
-    animation-duration: 1s; }
+    animation-delay: 0.92286s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(16) {
-    animation-delay: 0.08484s;
-    animation-duration: 1s; }
+    animation-delay: 0.89462s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(17) {
-    animation-delay: 0.75886s;
+    animation-delay: 0.47578s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(18) {
-    animation-delay: 0.00587s;
-    animation-duration: 1s; }
-  .palm .leaf:nth-of-type(19) {
-    animation-delay: 0.51914s;
+    animation-delay: 0.33636s;
     animation-duration: 2s; }
+  .palm .leaf:nth-of-type(19) {
+    animation-delay: 0.94415s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(20) {
-    animation-delay: 0.74741s;
+    animation-delay: 0.32673s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(21) {
-    animation-delay: 0.38397s;
-    animation-duration: 1s; }
+    animation-delay: 0.89286s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(22) {
-    animation-delay: 0.98341s;
+    animation-delay: 0.93137s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(23) {
-    animation-delay: 0.86494s;
-    animation-duration: 2s; }
+    animation-delay: 0.66614s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(24) {
-    animation-delay: 0.6482s;
-    animation-duration: 2s; }
+    animation-delay: 0.87067s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(25) {
-    animation-delay: 0.43802s;
+    animation-delay: 0.44799s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(26) {
-    animation-delay: 0.59489s;
+    animation-delay: 0.90401s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(27) {
-    animation-delay: 0.31309s;
-    animation-duration: 2s; }
+    animation-delay: 0.23157s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(28) {
-    animation-delay: 0.36998s;
-    animation-duration: 2s; }
+    animation-delay: 0.68964s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(29) {
-    animation-delay: 0.20116s;
+    animation-delay: 0.99705s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(30) {
-    animation-delay: 0.7659s;
+    animation-delay: 0.66099s;
     animation-duration: 2s; }
   .palm .leaf {
     transform-origin: bottom center;
@@ -1040,8 +1065,9 @@ body {
 
 .qualifications {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin-top: 15rem;
+  margin-top: 6rem;
   align-items: center;
   padding: 1rem; }
   .qualifications--wrapper {
@@ -1050,7 +1076,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-left: 10rem; }
+    margin-left: 10rem;
+    padding: 0; }
   .qualifications__line {
     width: 12rem;
     margin-right: -10rem; }
@@ -1075,16 +1102,56 @@ body {
   .qualifications__image .plant_pot {
     animation: drop 0.6s ease-in-out 0.2s backwards; }
   .qualifications__image .plant_leaves {
-    overflow: hidden;
-    height: 100rem;
-    animation: plant_grow 0.6s ease-in-out 0.6s backwards; }
+    animation: drop 0.6s ease-in-out 0.4s backwards; }
+    .qualifications__image .plant_leaves g:nth-of-type(1) {
+      animation-delay: 0.37397s;
+      animation-duration: 2s; }
+    .qualifications__image .plant_leaves g:nth-of-type(2) {
+      animation-delay: 0.06618s;
+      animation-duration: 1s; }
+    .qualifications__image .plant_leaves g:nth-of-type(3) {
+      animation-delay: 0.81137s;
+      animation-duration: 1s; }
+    .qualifications__image .plant_leaves g:nth-of-type(4) {
+      animation-delay: 0.06833s;
+      animation-duration: 2s; }
+    .qualifications__image .plant_leaves g:nth-of-type(5) {
+      animation-delay: 0.85092s;
+      animation-duration: 2s; }
+    .qualifications__image .plant_leaves g:nth-of-type(6) {
+      animation-delay: 0.9914s;
+      animation-duration: 1s; }
+    .qualifications__image .plant_leaves g:nth-of-type(7) {
+      animation-delay: 0.59108s;
+      animation-duration: 2s; }
+    .qualifications__image .plant_leaves g:nth-of-type(8) {
+      animation-delay: 0.26574s;
+      animation-duration: 1s; }
+    .qualifications__image .plant_leaves g:nth-of-type(9) {
+      animation-delay: 0.48954s;
+      animation-duration: 1s; }
+    .qualifications__image .plant_leaves g:nth-of-type(10) {
+      animation-delay: 0.52479s;
+      animation-duration: 1s; }
+    .qualifications__image .plant_leaves g {
+      transform-origin: bottom center;
+      animation: leaf-animations infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease-in-out; }
+  .qualifications__image .shaddows ellipse {
+    fill: #d67c14;
+    transition: all 0.4s;
+    transform-origin: bottom center;
+    animation: shaddow-grow 0.5s ease-in-out backwards; }
   @media screen and (max-width: 600px) {
     .qualifications .qualifications {
       flex-direction: column; }
       .qualifications .qualifications--wrapper {
-        width: 100%; }
-      .qualifications .qualifications__image {
-        width: 5rem; } }
+        width: 100%;
+        margin-left: 0;
+        padding: 3rem; }
+      .qualifications .qualifications__line {
+        display: none; } }
 
 .contact-us {
   display: flex;
@@ -1107,7 +1174,7 @@ body {
     .contact-us__image-wrapper {
       position: relative; }
 
-.portfolio {
+.portfolio__wrapper {
   padding: 8rem;
   display: flex;
   justify-content: center;

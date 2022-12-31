@@ -61,6 +61,8 @@
                     border-radius: 50%;
                     background-color: $main-yellow;
                     box-shadow: 0.2rem 0.2rem 0.5rem $main-orange-dark;
+                    background-size: cover;
+                    background-position: center;
 
                     &:not(:first-child){
                         margin-left: -3rem;
@@ -72,6 +74,8 @@
                 font-size: 1rem;
                 line-height: 1rem;
                 color: black;
+                text-transform: initial;
+                letter-spacing: 0.2rem;
 
                 &--year, &--program{
                     display: block;

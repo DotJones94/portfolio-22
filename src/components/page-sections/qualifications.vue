@@ -37,7 +37,7 @@ export default {
                 },
                 {
                     id: 3,
-                    name : 'Level 5 NQV Leadership and Management',
+                    name : 'Level 5 NVQ Leadership and Management Diploma',
                     subList: ['Swansea University'],
                     image: 'qualification3.png'
                 },
@@ -45,9 +45,9 @@ export default {
                     id: 4,
                     name : 'Online Courses',
                     subList: [
-                        'udemy 1',
-                        'udemy 2', 
-                        'udemy 3'
+                        '- Advanced CSS and Sass',
+                        '- Master Laravel 9, Vue 3 & Inertia Fullstack', 
+                        '- The Ultimate Guide to Game Development with Unity'
                     ],
                     image: 'qualification4.png'
                 },
@@ -67,9 +67,6 @@ export default {
         <div class="header-wrapper">
             <!-- Image of plant -->
             <div>
-                <img src="../../assets/images/section-navigation/hanging01.png"
-                 alt="Hanging plant"
-                 class="navigation__image" />
             </div>
 
             <!-- Navigation links -->

@@ -68,7 +68,7 @@ export default {
                     type: 'Film',
                     description: "This a short animated film on a Welsh folk tale about a little yellow cheese that goes on a journey. This short film was part of my postgraduate year and is a simple 2D film that helped me explore my heritage.",
                     images: [
-                        'caws01.jpg'
+                        'caws01.jpg', 'caws02.jpg', 'caws03.jpg'
                     ]
                 },
                 {
@@ -144,13 +144,10 @@ export default {
 </script>
 
 <template>
-   <div class="full_page">
+   <div class="full_page portfolio">
         <div class="header-wrapper">
             <!-- Image of plant -->
             <div>
-                <img src="../../assets/images/section-navigation/hanging01.png"
-                 alt="Hanging plant"
-                 class="navigation__image" />
             </div>
 
             <!-- Navigation links -->
@@ -160,7 +157,7 @@ export default {
             </div>
         </div>
 
-        <div class="portfolio">
+        <div class="portfolio__wrapper">
             <portfolio-line v-for="(item) in portfolio" 
             :key="item" 
             v-bind="item"/>

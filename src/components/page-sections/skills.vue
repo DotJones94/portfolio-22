@@ -115,7 +115,7 @@
         <div class="header-wrapper">
             <!-- Image of plant -->
             <div>
-                <pot-plant class="navigation__image"  />
+              
             </div>
 
             <!-- Navigation links -->
