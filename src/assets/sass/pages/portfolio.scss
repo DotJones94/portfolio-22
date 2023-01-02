@@ -6,5 +6,23 @@
         align-items: center;
         flex-direction: column;
     }
+
+    &__modal{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: rgba($color: $main-green, $alpha: 0.4);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        video{
+            max-width: 85%;
+        }
+    }
     
 }

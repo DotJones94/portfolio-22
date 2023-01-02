@@ -48,11 +48,6 @@
             <div class="landing-page__background landing-page__background--circle"></div>
         </div>
 
-        <!-- Plant Shaddow -->
-        <div class="full-layer full-layer--background">
-            <div class="landing-page__background"><div class="circle-shaddow"></div></div>
-        </div>
-
         <!-- Image of plant -->
         <div class="full-layer full-layer--background full-layer--background-plant" >
             <palm class="landing-page__background landing-page__background--plant"/>

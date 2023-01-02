@@ -21,14 +21,14 @@
                         yearFrom: '2020', 
                         yearTo: 'Current',
                         role: 'Software Developer',
-                        image: ''
+                        image: 'substantive02.png'
                     },
                     {
                         id: 2,
                         yearFrom: '2018', 
                         yearTo: '2020',
                         role: 'Co-Founder & Technical Director',
-                        image : ''
+                        image : 'mela.svg'
                     },
                     {
                         id: 3,
@@ -42,7 +42,7 @@
                         yearFrom: '2017', 
                         yearTo: '2017',
                         role: 'Events Co-Ordinator',
-                        image: ''
+                        image: 'impac.png'
                     }
                 ],
                 activeRoleID : 1,
@@ -55,7 +55,10 @@
             },
             handleFocusOut(){
                 this.showMore = false;
-            }
+            },
+            getImage(imageName){
+                return new URL(`../../assets/images/experience/${imageName}`, import.meta.url).href;
+            },
         }
     }
 </script>
@@ -93,7 +96,7 @@
             <!-- text -->
             <div class="content__text">
                 <!-- <img :src="'../../assets/images/experience/' + activeExperience.image" class="content__logo" /> -->
-                <img src="../../assets/images/experience/CapitalK.png" class="content__logo" />
+                <img :src="getImage(activeExperience.image)" class="content__logo" />
                 <div class="content__text--headings">
                     <div class="heading__five">
                         From {{activeExperience.yearFrom}} -  {{activeExperience.yearTo}}
@@ -115,7 +118,7 @@
 
             <!-- See More -->
             <div class="exp__see-more" v-if="showMore">
-                   <SeeMoreExperience :experience="activeExperience"/>
+                   <SeeMoreExperience :experience="activeExperience" :key="activeExperience.id"/>
             </div>
         </div>
     </div>

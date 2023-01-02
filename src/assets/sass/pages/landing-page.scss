@@ -41,7 +41,7 @@
         width: 100%;
         height: 60rem;
         position: relative;
-        z-index: 1;
+        z-index: 2;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -72,6 +72,8 @@
     animation: drop .6s linear .4s backwards ;
     transform-origin: bottom;
     margin-right: 2rem;
+    position: relative;
+    z-index: 1;
     
     @for $i from 1 through 30 {
         .leaf:nth-of-type(#{$i}){
@@ -89,11 +91,12 @@
 }
 
 .circle-shaddow{
-    position: absolute;
-    bottom: 6rem;
-    margin-left: 30%;
-    background-color: $main-orange-dark;
-    width: 40%;
+    position: relative;
+    bottom: 15px;
+    z-index: 0;
+    margin-left: 1%;
+    background-color: #BE7303;
+    width: 25rem;
     height: 4rem;
     border-radius: 50%;
     transition: all 0.5s;
@@ -182,7 +185,4 @@
             height: 90rem;
         }
      }
-     .circle-shaddow{
-        bottom: 18%;
-    }
   }
