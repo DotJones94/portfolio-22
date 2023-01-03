@@ -1,0 +1,20 @@
+.skills{
+    &__blocks{
+        display: flex;
+        justify-content: center;
+        padding: 8rem;
+        align-items: center;
+    }
+}
+
+//Smaller Screens
+@media screen and (max-width: 900px) {
+    .skills{
+        &__blocks{
+            display: flex;
+            justify-content: center;
+          
+            flex-direction: column;
+        }
+    }
+}

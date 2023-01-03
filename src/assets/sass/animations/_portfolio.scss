@@ -1,0 +1,9 @@
+@keyframes main-image-show {
+    0%{  width: 7rem; height: 7rem; opacity: 0;}
+    100%{  width: 12rem; height: 12rem;  opacity: 1; }
+}
+
+@keyframes portfolio-drop-down {
+    0%{ transform: scaleY(0); opacity: 0; margin-top: -9rem;}
+    100%{  transform: scaleY(1);  opacity: 1; margin-top: 2rem; }
+}
