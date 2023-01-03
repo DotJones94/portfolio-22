@@ -1,0 +1,35 @@
+.bee{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+
+    &:nth-child(odd){
+        animation: beeMove 20s infinite;
+        animation-direction: normal;
+    }
+
+    &:nth-child(even){
+        animation: beeMove 20s infinite;
+        animation-direction: reverse;
+    }
+    
+
+    #wings{
+        animation: bob 0.5s ease-in-out infinite;
+        g{
+            path{
+                transform-origin: bottom;
+                animation: wings 0.2s ease-in-out infinite;
+            }
+
+            @for $i from 1 through 10{
+                path:nth-of-type(#{$i}){
+                    animation-delay: $i*0.25s;
+                }
+            }
+        }
+    }
+    #body{
+        animation: bob 0.5s ease-in-out infinite;
+    }
+}

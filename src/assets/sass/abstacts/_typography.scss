@@ -10,10 +10,8 @@ $inria-sans-font: 'Inria Sans', sans-serif;
         font-size: 9rem;
         color: white;
         font-weight: 800;
-        letter-spacing: 1.3rem;
         text-align: center;
         line-height: 7rem;
-        text-shadow: -4px 5px 8px rgba($color: #000000, $alpha: 0.05)
     }
 
     &__two{
@@ -62,6 +60,7 @@ $inria-sans-font: 'Inria Sans', sans-serif;
 
     &--navigation{
         color: #FFFFFF;
+        font-size: 1rem;
     }
 
     &--btn{
@@ -83,3 +82,18 @@ $inria-sans-font: 'Inria Sans', sans-serif;
     line-height: 1.2rem;
     letter-spacing: 0.06em;
 }
+
+
+.portfolio__text{
+    text-transform: uppercase;
+    font-family: $assistant-font;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.15em;
+
+    &--name{
+        font-weight: 600;
+        letter-spacing: 0.2em;
+    }
+}
+

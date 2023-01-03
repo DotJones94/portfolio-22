@@ -1,10 +1,11 @@
 <script>
     import SkillBlock from '../elements/skill-block.vue';
+    import potPlant from '../../assets/images/bottom-images/pot-plant-1.vue';
 
     export default {
         emits: ["changeCurrentRole"],
         components: {
-            SkillBlock,
+            SkillBlock, potPlant,
         },
         computed:{
             activeExperience(){
@@ -22,40 +23,51 @@
                             {
                                 name: 'Figma',
                                 percentage: 70,
+                                strokeDasharray: "7.5 100",
+                                subItems: 'Wireframes & prototyping',
                             },
                             {
                                 name: 'Adobe Suite',
                                 percentage: 80,
+                                strokeDasharray: "10 100",
+                                subItems: 'PS, AI, FL, AE, XD, ID, PR',
                             },
                             {
                                 name: '3Ds Max',
                                 percentage: 70,
+                                strokeDasharray: "7.5 100",
+                                subItems: 'Modeling & Animation',
                             },
                             {
                                 name: 'Unity',
                                 percentage: 75,
+                                strokeDasharray: "8.9 100",
+                                subItems: 'Game dev, film, VR',
                             },
                         ]
                     },
                     {
                         id: 2,
                         name: 'Web Development',
-                        image: '',
+                        image: 'www.png',
                         skills: [
                             {
                                 name: 'HTML/CSS',
                                 percentage: 95,
-                                strokeDasharray: "10 100"
+                                strokeDasharray: "11.2 100",
+                                subItems: 'HTML 5, Sass',
                             },
                             {
                                 name: 'Javascript',
                                 percentage: 85,
-                                strokeDasharray: "9.5 100"
+                                strokeDasharray: "10.5 100",
+                                subItems: 'Vue.js, Jquery',
                             },
                             {
                                 name: 'PHP',
                                 percentage: 90,
-                                strokeDasharray: "11 100"
+                                strokeDasharray: "11 100",
+                                subItems: 'Laravel',
                             },
                         ]
                     },
@@ -67,14 +79,20 @@
                             {
                                 name: 'Java',
                                 percentage: 75,
+                                strokeDasharray: "8.9 100",
+                                subItems: 'Data structure & Algorithms',
                             },
                             {
                                 name: 'C++',
                                 percentage: 70,
+                                strokeDasharray: "7.5 100",
+                                subItems: '',
                             },
                             {
                                 name: 'c#',
                                 percentage: 60,
+                                strokeDasharray: "7 100",
+                                subItems: 'Game development',
                             },
                         ]
                     },
@@ -97,9 +115,7 @@
         <div class="header-wrapper">
             <!-- Image of plant -->
             <div>
-                <img src="../../assets/images/section-navigation/hanging01.png"
-                 alt="Hanging plant"
-                 class="navigation__image" />
+              
             </div>
 
             <!-- Navigation links -->
@@ -110,17 +126,17 @@
         </div>
 
         <div class="skills__blocks">
-            <skill-block v-for="skill in skills" 
+            <skill-block v-for="skill in skills"
+                @mouseover="this.activeSkillID = skill.id" 
+                @mouseleave="this.activeSkillID = 2"    
                 :key="skill.id" 
                 :skill="skill"
-                :class="{'skill-block--active' : this.activeSkillID == skill.id}"/>
+                :class="{'skill-block--active' : this.activeSkillID === skill.id}"/>
         </div>
 
-        <!-- Image of bottom Plant -->
+        <!-- Image of bottom Plant
         <div class="bottom-images bottom-images--skills">
-            <img src="../../assets/images/bottom-images/peacelilly.webp"
-            alt="Image of pot plant" 
-            class="bottom-image" />
-        </div>
+            <pot-plant class="bottom-image"  />
+        </div> -->
     </div>
 </template>

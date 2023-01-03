@@ -1,65 +1,188 @@
 .landing-page{
    &__heading{
-    z-index: 3;
-   }
+        z-index: 3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 25rem;
+        position: relative;
+        overflow: visible;
+        animation: heading-show 1s backwards;
+        transition: all 0.4s;
+        opacity: 1;
+
+        div{
+            transition: all 0.4s;
+            font-size: 11rem;
+            opacity: 1;
+            animation: heading-animate 1s;
+            text-shadow: 1px 1px 3px rgba($color: $main-orange-dark, $alpha: 0.6);
+        }
+        
+    }
 
 //    BACKGROUND CIRCLE
    &__background{
-        width: 55%;
+        width: 600px;
+        height: 600px;
+        position: relative;
+        transition: all 0.5s;
+        animation: circle-animations 0.6s ease-in-out;
 
         &--circle{
             background-color: #FFBD15;
             border-radius: 100%; 
        }
-
-       &::after{
-        content: "";
-        padding-bottom: 100%;
-        display: block;
-    }
    }
-    
 
 
 //    CONTENT: NAME AND WELCOME NOTE
     &__content{
         width: 100%;
-        margin-top: 27vw;
+        height: 60rem;
         position: relative;
-        z-index: 1;
+        z-index: 2;
         display: flex;
         flex-direction: column;
-        align-content: flex-start;
-        align-items: stretch;
-        justify-content: flex-end;
+        justify-content: center;
 
         //    WELOCME NOTE ----------
         .landing-page__welcome-note{
-            height: 40vh;
             margin-top: 7vh;
             margin-right: 7vw;
             align-self: flex-end;
+
+            & > div{
+                transform-origin: top center;
+                animation: flip-down 1s ease backwards;
+
+                @for $i from 1 through 5{
+                    &:nth-of-type(#{$i}){
+                        animation-delay: $i*0.25s;
+                    }
+                }  
+            }
+        }
+    }
+}
+
+// Palm animations 
+.palm{
+    
+    animation: drop .6s linear .4s backwards ;
+    transform-origin: bottom;
+    margin-right: 2rem;
+    position: relative;
+    z-index: 1;
+    
+    @for $i from 1 through 30 {
+        .leaf:nth-of-type(#{$i}){
+            animation-delay: random()+s;
+            animation-duration: random($limit: 2)+s;
+        }
+    }
+
+    .leaf{
+        transform-origin: bottom center;
+        animation: palm-animations infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+.circle-shaddow{
+    position: relative;
+    bottom: 15px;
+    z-index: 0;
+    margin-left: 1%;
+    background-color: #BE7303;
+    width: 25rem;
+    height: 4rem;
+    border-radius: 50%;
+    transition: all 0.5s;
+    animation: shaddow-grow .6s linear .4s backwards ;
+}
+
+// LOADING Circle
+.circle__wrapper{
+    position: fixed;
+    height: 100vh;
+
+    .circle{
+        border-radius: 50%;
+        position: absolute;
+        background: linear-gradient($main-orange, $main-orange) padding-box,
+              linear-gradient(to right, $main-yellow, rgba($main-orange, 0.1)) border-box;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        animation: spinner 3s ease-in-out infinite;
+    
+        &__inner-most{
+            width: 10rem;
+            height: 10rem;
+            animation-delay: 0.2s;
+        }
+
+        &__inner{
+            width: 15rem;
+            height: 15rem;
+            animation-delay: 0.5s;
+        }
+
+        &__outer{
+            width: 20rem;
+            height: 20rem;
+            animation-delay: 0.8s;
+        }
+
+        &--loaded{
+            animation: front-ripple 1s ease backwards;
+            opacity: 0;
         }
     }
 }
 
 
+
 //Smaller Screens
 @media screen and (max-width: 600px) {
     .landing-page{     
-     
+        &__heading{
+            margin-top: 10rem;
+        }
+
+        .heading__two{
+            color: white;
+            font-weight: 600;
+            text-shadow: 1px 1px 1px #7c620fbd;
+        }
+
      //    CONTENT: NAME AND WELCOME NOTE
          &__content{
-             margin-top: 38vh;
-     
+            text-shadow: 1px 1px 5px rgba($color: #895e07, $alpha: 0.35);
              //    WELOCME NOTE ----------
              .landing-page__welcome-note{
-                 height: 30vh;
-                 margin-right: 0;
-                 align-self: center;
-                 text-align: center;
-                 align-items: center;
+                border-radius: 2rem;
+                height: 30vh;
+                margin-right: 0;
+                align-self: center;
+                text-align: center;
+                align-items: center;
+                color: white;
+                text-shadow: 1px 1px 5px rgba($color: #513703, $alpha: 0.35);
              }
          }
+     }
+  }
+
+  
+//larger Screens
+@media screen and (min-width: 1400px) {
+    .landing-page{     
+     //    BACKGROUND CIRCLE
+        &__background{
+            width: 90rem;
+            height: 90rem;
+        }
      }
   }

@@ -1,21 +1,22 @@
 .navigation__wrapper{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     position: fixed;
     z-index: 5;
+    width: 100%;
+    margin-top: 2rem;
 }
 
 .navigation{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 50%;
     position: fixed;
-    height: 35vh;
+    height: auto;
     justify-content: space-between;
     margin-left: 2rem ;
     padding: 1rem;
-    overflow: hidden;
     animation: nagivation-grow 1s ease;
     opacity: 1;
     animation-fill-mode: backwards;
@@ -27,11 +28,13 @@
         cursor: pointer;
         transition: all ease-in-out 0.3s;
         opacity: 0.85;
+        position: relative;
+        align-items: center;
 
         &--active{
             color: white;
 
-            .link_text{
+            .link__text--navigation{
                 opacity: 1;
             }
            
@@ -48,14 +51,27 @@
             transform: scale(1.1);
             opacity: 1;
 
-            .link_text{
+            .link__text--navigation{
                 opacity: 1;
             }
         }
 
         &:not(.navigation__link--active).link__text{
-            opacity: 0;
+            display: none;
             padding-bottom: 1rem;
+        }
+
+        .link__text{
+            display: block;
+            position: absolute;
+            top: -2rem;
+        }
+
+        .link__text--navigation{
+            opacity: 0;
+            transition: all 0.5s;
+            width: 100px;
+            text-align: center;
         }
     }
 
@@ -69,16 +85,43 @@
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .navigation{
+        .link__text{
+            // display: none;
+        }
+    }
+
+   
+}
+
+
+@media only screen and (min-width: 600px) {
+    
+    .navigation__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: auto;
+        position: fixed;
+        z-index: 5;
+    }
+
+    .navigation{
+        flex-direction: column;
+        width: auto;
+        height: 35vh;
+
         &__link{
             align-items: center;
             flex-direction: row;
-        }
 
-        .link__text{
-            padding-left: 1.2rem;
-            padding-bottom: 0;
+            .link__text--navigation{
+                text-align: left;
+            }
         }
     }
+
+    
 }

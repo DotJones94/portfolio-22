@@ -50,12 +50,12 @@
                 <span class="link__text link__text--navigation">Skills</span>
             </div>
 
-            <!-- <div class="navigation__link"
+            <div class="navigation__link"
                 :class="{'navigation__link--active' : activeSection === 'portfolio'}"
                 @click="changeActiveSection('portfolio')">
                 <brush/>
                 <span class="link__text link__text--navigation">Portfolio</span>
-            </div> -->
+            </div>
 
             <div class="navigation__link"
                 :class="{'navigation__link--active' : activeSection === 'qualifications'}"
@@ -68,7 +68,7 @@
                 :class="{'navigation__link--active' : activeSection === 'contact-me'}"
                 @click="changeActiveSection('contact-me')">
                 <message />
-                <div class="link__text link__text--navigation">Contact Me</div>
+                <span class="link__text link__text--navigation">Contact Me</span>
             </div>
         </div>
     </div>
