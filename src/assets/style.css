@@ -719,94 +719,94 @@ body {
   position: relative;
   z-index: 1; }
   .palm .leaf:nth-of-type(1) {
-    animation-delay: 0.1281s;
-    animation-duration: 2s; }
+    animation-delay: 0.04155s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(2) {
-    animation-delay: 0.91474s;
+    animation-delay: 0.35628s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(3) {
-    animation-delay: 0.45312s;
+    animation-delay: 0.39906s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(4) {
-    animation-delay: 0.36452s;
+    animation-delay: 0.57734s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(5) {
-    animation-delay: 0.08353s;
-    animation-duration: 2s; }
+    animation-delay: 0.83767s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(6) {
-    animation-delay: 0.78718s;
+    animation-delay: 0.10409s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(7) {
-    animation-delay: 0.00945s;
+    animation-delay: 0.19652s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(8) {
-    animation-delay: 0.9642s;
+    animation-delay: 0.64749s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(9) {
-    animation-delay: 0.10913s;
-    animation-duration: 1s; }
-  .palm .leaf:nth-of-type(10) {
-    animation-delay: 0.41596s;
+    animation-delay: 0.54564s;
     animation-duration: 2s; }
+  .palm .leaf:nth-of-type(10) {
+    animation-delay: 0.79229s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(11) {
-    animation-delay: 0.75525s;
+    animation-delay: 0.19799s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(12) {
-    animation-delay: 0.82068s;
+    animation-delay: 0.3548s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(13) {
-    animation-delay: 0.07715s;
+    animation-delay: 0.25205s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(14) {
-    animation-delay: 0.45891s;
-    animation-duration: 1s; }
+    animation-delay: 0.24752s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(15) {
-    animation-delay: 0.566s;
+    animation-delay: 0.3073s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(16) {
-    animation-delay: 0.56997s;
-    animation-duration: 2s; }
+    animation-delay: 0.80805s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(17) {
-    animation-delay: 0.71722s;
+    animation-delay: 0.12487s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(18) {
-    animation-delay: 0.82834s;
-    animation-duration: 2s; }
+    animation-delay: 0.14653s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(19) {
-    animation-delay: 0.47247s;
+    animation-delay: 0.30945s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(20) {
-    animation-delay: 0.8567s;
-    animation-duration: 1s; }
-  .palm .leaf:nth-of-type(21) {
-    animation-delay: 0.50731s;
-    animation-duration: 1s; }
-  .palm .leaf:nth-of-type(22) {
-    animation-delay: 0.24502s;
-    animation-duration: 1s; }
-  .palm .leaf:nth-of-type(23) {
-    animation-delay: 0.30652s;
+    animation-delay: 0.75346s;
     animation-duration: 2s; }
+  .palm .leaf:nth-of-type(21) {
+    animation-delay: 0.34966s;
+    animation-duration: 2s; }
+  .palm .leaf:nth-of-type(22) {
+    animation-delay: 0.19032s;
+    animation-duration: 2s; }
+  .palm .leaf:nth-of-type(23) {
+    animation-delay: 0.53882s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(24) {
-    animation-delay: 0.46171s;
+    animation-delay: 0.66143s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(25) {
-    animation-delay: 0.19311s;
-    animation-duration: 1s; }
-  .palm .leaf:nth-of-type(26) {
-    animation-delay: 0.26609s;
-    animation-duration: 1s; }
-  .palm .leaf:nth-of-type(27) {
-    animation-delay: 0.82099s;
+    animation-delay: 0.17578s;
     animation-duration: 2s; }
+  .palm .leaf:nth-of-type(26) {
+    animation-delay: 0.27973s;
+    animation-duration: 2s; }
+  .palm .leaf:nth-of-type(27) {
+    animation-delay: 0.73852s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(28) {
-    animation-delay: 0.01261s;
+    animation-delay: 0.75653s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(29) {
-    animation-delay: 0.68243s;
-    animation-duration: 2s; }
+    animation-delay: 0.53653s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(30) {
-    animation-delay: 0.4983s;
+    animation-delay: 0.27597s;
     animation-duration: 1s; }
   .palm .leaf {
     transform-origin: bottom center;
@@ -1138,34 +1138,34 @@ body {
   .qualifications__image .plant_leaves {
     animation: drop 0.6s ease-in-out 0.4s backwards; }
     .qualifications__image .plant_leaves g:nth-of-type(1) {
-      animation-delay: 0.50878s;
+      animation-delay: 0.85286s;
       animation-duration: 1s; }
     .qualifications__image .plant_leaves g:nth-of-type(2) {
-      animation-delay: 0.92055s;
+      animation-delay: 0.74541s;
       animation-duration: 1s; }
     .qualifications__image .plant_leaves g:nth-of-type(3) {
-      animation-delay: 0.31247s;
+      animation-delay: 0.45035s;
       animation-duration: 1s; }
     .qualifications__image .plant_leaves g:nth-of-type(4) {
-      animation-delay: 0.09628s;
-      animation-duration: 2s; }
-    .qualifications__image .plant_leaves g:nth-of-type(5) {
-      animation-delay: 0.24298s;
+      animation-delay: 0.52017s;
       animation-duration: 1s; }
-    .qualifications__image .plant_leaves g:nth-of-type(6) {
-      animation-delay: 0.95424s;
+    .qualifications__image .plant_leaves g:nth-of-type(5) {
+      animation-delay: 0.0945s;
       animation-duration: 2s; }
+    .qualifications__image .plant_leaves g:nth-of-type(6) {
+      animation-delay: 0.66458s;
+      animation-duration: 1s; }
     .qualifications__image .plant_leaves g:nth-of-type(7) {
-      animation-delay: 0.95138s;
+      animation-delay: 0.37471s;
       animation-duration: 2s; }
     .qualifications__image .plant_leaves g:nth-of-type(8) {
-      animation-delay: 0.66343s;
-      animation-duration: 1s; }
-    .qualifications__image .plant_leaves g:nth-of-type(9) {
-      animation-delay: 0.54764s;
+      animation-delay: 0.54248s;
       animation-duration: 2s; }
+    .qualifications__image .plant_leaves g:nth-of-type(9) {
+      animation-delay: 0.05625s;
+      animation-duration: 1s; }
     .qualifications__image .plant_leaves g:nth-of-type(10) {
-      animation-delay: 0.23015s;
+      animation-delay: 0.74779s;
       animation-duration: 2s; }
     .qualifications__image .plant_leaves g {
       transform-origin: bottom center;
@@ -1177,15 +1177,16 @@ body {
     transition: all 0.4s;
     transform-origin: bottom center;
     animation: shaddow-grow 0.5s ease-in-out backwards; }
-  @media screen and (max-width: 600px) {
-    .qualifications .qualifications {
-      flex-direction: column; }
-      .qualifications .qualifications--wrapper {
-        width: 100%;
-        margin-left: 0;
-        padding: 3rem; }
-      .qualifications .qualifications__line {
-        display: none; } }
+
+@media screen and (max-width: 600px) {
+  .qualifications {
+    flex-direction: column; }
+    .qualifications--wrapper {
+      width: 100%;
+      margin-left: 0;
+      padding: 3rem; }
+    .qualifications__line {
+      display: none; } }
 
 .contact-us {
   display: flex;
@@ -1215,20 +1216,20 @@ body {
       position: relative;
       z-index: 0; }
       .contact-us__image-wrapper .plant-hanging:nth-of-type(1) {
-        animation-delay: 0.71078s;
+        animation-delay: 0.53674s;
         animation-duration: 1s; }
       .contact-us__image-wrapper .plant-hanging:nth-of-type(2) {
-        animation-delay: 0.73429s;
-        animation-duration: 2s; }
+        animation-delay: 0.09681s;
+        animation-duration: 1s; }
       .contact-us__image-wrapper .plant-hanging:nth-of-type(3) {
-        animation-delay: 0.67322s;
-        animation-duration: 2s; }
+        animation-delay: 0.03357s;
+        animation-duration: 1s; }
       .contact-us__image-wrapper .plant-hanging:nth-of-type(4) {
-        animation-delay: 0.91757s;
+        animation-delay: 0.84515s;
         animation-duration: 2s; }
       .contact-us__image-wrapper .plant-hanging:nth-of-type(5) {
-        animation-delay: 0.75692s;
-        animation-duration: 1s; }
+        animation-delay: 0.07123s;
+        animation-duration: 2s; }
       .contact-us__image-wrapper .plant-hanging {
         transform-origin: top center;
         animation: palm-animations infinite;

@@ -13,13 +13,13 @@
         <div class="contact-us__info">
             <div class="contact-us__words">
                 <div class="heading__four contact-us__heading">Let's Chat</div>
-                <div class="btn btn--main ">
+                <a class="btn btn--main"  href = "mailto:kellydotjones@gmail.com">
                     <div class="btn__circle"></div>
                     <div class="btn__text">
                         <send class="btn__icon"/>
                         <span class="link__text link__text--btn">Drop me an email</span>
                     </div>
-                </div>
+                </a>
             </div>
             
             <div class="contact-us__image-wrapper">

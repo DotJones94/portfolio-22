@@ -32,13 +32,13 @@
                     <div class="line_breaker"></div>
                     <div><h2 class="heading__two">Welcome to my portfolio</h2></div>
                     <div class="description">Something short sweet and a little funny, like a quote or something that shows a little bit more about me</div>
-                    <div class="btn btn--main ">
+                    <a class="btn btn--main" href = "mailto:kellydotjones@gmail.com">
                         <div class="btn__circle"></div>
                         <div class="btn__text">
                             <send class="btn__icon"/>
                             <span class="link__text link__text--btn">Drop me an email</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>           
         </div>
@@ -51,7 +51,6 @@
         <!-- Image of plant -->
         <div class="full-layer full-layer--background full-layer--background-plant" >
             <palm class="landing-page__background landing-page__background--plant"/>
-           
         </div>
         
     </div>
