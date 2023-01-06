@@ -3,14 +3,19 @@
     height: 6rem;
     position: absolute;
 
+    &--left{
+       animation: beeMoveLeft 15s infinite backwards;
+       transform: scaleX(-1);
+    }
+
     &:nth-child(odd){
-        animation: beeMove 20s infinite;
-        animation-direction: normal;
+        // animation: beeMove 20s infinite;
+        // animation-direction: normal;
     }
 
     &:nth-child(even){
-        animation: beeMove 20s infinite;
-        animation-direction: reverse;
+        // animation: beeMove 20s infinite;
+        // animation-direction: reverse;
     }
     
 

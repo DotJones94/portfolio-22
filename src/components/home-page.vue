@@ -20,9 +20,12 @@ import Bee from './elements/bee.vue';
         </div>
 
         <!-- Bees -->
-        <div class="bees full-layer" v-if="!loading" >
-            <div v-for="index in 10" :key="index" class="landing-page__bees--single">
-               <Bee class="bee" :style="{top: getRandomNumberTop(), left: getRandomNumberLeft()}"/>
+        <div class="bees full-layer" v-if="loading" >
+            <div v-for="index in 7" :key="index" class="landing-page__bees--single">
+               <Bee class="bee bee--left" :style="{top: getRandomNumberTop(), left: getRandomNumberLeft()}"/>
+            </div>
+            <div v-for="index in 7" :key="index" class="landing-page__bees--single">
+               <Bee class="bee bee--right" :style="{top: getRandomNumberTop(), left: getRandomNumberRight()}"/>
             </div>
         </div>
 
@@ -96,12 +99,15 @@ export default {
                 });
         },
         getRandomNumberTop() {
-            console.log(this.windowHeight);
-            return Math.random() * (this.windowHeight - 0) + 0 + 'px';
+            return Math.random() * 5500 + 'px';
         },
         getRandomNumberLeft(){
-            return Math.random() * (this.windowWitdth - 0) + 0 + 'px';
+            return Math.random() * (this.windowWitdth/2) + 0 + 'px';
+        },
+        getRandomNumberRight(){
+            return Math.random() * (this.windowWitdth) + this.windowWitdth/2 + 'px';
         }
+
     },
     components: { Bee }
 }

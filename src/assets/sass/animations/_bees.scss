@@ -15,3 +15,39 @@
     // 50% {transform: rotate(180deg) translateX(10rem) rotate(180deg);}
     0%   { transform: rotate(180deg) translateX(10rem) rotate(-180deg); }
 }
+
+@keyframes beeMoveLeft {
+    
+	0% {
+		transform: translateY(-2rem) translateX(-10rem) 
+	}
+	
+	10% {
+		transform: translateY(0) translateX(10rem)
+	}
+	
+	20% {
+		transform: translateY(-4rem) translateX(30rem) ;
+	}
+	
+	30% {
+		transform: translateY(1rem) translateX(50rem) 
+	}
+	
+	40% {
+		transform: translateY(-2.5rem) translateX(70rem) 
+	}
+	
+	50% {
+		transform: translateY(0) translateX(90rem)
+	}
+	
+	51% {
+		transform: translateY(0) translateX(110rem)
+	}
+	
+	100% {
+		transform: translateY(0vh) translateX(110rem) 
+	}
+}
+
