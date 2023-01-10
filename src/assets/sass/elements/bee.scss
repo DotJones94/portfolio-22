@@ -4,18 +4,23 @@
     position: absolute;
 
     &--left{
-       animation: beeMoveLeft 15s infinite backwards;
-       transform: scaleX(-1);
+       animation: beeMoveLeft infinite ease-in-out;
+       @for $i from 1 through 7{
+        &:nth-of-type(#{$i}){
+            animation-delay: $i*0.8s;
+            animation-duration: ($i*0.8s) + 50s;
+        }
+        }
     }
 
-    &:nth-child(odd){
-        // animation: beeMove 20s infinite;
-        // animation-direction: normal;
-    }
-
-    &:nth-child(even){
-        // animation: beeMove 20s infinite;
-        // animation-direction: reverse;
+    &--right{
+        animation: beeMoveRight infinite ease-in-out;
+        @for $i from 7 through 14{
+            &:nth-of-type(#{$i}){
+                animation-delay: $i*0.8s;
+                animation-duration: ($i*0.8s) + 45s;
+            }
+        }
     }
     
 
@@ -36,5 +41,30 @@
     }
     #body{
         animation: bob 0.5s ease-in-out infinite;
+    }
+}
+
+//Smaller Screens
+@media screen and (max-width: 600px) {
+    .bee{
+        &--left{
+           animation: beeMoveLeft infinite ease-in-out;
+           @for $i from 1 through 7{
+            .bee--left:nth-of-type(#{$i}){
+                animation-delay: $i*0.8s;
+                animation-duration: $i*0.8s + 10s;
+            }
+            }
+        }
+    
+        &--right{
+            animation: beeMoveRight infinite linear;
+            @for $i from 1 through 7{
+                .bee--right:nth-of-type(#{$i}){
+                    animation-delay: $i*0.8s;
+                    animation-duration: $i*0.8s + 8s;
+                }
+            }
+        }
     }
 }

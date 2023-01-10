@@ -20,13 +20,9 @@ import Bee from './elements/bee.vue';
         </div>
 
         <!-- Bees -->
-        <div class="bees full-layer" v-if="loading" >
-            <div v-for="index in 7" :key="index" class="landing-page__bees--single">
-               <Bee class="bee bee--left" :style="{top: getRandomNumberTop(), left: getRandomNumberLeft()}"/>
-            </div>
-            <div v-for="index in 7" :key="index" class="landing-page__bees--single">
-               <Bee class="bee bee--right" :style="{top: getRandomNumberTop(), left: getRandomNumberRight()}"/>
-            </div>
+        <div class="bees full-layer" v-if="loading" > 
+               <Bee v-for="index in 7" :key="index" class="bee bee--left" :style="{top: getRandomNumberTop(), left: getRandomNumberLeft()}"/>
+               <Bee  v-for="index in 7" :key="index" class="bee bee--right" :style="{top: getRandomNumberTop(), left: getRandomNumberRight()}"/>
         </div>
 
         <SideNavigation v-if="loading"/>
