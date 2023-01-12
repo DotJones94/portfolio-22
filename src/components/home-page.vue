@@ -11,7 +11,11 @@ import Bee from './elements/bee.vue';
 </script>
 
 <template>
-    <div ref="full">
+    <div ref="full" class="full"  @mousemove="moveCircle">
+        <!-- Hive Background -->
+        <div class="background--honey"></div> 
+        <div id="background--circle" class="circle" ></div>
+
         <!-- Laoding -->
         <div class="circle__wrapper full-layer">
             <div class="circle circle__outer" :class="{'circle--loaded': loading}"></div>
@@ -21,11 +25,13 @@ import Bee from './elements/bee.vue';
 
         <!-- Bees -->
         <div class="bees full-layer" v-if="loading" > 
-               <Bee v-for="index in 7" :key="index" class="bee bee--left" :style="{top: getRandomNumberTop(), left: getRandomNumberLeft()}"/>
-               <Bee  v-for="index in 7" :key="index" class="bee bee--right" :style="{top: getRandomNumberTop(), left: getRandomNumberRight()}"/>
+               <Bee v-for="index in 7" :key="index" class="bee bee--left" :style="{top: getRandomNumberTop(index)}"/>
+               <Bee  v-for="index in 7" :key="index" class="bee bee--right" :style="{top: getRandomNumberTop(index)}"/>
         </div>
 
         <SideNavigation v-if="loading"/>
+
+
         <div class="pages">
             <LandingPage id="home" v-if="loading"/>
             <Experience id="experience" v-if="loading"/>
@@ -46,6 +52,8 @@ export default {
         console.log(this.$refs.full.scrollHeight);
         this.windowHeight = this.$refs.full.clientHeight;
         this.loading = true;
+
+        this.circle = document.getElementById('background--circle');
     },
     computed: {
         ...mapState({
@@ -63,7 +71,8 @@ export default {
         return {
             loading: false,
             windowWitdth : window.innerWidth-60,
-            windowHeight: 0
+            windowHeight: 0,
+            circle: null
         };
     },
     methods: {
@@ -94,16 +103,23 @@ export default {
                     newSectionName: "contact-me"
                 });
         },
-        getRandomNumberTop() {
+        getRandomNumberTop(index) {
+            switch(index){
+                case 1 : return Math.random() * (900 - 0 + 1) + 0 + 'px';
+                case 2 : return Math.random() * (1600 - +900 + 1) + 900 + 'px';
+                case 3 : return Math.random() * (2500 - 1600 + 1) + 1600 + 'px';
+                case 4 : return Math.random() * (3500 - 2500 + 1) + 2500 + 'px';
+                case 5 : return Math.random() * (4500 - 3500 + 1) + 3500 + 'px';
+                case 6 : return Math.random() * (5500 - 4500 + 1) + 4500 + 'px';
+                case 7 : return Math.random() * (6500 - 5500 + 1) + 5500 + 'px';
+            }
+
             return Math.random() * 5500 + 'px';
         },
-        getRandomNumberLeft(){
-            return Math.random() * (this.windowWitdth/2) + 0 + 'px';
-        },
-        getRandomNumberRight(){
-            return Math.random() * (this.windowWitdth) + this.windowWitdth/2 + 'px';
+        moveCircle(e){
+            this.circle.style.left = e.clientX - 100 + 'px';
+            this.circle.style.top = e.clientY - 100 + 'px';
         }
-
     },
     components: { Bee }
 }

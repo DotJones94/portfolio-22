@@ -8,8 +8,15 @@
         },
         data(){
             return{
-                typography : 'heading--loading'
+                typography : 'heading--loading',
+                circle : null,
             }
+        },
+        mounted() {
+         
+        },
+        methods:{
+          
         }
     }
 </script>
@@ -18,6 +25,8 @@
     <div class="full_page landing-page">
         <!-- Content -->
         <div class="full-layer full-layer--background">
+            
+        
             <div class="landing-page__content">
                 <!-- Heading of my name -->
                 <h1 class="heading__main landing-page__heading"
