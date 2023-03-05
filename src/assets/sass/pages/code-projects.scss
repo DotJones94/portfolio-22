@@ -1,0 +1,30 @@
+.code-projects{
+    &__pills-wrapper{
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    &__pills{
+        width: 35%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__examples-wrapper{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        width: 60%;
+        flex-wrap: wrap;
+    }
+}

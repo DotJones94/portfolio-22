@@ -4,11 +4,13 @@ import router from './router'
 import store from './store';
 
 import './assets/style.css'
+import Particles from "vue3-particles";
 
 const app = createApp(App)
 
 app.use(router)
 app.use(store)
+app.use(Particles);
 
 app.mount('#app')
 

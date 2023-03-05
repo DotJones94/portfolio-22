@@ -5,7 +5,8 @@ import Experience from './page-sections/experience.vue';
 import Skills from './page-sections/skills.vue';
 import Qualifications  from './page-sections/qualifications.vue';
 import ContactMe  from './page-sections/contact-us.vue';
-import Portfolio from './page-sections/portfolio.vue'
+import Portfolio from './page-sections/portfolio.vue';
+import codeProjects from './page-sections/code-projects.vue';
 import { mapState } from 'vuex';
 import Bee from './elements/bee.vue';
 </script>
@@ -35,6 +36,7 @@ import Bee from './elements/bee.vue';
         <div class="pages">
             <LandingPage id="home" v-if="loading"/>
             <Experience id="experience" v-if="loading"/>
+            <code-projects id="code-projects" v-if="loading" />
             <skills id="skills" v-if="loading"/>
             <Portfolio id="portfolio" v-if="loading"/>
             <Qualifications id="qualifications" v-if="loading"/>
@@ -79,6 +81,7 @@ export default {
         navigationChange() {
             let home = Math.ceil(document.getElementById("home").getBoundingClientRect().top);
             let experience = Math.ceil(document.getElementById("experience").getBoundingClientRect().top);
+            let codeProjects = Math.ceil(document.getElementById("code-projects").getBoundingClientRect().top);
             let skills = Math.ceil(document.getElementById("skills").getBoundingClientRect().top);
             let qualifications = Math.ceil(document.getElementById("qualifications").getBoundingClientRect().top);
             let contactMe = Math.ceil(document.getElementById("contact-me").getBoundingClientRect().top);
@@ -89,6 +92,10 @@ export default {
             if (experience > 0 && experience < 50)
                 this.$store.commit("changeSection", {
                     newSectionName: "experience"
+                });
+            if (codeProjects > 0 && codeProjects < 50)
+                this.$store.commit("changeSection", {
+                    newSectionName: "code-projects"
                 });
             if (skills > 0 && skills < 50)
                 this.$store.commit("changeSection", {

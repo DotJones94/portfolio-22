@@ -1,0 +1,46 @@
+
+.code-example {
+    width: 13rem;
+    height: 11rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    transition: all 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.7;
+
+    &__title{
+        font-family: $assistant-font;
+        letter-spacing: 1.2px;
+        color: white;
+        font-size: 1.4rem;
+        text-decoration: none;
+        min-height: 2rem;
+        text-align: center;
+    }
+
+    &__logo-wrapper{
+        margin-top: 1rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    &__logo{
+        height: 2rem;
+        width: 2rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &:hover{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+ }

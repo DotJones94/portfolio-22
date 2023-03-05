@@ -1,0 +1,34 @@
+.lanuage-pill{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-family: $inria-sans-font;
+  border: 2px solid rgba($main-orange-dark, 0.3);
+  background-color: rgba($color: $main-yellow, $alpha: 0.2);
+  border-radius: 50px;
+  padding: 0.2rem 2rem 0.2rem 0;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.4s ease-in-out;
+
+  &:hover{
+    opacity: 1;
+    background-color: rgba($color: $main-yellow, $alpha: 0.5);
+  }
+
+  &__logo{
+    width: 2rem;
+    height: 2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid $main-yellow;
+    border-radius: 50px;
+   
+  }
+
+  &__name{
+    font-size: 1.2rem;
+  }
+}
