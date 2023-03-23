@@ -4,9 +4,15 @@
 }
 
 @keyframes circle-animations {
-    0%{ width: 10rem; height: 10rem; opacity: 0; }
-    70%{ width: 65rem; height: 65rem; opacity: 1;}
-    100%{ width: 60rem; height: 60rem; opacity: 1;}
+    0%{ width: 10rem; height: 10rem; opacity: 0; transform: translateX(40vw); }
+    40%{ width: 65rem; height: 65rem; opacity: 1;transform: translateX(55vw); }
+    100%{ width: 80rem; height: 80rem; opacity: 1;  transform: translateX(50vw);}
+}
+
+@keyframes circle2-animations {
+    0%{ width: 10rem; height: 10rem; opacity: 0; transform: translateX(40vw); }
+    40%{ width: 45rem; height: 45rem; opacity: 1;transform: translateX(35vw); }
+    100%{ width: 40rem; height: 40rem; opacity: 1;  transform: translateX(2vw);}
 }
 
 @keyframes shaddow-grow {
@@ -19,12 +25,12 @@
 
 
 @keyframes drop {
-    0% {transform: translateY(-100rem) scaleY(0.9); opacity: 0;}
+    0% {transform: translateY(-100rem)  translateX(30vw) scaleY(1); opacity: 0;}
     5% {opacity: .7;}
-    50% {transform: translateY(0px) scaleY(1); opacity: 1;}
-    65% {transform: translateY(-17px) scaleY(.9); opacity: 1;}
-    75% {transform: translateY(-22px) scaleY(.9); opacity: 1;}
-    100% {transform: translateY(0px) scaleY(1); opacity: 1;}
+    50% {transform: translateY(0px)  translateX(30vw) scaleY(1.1); opacity: 1;}
+    65% {transform: translateY(-17px)  translateX(30vw) scaleY(1); opacity: 1;}
+    75% {transform: translateY(-22px)  translateX(30vw) scaleY(1); opacity: 1;}
+    100% {transform: translateY(0px) translateX(30vw) scaleY(1.2); opacity: 1;}
   }
 
 @keyframes flip-down {
@@ -37,6 +43,12 @@
     0%{transform: rotate(0deg) scale(0.5); opacity: 0;}
     90%{transform: rotate(270deg) scale(1); opacity: 1;}
     100%{transform: rotate(360deg) scale(0.95); opacity: 0;}
+}
+
+@keyframes spinnerLoaded {
+    0%{transform: rotate(0deg) }
+    90%{transform: rotate(270deg) }
+    100%{transform: rotate(360deg) }
 }
 
 @keyframes front-ripple {

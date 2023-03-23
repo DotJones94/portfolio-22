@@ -69,6 +69,34 @@ body{
     z-index: 2;
 }
 
+.loading-wrapper{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loading-layer{
+        background-color: $main-green;
+        width: 500rem;
+        height: 500rem;
+        overflow: hidden;
+        z-index: 10;
+        opacity: 1;
+        transition: all 1s;
+    
+        &--loaded{
+            border-radius: 70%;
+            width: 0rem;
+            height: 00rem;
+        }
+    }
+}
+
+
+
 //GLOBAL
 @import 'abstacts/global';
 

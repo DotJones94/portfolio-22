@@ -3,54 +3,81 @@
         z-index: 3;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 25rem;
+        justify-content: start;
+        width: 80vw;
         position: relative;
         overflow: visible;
-        animation: heading-show 1s backwards;
+        animation: heading-show 1s 1s backwards;
         transition: all 0.4s;
         opacity: 1;
+        gap: 1rem;
 
         div{
             transition: all 0.4s;
-            font-size: 11rem;
+            font-size: 10rem;
             opacity: 1;
-            animation: heading-animate 1s;
-            text-shadow: 1px 1px 3px rgba($color: $main-orange-dark, $alpha: 0.6);
+            animation: heading-animate 1s 1s;
+            text-shadow: 1px 1px 3px rgba($color: $main-orange-dark, $alpha: 0.5);
         }
         
     }
 
+    &__circle{
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+
 //    BACKGROUND CIRCLE
    &__background{
-        width: 600px;
-        height: 600px;
+        width: 80rem;
+        height: 80rem;
+        margin-top: -8rem;
         position: relative;
         transition: all 0.5s;
-        animation: circle-animations 0.6s ease-in-out;
+        animation: circle-animations 2s ease-in-out;
+        transform: translateX(50vw);
 
         &--circle{
-            background-color: #FFBD15;
+            background-color: rgba($color: $main-yellow, $alpha: 0.8);
             border-radius: 100%; 
        }
    }
 
+   &__background--circle2{
+    width: 40rem;
+    height: 40rem;
+    // margin-top: -8rem;
+    position: relative;
+    transition: all 0.5s;
+    animation: circle2-animations 2s ease-in-out;
+    transform: translateX(2vw);
+    background-color:rgba($color: $main-yellow, $alpha: 0.3);
+    border-radius: 100%; 
+}
+
+
 
 //    CONTENT: NAME AND WELCOME NOTE
     &__content{
-        width: 100%;
         height: 60rem;
         position: relative;
         z-index: 2;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 45rem;
+        align-self: flex-start;
+        margin-left: 14vw;
+        padding-top: 10rem;
 
         //    WELOCME NOTE ----------
         .landing-page__welcome-note{
             margin-top: 7vh;
-            margin-right: 7vw;
-            align-self: flex-end;
+            width: 30rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
 
             & > div{
                 transform-origin: top center;
@@ -58,7 +85,7 @@
 
                 @for $i from 1 through 5{
                     &:nth-of-type(#{$i}){
-                        animation-delay: $i*0.25s;
+                        animation-delay: $i* .25s;
                     }
                 }  
             }
@@ -68,11 +95,11 @@
 
 // Palm animations 
 .palm{
-    
     animation: drop .6s linear .4s backwards ;
     transform-origin: bottom;
-    margin-right: 2rem;
+    margin-top: 2rem;
     position: relative;
+    transform: translateX(30vw) scale(1.2);
     z-index: 1;
     
     @for $i from 1 through 30 {
@@ -94,49 +121,51 @@
     position: relative;
     bottom: 15px;
     z-index: 0;
-    margin-left: 1%;
+    margin-left: 3vw;
     background-color: #BE7303;
     width: 25rem;
     height: 4rem;
     border-radius: 50%;
     transition: all 0.5s;
     animation: shaddow-grow .6s linear .4s backwards ;
+    align-self: flex-end;
 }
 
 // LOADING Circle
 .circle__wrapper{
     position: fixed;
     height: 100vh;
+    z-index: 15;
 
-    .circle{
+    .circle-loading{
         border-radius: 50%;
         position: absolute;
-        background: linear-gradient($main-orange, $main-orange) padding-box,
-              linear-gradient(to right, $main-yellow, rgba($main-orange, 0.1)) border-box;
+        background: linear-gradient($main-green, $main-green) padding-box,
+              linear-gradient(to right, $main-orange, rgba($main-green, 0.1)) border-box;
         border-radius: 50%;
         border: 3px solid transparent;
         animation: spinner 3s ease-in-out infinite;
     
         &__inner-most{
-            width: 10rem;
-            height: 10rem;
+            width: 20vw;
+            height: 20vw;
             animation-delay: 0.2s;
         }
 
         &__inner{
-            width: 15rem;
-            height: 15rem;
+            width: 30vw;
+            height: 30vw;
             animation-delay: 0.5s;
         }
 
         &__outer{
-            width: 20rem;
-            height: 20rem;
+            width: 50vw;
+            height: 50vw;
             animation-delay: 0.8s;
         }
 
         &--loaded{
-            animation: front-ripple 1s ease backwards;
+            animation: front-ripple 0.9s ease backwards;
             opacity: 0;
         }
     }
@@ -149,6 +178,8 @@
     .landing-page{     
         &__heading{
             margin-top: 10rem;
+            width: 100%;
+            justify-content: center;
         }
 
         .heading__two{
@@ -159,6 +190,8 @@
 
      //    CONTENT: NAME AND WELCOME NOTE
          &__content{
+            margin-left: 1vw;
+            width: 100%;
             text-shadow: 1px 1px 5px rgba($color: #895e07, $alpha: 0.35);
              //    WELOCME NOTE ----------
              .landing-page__welcome-note{
@@ -184,5 +217,9 @@
             width: 90rem;
             height: 90rem;
         }
+     }
+
+     .palm{
+        transform: translateX(20vw) scale(1.2);
      }
   }

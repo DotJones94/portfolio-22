@@ -9,9 +9,9 @@ $inria-sans-font: 'Inria Sans', sans-serif;
         font-family: $assistant-font;
         font-size: 9rem;
         color: white;
-        font-weight: 800;
+        font-weight: 700;
         text-align: center;
-        line-height: 7rem;
+        line-height: 6.5rem;
     }
 
     &__two{
@@ -20,7 +20,7 @@ $inria-sans-font: 'Inria Sans', sans-serif;
         font-weight: 400;
         font-size: 1.8rem;
         letter-spacing: 0.26em;
-        color: black;
+        color: $main-green;
         text-transform: uppercase;
     }
 

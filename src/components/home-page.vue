@@ -14,33 +14,36 @@ import Bee from './elements/bee.vue';
 <template>
     <div ref="full" class="full"  @mousemove="moveCircle">
         <!-- Hive Background -->
-        <div class="background--honey"></div> 
-        <div id="background--circle" class="circle" ></div>
+        <div class="background--honey" v-if="fullyLoaded"></div> 
+        <div id="background--circle" class="circle" v-show="fullyLoaded" ></div>
 
         <!-- Laoding -->
-        <div class="circle__wrapper full-layer">
-            <div class="circle circle__outer" :class="{'circle--loaded': loading}"></div>
-            <div class="circle circle__inner" :class="{'circle--loaded': loading}"></div>
-            <div class="circle circle__inner-most" :class="{'circle--loaded': loading}"></div>
+        <div class="circle__wrapper full-layer" v-if="!fullyLoaded">
+            <div class="circle-loading circle-loading__outer" :class="{'circle-loading--loaded' : loaded}" ></div>
+            <div class="circle-loading circle-loading__inner"  :class="{'circle-loading--loaded' : loaded}"></div>
+            <div class="circle-loading circle-loading__inner-most" :class="{'circle-loading--loaded' : loaded}" ></div>
+        </div>
+
+        <div class="loading-wrapper" v-if="!fullyLoaded">
+            <div class="loading-layer" :class="{'loading-layer--loaded' : loaded}"></div>
         </div>
 
         <!-- Bees -->
-        <div class="bees full-layer" v-if="loading" > 
+        <div class="bees full-layer" v-if="fullyLoaded" > 
                <Bee v-for="index in 7" :key="index" class="bee bee--left" :style="{top: getRandomNumberTop(index)}"/>
                <Bee  v-for="index in 7" :key="index" class="bee bee--right" :style="{top: getRandomNumberTop(index)}"/>
         </div>
 
-        <SideNavigation v-if="loading"/>
+        <SideNavigation v-if="fullyLoaded"/>
 
-
-        <div class="pages">
-            <LandingPage id="home" v-if="loading"/>
-            <Experience id="experience" v-if="loading"/>
-            <code-projects id="code-projects" v-if="loading" />
-            <skills id="skills" v-if="loading"/>
-            <Portfolio id="portfolio" v-if="loading"/>
-            <Qualifications id="qualifications" v-if="loading"/>
-            <ContactMe id="contact-me" v-if="loading"/>
+        <div class="pages" v-if="fullyLoaded">
+            <LandingPage id="home"/>
+            <Experience id="experience"/>
+            <code-projects id="code-projects"/>
+            <skills id="skills"/>
+            <Portfolio id="portfolio" />
+            <Qualifications id="qualifications"/>
+            <ContactMe id="contact-me"/>
         </div>
     </div>
 </template>
@@ -53,7 +56,10 @@ export default {
     mounted() {
         console.log(this.$refs.full.scrollHeight);
         this.windowHeight = this.$refs.full.clientHeight;
-        this.loading = true;
+
+        setTimeout(() => { this.loaded = true;}, "2000");
+        setTimeout(() => { this.fullyLoaded = true;}, "3000");
+        
 
         this.circle = document.getElementById('background--circle');
     },
@@ -71,7 +77,8 @@ export default {
     },
     data() {
         return {
-            loading: false,
+            loaded: false,
+            fullyLoaded: false,
             windowWitdth : window.innerWidth-60,
             windowHeight: 0,
             circle: null
