@@ -23,8 +23,51 @@
         padding: 2rem;
         display: flex;
         justify-content: center;
-        gap: 2rem;
-        width: 60%;
+        column-gap: 2rem;
+        width: 30rem;
         flex-wrap: wrap;
+
+        a:nth-child(even){
+            margin-top: -2rem;
+        }
+
+        a{
+            opacity: 0.9;
+            transition: all 0.4s ease-in-out;
+        }
+
+        a:hover{
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .example__image{
+            width: 20rem;
+            margin-left: -6rem;
+            margin-right: -6rem;
+
+            .plant_leaves{
+                animation: drop 0.6s ease-in-out 0.4s backwards;
+
+                g{
+                    transform-origin: bottom center;
+                    animation: leaf-animations infinite;
+                    animation-direction: alternate-reverse;
+                    animation-timing-function: ease-in-out;
+                }
+        
+                @for $i from 1 through 10 {
+                    g:nth-of-type(#{$i}){
+                        animation-delay: random()+s;
+                        animation-duration: random($limit: 5)+s;
+                    }
+                }
+            }
+
+            tspan{
+                font-size: 2.8rem;
+                font-family: $assistant-font;
+            }
+        }
     }
 }

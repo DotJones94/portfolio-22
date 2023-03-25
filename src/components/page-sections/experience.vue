@@ -65,7 +65,6 @@
 
 <template>
     <div class="full_page exp">
-    
         <div class="exp__navigation-wrapper">
             <!-- Navigation links -->
             <div class="top__navigation">

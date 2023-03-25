@@ -9,6 +9,7 @@ import Portfolio from './page-sections/portfolio.vue';
 import codeProjects from './page-sections/code-projects.vue';
 import { mapState } from 'vuex';
 import Bee from './elements/bee.vue';
+import { KinesisContainer, KinesisElement } from "vue-kinesis";
 </script>
 
 <template>

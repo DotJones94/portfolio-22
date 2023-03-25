@@ -329,7 +329,7 @@
   0% {
     transform: rotate(0); }
   100% {
-    transform: rotate(0.2deg); } }
+    transform: rotate(0.3deg); } }
 
 .list-link {
   display: flex;
@@ -1032,95 +1032,95 @@ body {
   transform: translateX(30vw) scale(1.2);
   z-index: 1; }
   .palm .leaf:nth-of-type(1) {
-    animation-delay: 0.17824s;
-    animation-duration: 2s; }
+    animation-delay: 0.06062s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(2) {
-    animation-delay: 0.84623s;
+    animation-delay: 0.38188s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(3) {
-    animation-delay: 0.13683s;
+    animation-delay: 0.51315s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(4) {
-    animation-delay: 0.52521s;
+    animation-delay: 0.46064s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(5) {
-    animation-delay: 0.40178s;
+    animation-delay: 0.96637s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(6) {
-    animation-delay: 0.47614s;
+    animation-delay: 0.82964s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(7) {
-    animation-delay: 0.89953s;
+    animation-delay: 0.38835s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(8) {
-    animation-delay: 0.71164s;
+    animation-delay: 0.13357s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(9) {
-    animation-delay: 0.27493s;
-    animation-duration: 2s; }
+    animation-delay: 0.63222s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(10) {
-    animation-delay: 0.51146s;
-    animation-duration: 2s; }
+    animation-delay: 0.53365s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(11) {
-    animation-delay: 0.69428s;
+    animation-delay: 0.85316s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(12) {
-    animation-delay: 0.70224s;
-    animation-duration: 1s; }
+    animation-delay: 0.27488s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(13) {
-    animation-delay: 0.41998s;
+    animation-delay: 0.64594s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(14) {
-    animation-delay: 0.25945s;
+    animation-delay: 0.64388s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(15) {
-    animation-delay: 0.53682s;
-    animation-duration: 2s; }
-  .palm .leaf:nth-of-type(16) {
-    animation-delay: 0.31927s;
+    animation-delay: 0.34736s;
     animation-duration: 1s; }
+  .palm .leaf:nth-of-type(16) {
+    animation-delay: 0.31056s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(17) {
-    animation-delay: 0.83573s;
+    animation-delay: 0.44218s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(18) {
-    animation-delay: 0.78934s;
+    animation-delay: 0.33173s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(19) {
-    animation-delay: 0.9771s;
-    animation-duration: 2s; }
+    animation-delay: 0.02628s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(20) {
-    animation-delay: 0.864s;
+    animation-delay: 0.07227s;
     animation-duration: 1s; }
   .palm .leaf:nth-of-type(21) {
-    animation-delay: 0.7254s;
-    animation-duration: 2s; }
-  .palm .leaf:nth-of-type(22) {
-    animation-delay: 0.30311s;
-    animation-duration: 2s; }
-  .palm .leaf:nth-of-type(23) {
-    animation-delay: 0.95933s;
-    animation-duration: 2s; }
-  .palm .leaf:nth-of-type(24) {
-    animation-delay: 0.92125s;
+    animation-delay: 0.41463s;
     animation-duration: 1s; }
+  .palm .leaf:nth-of-type(22) {
+    animation-delay: 0.58707s;
+    animation-duration: 1s; }
+  .palm .leaf:nth-of-type(23) {
+    animation-delay: 0.75654s;
+    animation-duration: 1s; }
+  .palm .leaf:nth-of-type(24) {
+    animation-delay: 0.37698s;
+    animation-duration: 2s; }
   .palm .leaf:nth-of-type(25) {
-    animation-delay: 0.23535s;
+    animation-delay: 0.48669s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(26) {
-    animation-delay: 0.59127s;
-    animation-duration: 2s; }
+    animation-delay: 0.49488s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(27) {
-    animation-delay: 0.21915s;
+    animation-delay: 0.98835s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(28) {
-    animation-delay: 0.31563s;
-    animation-duration: 2s; }
+    animation-delay: 0.53916s;
+    animation-duration: 1s; }
   .palm .leaf:nth-of-type(29) {
-    animation-delay: 0.06652s;
+    animation-delay: 0.99924s;
     animation-duration: 2s; }
   .palm .leaf:nth-of-type(30) {
-    animation-delay: 0.5765s;
-    animation-duration: 1s; }
+    animation-delay: 0.86042s;
+    animation-duration: 2s; }
   .palm .leaf {
     transform-origin: bottom center;
     animation: palm-animations infinite;
@@ -1459,35 +1459,35 @@ body {
   .qualifications__image .plant_leaves {
     animation: drop 0.6s ease-in-out 0.4s backwards; }
     .qualifications__image .plant_leaves g:nth-of-type(1) {
-      animation-delay: 0.65406s;
+      animation-delay: 0.86565s;
       animation-duration: 1s; }
     .qualifications__image .plant_leaves g:nth-of-type(2) {
-      animation-delay: 0.41743s;
+      animation-delay: 0.59427s;
       animation-duration: 1s; }
     .qualifications__image .plant_leaves g:nth-of-type(3) {
-      animation-delay: 0.86142s;
-      animation-duration: 1s; }
+      animation-delay: 0.44577s;
+      animation-duration: 2s; }
     .qualifications__image .plant_leaves g:nth-of-type(4) {
-      animation-delay: 0.70807s;
+      animation-delay: 0.45176s;
       animation-duration: 2s; }
     .qualifications__image .plant_leaves g:nth-of-type(5) {
-      animation-delay: 0.02291s;
-      animation-duration: 2s; }
+      animation-delay: 0.82719s;
+      animation-duration: 1s; }
     .qualifications__image .plant_leaves g:nth-of-type(6) {
-      animation-delay: 0.08146s;
+      animation-delay: 0.45556s;
       animation-duration: 2s; }
     .qualifications__image .plant_leaves g:nth-of-type(7) {
-      animation-delay: 0.65108s;
+      animation-delay: 0.85405s;
       animation-duration: 1s; }
     .qualifications__image .plant_leaves g:nth-of-type(8) {
-      animation-delay: 0.2981s;
+      animation-delay: 0.40101s;
       animation-duration: 1s; }
     .qualifications__image .plant_leaves g:nth-of-type(9) {
-      animation-delay: 0.91617s;
-      animation-duration: 2s; }
+      animation-delay: 0.62666s;
+      animation-duration: 1s; }
     .qualifications__image .plant_leaves g:nth-of-type(10) {
-      animation-delay: 0.11137s;
-      animation-duration: 2s; }
+      animation-delay: 0.59539s;
+      animation-duration: 1s; }
     .qualifications__image .plant_leaves g {
       transform-origin: bottom center;
       animation: leaf-animations infinite;
@@ -1537,19 +1537,19 @@ body {
       position: relative;
       z-index: 0; }
       .contact-us__image-wrapper .plant-hanging:nth-of-type(1) {
-        animation-delay: 0.34028s;
-        animation-duration: 1s; }
-      .contact-us__image-wrapper .plant-hanging:nth-of-type(2) {
-        animation-delay: 0.15267s;
+        animation-delay: 0.51442s;
         animation-duration: 2s; }
+      .contact-us__image-wrapper .plant-hanging:nth-of-type(2) {
+        animation-delay: 0.0022s;
+        animation-duration: 1s; }
       .contact-us__image-wrapper .plant-hanging:nth-of-type(3) {
-        animation-delay: 0.1596s;
+        animation-delay: 0.57665s;
         animation-duration: 1s; }
       .contact-us__image-wrapper .plant-hanging:nth-of-type(4) {
-        animation-delay: 0.77682s;
+        animation-delay: 0.38844s;
         animation-duration: 2s; }
       .contact-us__image-wrapper .plant-hanging:nth-of-type(5) {
-        animation-delay: 0.42364s;
+        animation-delay: 0.12001s;
         animation-duration: 2s; }
       .contact-us__image-wrapper .plant-hanging {
         transform-origin: top center;
@@ -1604,6 +1604,58 @@ body {
   padding: 2rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  width: 60%;
+  column-gap: 2rem;
+  width: 30rem;
   flex-wrap: wrap; }
+  .code-projects__examples-wrapper a:nth-child(even) {
+    margin-top: -2rem; }
+  .code-projects__examples-wrapper a {
+    opacity: 0.9;
+    transition: all 0.4s ease-in-out; }
+  .code-projects__examples-wrapper a:hover {
+    opacity: 1;
+    transform: scale(1.1); }
+  .code-projects__examples-wrapper .example__image {
+    width: 20rem;
+    margin-left: -6rem;
+    margin-right: -6rem; }
+    .code-projects__examples-wrapper .example__image .plant_leaves {
+      animation: drop 0.6s ease-in-out 0.4s backwards; }
+      .code-projects__examples-wrapper .example__image .plant_leaves g {
+        transform-origin: bottom center;
+        animation: leaf-animations infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out; }
+      .code-projects__examples-wrapper .example__image .plant_leaves g:nth-of-type(1) {
+        animation-delay: 0.72279s;
+        animation-duration: 2s; }
+      .code-projects__examples-wrapper .example__image .plant_leaves g:nth-of-type(2) {
+        animation-delay: 0.72427s;
+        animation-duration: 5s; }
+      .code-projects__examples-wrapper .example__image .plant_leaves g:nth-of-type(3) {
+        animation-delay: 0.13261s;
+        animation-duration: 1s; }
+      .code-projects__examples-wrapper .example__image .plant_leaves g:nth-of-type(4) {
+        animation-delay: 0.57969s;
+        animation-duration: 3s; }
+      .code-projects__examples-wrapper .example__image .plant_leaves g:nth-of-type(5) {
+        animation-delay: 0.26799s;
+        animation-duration: 4s; }
+      .code-projects__examples-wrapper .example__image .plant_leaves g:nth-of-type(6) {
+        animation-delay: 0.96056s;
+        animation-duration: 3s; }
+      .code-projects__examples-wrapper .example__image .plant_leaves g:nth-of-type(7) {
+        animation-delay: 0.74994s;
+        animation-duration: 4s; }
+      .code-projects__examples-wrapper .example__image .plant_leaves g:nth-of-type(8) {
+        animation-delay: 0.67897s;
+        animation-duration: 2s; }
+      .code-projects__examples-wrapper .example__image .plant_leaves g:nth-of-type(9) {
+        animation-delay: 0.14407s;
+        animation-duration: 5s; }
+      .code-projects__examples-wrapper .example__image .plant_leaves g:nth-of-type(10) {
+        animation-delay: 0.45383s;
+        animation-duration: 4s; }
+    .code-projects__examples-wrapper .example__image tspan {
+      font-size: 2.8rem;
+      font-family: "Assistant", sans-serif; }
