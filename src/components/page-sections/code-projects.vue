@@ -7,14 +7,20 @@ import AdvancedStyling from '../elements/example-codes/advanced-styling.vue';
 import VueTesting from '../elements/example-codes/vue-testing.vue';
 import Portfolio2020 from '../elements/example-codes/portfolio-2020.vue';
 import Portfolio2023 from '../elements/example-codes/portfolio-2023.vue';
+import Github from '../global/icons/github.vue';
 
-    export default {
+export default {
         components: {
-            lanuagePill,
-            codeExamples,
-            KinesisContainer,
-            TicTacToe,AdvancedStyling, VueTesting, Portfolio2020,Portfolio2023
-        },
+    lanuagePill,
+    codeExamples,
+    KinesisContainer,
+    TicTacToe,
+    AdvancedStyling,
+    VueTesting,
+    Portfolio2020,
+    Portfolio2023,
+    Github
+},
         data(){
             return{
                 lanuages: [
@@ -61,32 +67,66 @@ import Portfolio2023 from '../elements/example-codes/portfolio-2023.vue';
             </div>
         </div>
 
-        <!-- Lanuages Pills -->
-        <div class="code-projects__pills-wrapper">
-            <div class="code-projects__pills">
-                <lanuage-pill v-for="lang in lanuages" :key="lang.id" :lanuage="lang" />
+        <div class="code-projects__wrapper">
+            <div class="code-projects__text">
+                <KinesisContainer class="code-projects__examples-wrapper">
+                    <kinesis-element 
+                            :strength="15"
+                            transformOrigin="50% 400%"
+                            axis="y"
+                            type="translate">
+                                <!-- Headings -->
+                                <div>
+                                    <h2 class="heading__two">Some GitHub Examples</h2><br>
+                                    <div class="line_breaker"></div><br><br>
+                                    <div class="description">Just a few links to some code I have done. Most of these are side little projects that were built to keep me learning. They are all web based and range from font-end to back-end. I am constantly trying to keep my skills up to date and the best way to do it is through doing. </div>
+                                </div>
+                                <!-- Lanuages Pills -->
+                                <div class="code-projects__pills-wrapper">
+                                    <div class="code-projects__pills">
+                                        <lanuage-pill v-for="lang in lanuages" :key="lang.id" :lanuage="lang" />
+                                    </div>
+                                </div>
+                                <!-- Git hub link -->
+                                <div class="btn btn--main">
+                                    <a  href = "https://github.com/DotJones94">
+                                        <div class="btn__circle"></div>
+                                        <div class="btn__text">
+                                            <Github class="btn__icon" />
+                                            <span class="link__text link__text--btn">Github profile</span>
+                                        </div>
+                                    </a>
+                                </div>
+                        </kinesis-element>
+                    </KinesisContainer>
             </div>
+
+            <!-- Code examples -->
+            <div class="code-projects__wrapper">
+                <KinesisContainer class="code-projects__examples-wrapper">
+                    <a v-for="(example, index) in codeExamples" :key="example.id"
+                    :href="example.link" target="_blank" >
+                        <kinesis-element 
+                            :strength="-10 + (index*2)"
+                            transformOrigin="50% 400%"
+                            axis="y"
+                            type="translate">
+                                <TicTacToe v-if="index === 0" class="example__image"/>
+                                <vue-testing v-if="index === 1" class="example__image" />
+                                <advanced-styling v-if="index === 2" class="example__image" />
+                                <portfolio-2020 v-if="index === 3" class="example__image" />
+                                <portfolio-2023 v-if="index === 4" class="example__image" />
+                        </kinesis-element>
+                    </a>
+                </KinesisContainer>
+            </div>
+
         </div>
 
-        <!-- Code examples -->
-        <div class="code-projects__wrapper">
-            <KinesisContainer class="code-projects__examples-wrapper">
-                <a v-for="(example, index) in codeExamples" :key="example.id"
-                :href="example.link" target="_blank" >
-                    <kinesis-element 
-                        :strength="-10 + (index*2)"
-                        transformOrigin="50% 400%"
-                        axis="y"
-                        type="translate">
-                            <TicTacToe v-if="index === 0" class="example__image"/>
-                            <vue-testing v-if="index === 1" class="example__image" />
-                            <advanced-styling v-if="index === 2" class="example__image" />
-                            <portfolio-2020 v-if="index === 3" class="example__image" />
-                            <portfolio-2023 v-if="index === 4" class="example__image" />
-                    </kinesis-element>
-                </a>
-            </KinesisContainer>
-        </div>
+        
+
+
+        
     </div>
     
 </template>

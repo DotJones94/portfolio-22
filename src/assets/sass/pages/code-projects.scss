@@ -1,4 +1,9 @@
 .code-projects{
+    &__text{
+        max-width: 40rem;
+        margin-right: 10rem;
+    }
+
     &__pills-wrapper{
         display: flex;
         justify-content: center;
@@ -7,16 +12,18 @@
     }
 
     &__pills{
-        width: 35%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: start;
         gap: 0.5rem;
     }
 
     &__wrapper{
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 6rem;
     }
 
     &__examples-wrapper{

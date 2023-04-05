@@ -3,8 +3,7 @@
   gap: 1rem;
   align-items: center;
   font-family: $inria-sans-font;
-  border: 2px solid rgba($main-orange-dark, 0.3);
-  background-color: rgba($color: $main-yellow, $alpha: 0.2);
+  background-color: rgba($color: $main-orange-dark, $alpha: 0.2);
   border-radius: 50px;
   padding: 0.2rem 2rem 0.2rem 0;
   margin-top: 0.5rem;
@@ -23,7 +22,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    border: 3px solid $main-yellow;
+    padding: 3px;
     border-radius: 50px;
    
   }
